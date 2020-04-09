@@ -1,0 +1,190 @@
+body{
+  background: #2C2E46;
+
+}
+
+header{
+  width:100%;
+  height: 200px;
+}
+header div:nth-child(1){width: 100%; height: 100px;}
+header div:nth-child(2){width: 100%; height: 100px;}
+
+
+header div:nth-child(1) nav:nth-child(1){
+  width:30%;
+  float:left;
+  height:inherit;
+  /* background: #202231; */
+}
+header div:nth-child(1) nav:nth-child(1) p{
+  color: white;
+  text-align: left;
+  margin: auto;
+  width: 50%;
+  padding-top: 30px;
+
+}
+header div:nth-child(1) nav:nth-child(2){
+  width:20%;
+  height:inherit;
+  float: right;
+  }
+header div:nth-child(2) nav:nth-child(1){
+  width: 40%;
+  height: inherit;
+  float:left;
+}
+
+header div:nth-child(2) nav:nth-child(1) ul{
+  display: flex;
+  justify-content: space-around;
+  height: inherit;
+  margin: auto;
+  width: 63%;
+  color: white;
+
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li{
+  position: absolute;
+  left: 0;
+}
+header div:nth-child(2) nav:nth-child(1) ul li{
+
+  height: inherit;
+  position: relative;
+  color:white;
+  width: 25%;
+  margin: 10px;
+}
+header div:nth-child(2) nav:nth-child(1) ul li select{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: #2C2E46;
+  color:white;
+  padding-left: 8px;
+  margin-top: -5px;
+  -webkit-appearance : none;  /*크롬*/
+  -moz-appearance : none; /*파이어폭스*/
+  -ms-appearance : none; /*인터넷익스플로러*/
+  background:url('../img/arrow.png') 90% no-repeat;
+  /*오페라는 크로스브라우징 X*/
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li span img{
+  position: absolute;
+  left: 0;
+}
+header div:nth-child(2) nav:nth-child(1) ul li:nth-child(1){
+  text-align: center;
+  padding-left: 20px;
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li span{
+  left: 0;
+  display: inline-block;
+  text-align: right;
+  width:60px;
+}
+
+header div:nth-child(2) nav:nth-child(2){
+  width: 79%;
+  height: inherit;
+  float:right;
+  }
+
+header div:nth-child(2) nav:nth-child(2) ul li img{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+header div:nth-child(2) nav:nth-child(2) ul{
+  display: flex;
+  width: 100%;
+  float:right;
+}
+
+header div:nth-child(2) nav:nth-child(2) ul li{
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 40px;
+}
+
+  header div:nth-child(1) nav:nth-child(2) ul{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 40%;
+    padding-top: 30px;
+  }
+  header div:nth-child(1) nav:nth-child(2) ul li {
+      position: relative;
+
+  }
+  header div:nth-child(1) nav:nth-child(2) ul li span {
+        position: absolute;
+        right: -13px;
+
+  }
+#dropdown ul{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 300px;
+}
+
+#dropdown ul li{
+  width:100%;
+  height: 50px;
+  text-align: center;
+  }
+#dropdown ul li img{
+  width:50%;
+}
+#dropdown{
+  width: 80px;
+  height: 1000px;
+  background: #2C2E46;
+  position: absolute;
+  left: 0;
+}
+
+.wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 89%!important;
+  border:unset!important;
+  float: left; /*왼쪽으로 붙임. 왼쪽은 고정*/
+  box-sizing: border-box;
+  /* float이나 border는 none 대신  unset */
+  margin: 0!important;
+}
+
+.container nav{
+  height: 300px;
+  float: left;
+  width: 6%;
+  /* background: red; */
+}
+
+.container{
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  }
+
+.container div{
+  width: 30%;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin: 3px;
+  margin-bottom: 30px;
+
+}
