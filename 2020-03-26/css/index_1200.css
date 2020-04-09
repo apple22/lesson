@@ -282,11 +282,18 @@ header div:nth-child(1) nav:nth-child(2) ul li span {
 }
 
 .down {
+    display: block;
+}
+
+.up {
+
     display: none;
 }
 
 #now {
     position: relative;
+    top: -150px;
+    display: none;
 }
 
 .a2 {
