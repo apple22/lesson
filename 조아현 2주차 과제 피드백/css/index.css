@@ -1,0 +1,91 @@
+boby{
+	width: 100%;
+	height: auto;
+/* 	outline: 3px solid black; */
+}
+#header{
+	width: 100%;
+	height: 30px;
+/* 	outline: 3px solid red; */
+	text-align: center;
+	margin: 2% 0; 
+	padding: 2% 0;
+	font-size: xx-large;
+	font-weight:600;
+}
+#container{
+	background-color: #fff5f7;
+	width: 90%;
+	height:70%;
+	margin: 0 auto;
+	
+/* 	outline: 3px solid blue; */
+}
+#agreetit{
+	width: 80%;
+	height: auto;
+	line-height: inherit;
+/* outline: 6px solid indigo;  */
+	text-align: left;
+padding: 3% 0; 
+	margin: 0 auto;
+	
+}
+.checkBox{
+	width: 80%;
+	height: 20px;
+/*  outline: 3px solid indigo; */  
+	text-align: right;
+	margin: 0 auto;
+	padding: 1% 0;
+}
+#contentBox{
+	width: 80%;
+	height: 40%
+	border: 1px solid gray;
+/* 	outline: 3px solid orange; */
+	margin: 0 auto;
+	
+}
+#innerBox{
+	width: 100%;
+	height: auto;
+	border: 1px solid gray;
+	margin: 0 auto;
+	
+}
+#innerBox>p{
+	padding: 2%;
+	display: block;
+}
+#innertit{
+	width: 100%;
+	height: 18px;
+	line-height: inherit;
+/* 	outline: 1px solid red; */
+	text-align: center;
+	background-color: rgba(69, 103, 112, 1);
+	padding: 1% 0;
+	color: #fff;
+}
+#footer{
+	width: 100%;
+	height: 60px;
+/* outline: 3px solid red; */
+	text-align: center;
+	margin: 2% 0; 
+	padding: 2% 0;
+	font-size: 20px;
+/* 	font-weight:300	 */
+}
+#btnBox{
+	width: 10%;
+	height: 20px;
+/* 	outline: 3px solid gold; */
+	text-align: center;
+	background-color: rgba(69, 103, 112, 1);
+	color: #fff;
+	margin: 0 auto;
+	padding: 1%;
+	
+}
