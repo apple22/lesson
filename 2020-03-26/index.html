@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--
+1.flexible layout 반응형    -> 수업
+2.matchmedia js 반응형 ->자바스크립트 숙련도있어야
+3.미디어 쿼리 해상도를 이용한 반응형  ->노가다 -->
+
+<head>
+    <meta charset="utf-8">
+    <title>BUS</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/index.css">-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="all and (max-width:1199px)" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:1200px)" href="./css/index_1200.css">
+
+
+</head>
+<script>
+    $(document).ready(function() {
+        $("#close").click(function() {
+            $("div#header_dropdown_sidebar").animate({
+                left: -300,
+            });
+        });
+
+        $("#open").click(function() {
+            $("div#header_dropdown_sidebar").animate({
+                left: 0,
+            });
+        });
+        $(".a1").click(function() {
+            $(".up").css("display", "none")
+            $(".down").css("display", "inline")
+            $(".a1").css("display", "none");
+            $(".a2").css("display", "inline");
+            $("#mask").css("display", "block");
+
+
+
+            $("#now").animate({
+                top: -100,
+            }, 400);
+            setTimeout(function() {
+                $("#now").css("display", "none")
+            }, 500);
+        });
+
+        $(".a2").click(function() {
+            $(".up").css("display", "inline")
+            $(".down").css("display", "none")
+            $(".a1").css("display", "inline");
+            $(".a2").css("display", "none");
+            $("#now").css("display", "block");
+
+            $("#now").animate({
+                top: 0,
+            }, 500);
+
+        });
+    });
+</script>
+
+<body>
+    <div id="mask"></div>
+
+    <div id="header_dropdown_sidebar" alt="헤더 메뉴 왼쪽 사이드바 ">
+        <nav>
+            <p><img id="close" src="./img/close.png"></p>
+        </nav>
+        <nav>
+            <ul>
+                <li>최고관리자님</li>
+                <li><img src="./img/stire22.png"></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li class="a1"><img src="./img/layer1.png">
+
+                    <span id="a1_logo">현황</span> <span class="up">▲</span><span class="down">▼</span></li>
+                <li class="a2">
+                    <img src="./img/layer1.png">
+                    <span id="a2_logo">현황 </span><span class="up">▲</span><span class="down">▼</span></li>
+                <span id="now">
+                    <li>현황 01</li>
+                    <li>현황 02</li>
+                    <li>현황 03</li>
+                </span>
+
+            </ul>
+
+        </nav>
+
+
+    </div>
+
+
+    <div id="dropdown">
+        <ul>
+            <li><img id="open" src="./img/sidebar_img01.png"></li>
+            <li><img src="./img/sidebar_img02.png"></li>
+            <li><img src="./img/sidebar_img03.png"></li>
+            <li><img src="./img/sidebar_img04.png"></li>
+        </ul>
+    </div>
+    <!-- dropdown -->
+    <header>
+        <div>
+            <nav>
+                <p>버스 상세 현황</p>
+            </nav>
+            <!-- header div:nth-child(1) nav:nth-child(1) -->
+            <nav>
+                <ul>
+                    <li><img src="./img/plug_solid.png">
+                        <span><img src="./img/count.png"></span>
+                    </li>
+                    <li><img src="./img/front_bus.png">
+                        <span><img src="./img/count.png"></span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- header div:nth-child(1) nav:nth-child(2) -->
+        </div>
+        <!--header div:nth-child(1)-->
+        <div>
+            <nav>
+                <ul>
+                    <!-- <li><span><img src="./img/stir.png">운수사</span><select><option value="">경인버스</option>
+              </select></li>
+              <li><span><img src="./img/roadmap.png">노선</span><select><option value="">서울버스</option>
+              </select></li> -->
+                    <li><span><img src="./img/stir.png">운수사</span></li>
+                    <li><select>
+                            <option value="">경인버스</option>
+                        </select></li>
+                    <li><span><img src="./img/roadmap.png">노선</span></li>
+                    <li><select>
+                            <option value="">서울버스</option>
+                        </select></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>전체</li>
+                    <li>운행 04</li>
+                    <li>충전 04</li>
+                    <li>경고 04</li>
+                    <li>오류 04</li>
+                    <li>오프라인 04</li>
+                    <li>범례</li>
+                </ul>
+            </nav>
+        </div>
+        <!--header div:nth-child(2)-->
+    </header>
+    <!--header-->
+    <div class="container">
+        <nav></nav>
+        <div class="wrap">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!--wrap-->
+    </div>
+    <!-- container -->
+
+</body>
+
+</html>

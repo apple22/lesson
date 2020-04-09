@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:1200px)" href="./css/test_1200.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:1199px)" href="./css/test_1990.css">
+    <!--외부스타일시트 , 미디어쿼리 , reset.css-->
+    <title>BUS</title>
+    <script>
+        $(document).ready(function() {
+            $('#close').click(function() {
+                $('#drop_menu').animate({
+                    left: -300,
+                });
+            });
+
+
+            $('img#side_1').click(function() {
+                $('#drop_menu').animate({
+                    left: 0,
+                });
+            });
+
+
+            $('.area_1').click(function() {
+                $('.headerLeft').animate({
+                    left: 0,
+                });
+                $('.material_iconslist').css('display', 'none');
+                $('.material_iconclose').css('display', 'block');
+                $('.area_1').css('display', 'none');
+                $('.area_2').css('display', 'block');
+            });
+
+
+            $('.area_2').click(function() {
+                $('.headerLeft').animate({
+                    left: -200,
+                });
+                $('.material_iconslist').css('display', 'block');
+                $('.material_iconclose').css('display', 'none');
+                $('.area_1').css('display', 'block');
+                $('.area_2').css('display', 'none');
+            });
+
+
+
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var target = $('p.off');
+            target.click(function() {
+
+                $(this).css('background', '#15ECCB');
+                target.not($(this)).css('background', '#2C2E46');
+            })
+        });
+    </script>
+
+
+    <script>
+        $(function() {
+            var target = $('.header_two_right_div ul li');
+            target.mouseover(function() {
+                $(this).find('a').css('color', 'white');
+                $(this).find('li').css('border-color', '#9b5fff');
+                $(this).css('background', '#3e3669');
+                $(this).css('border-color', '#9b5fff');
+
+                target.not($(this)).find('a').css('color', 'white');
+                target.not($(this)).css('border-color', 'lightgray');
+                target.not($(this)).css('background', 'transparent')
+
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#bus_hynhwang_up").click(function() {
+                $('#h_up').animate({
+                    top: -90,
+                }, 600);
+                setTimeout(function() {
+                    $('#h_up').css('display', 'none');
+                    $("#bus_hynhwang_up").css('display', 'none')
+                    $("#bus_hynhwang_down_button").css('display', 'block')
+                }, 400);
+            }); //bus_hyhwang_up
+
+            $("#bus_hynhwang_down_button").click(function() {
+                $('#h_up').animate({
+                    top: 0,
+                }, 600);
+
+                setTimeout(function() {
+                    $('#h_up').css('display', 'block');
+                    $('#bus_hynhwang_up').css('display', 'block');
+                    $('#bus_hynhwang_down_button').css('display', 'none');
+                }, 400);
+
+            }); //bus_hyhwang_down
+
+
+
+            $('#zoh_up').click(function() {
+
+                $('#h_up_two').animate({
+                    top: -30,
+                }, 600);
+                setTimeout(function() {
+                    $('#h_up_two').css('display', 'none');
+                    $("img#zoh_up").css('display', 'none')
+                    $("#zoh_down").css('display', 'block')
+                }, 400);
+
+
+            }); //zoh_up
+
+
+
+            $("#zoh_down").click(function() {
+                $('#h_up_two').animate({
+                    top: 0,
+                }, 600);
+
+                setTimeout(function() {
+                    $('#h_up_two').css('display', 'block');
+                    $('img#zoh_up').css('display', 'block');
+                    $('#zoh_down').css('display', 'none');
+                }, 400);
+
+            }); //zoh_down
+
+
+
+
+            $("#k_up").click(function() {
+                $('#h_up_three').animate({
+                    top: -60,
+                }, 400);
+
+                setTimeout(function() {
+                    $('#h_up_three').css('display', 'none');
+                    $('#k_up').css('display', 'none');
+                    $('#k_down').css('display', 'block');
+                }, 400);
+
+            }); //zoh_down
+
+
+
+            $("#k_down").click(function() {
+                $('#h_up_three').animate({
+                    top: 0,
+                }, 800);
+
+                setTimeout(function() {
+                    $('#h_up_three').css('display', 'block');
+                    $('#k_up').css('display', 'block');
+                    $('#k_down').css('display', 'none');
+                }, 400);
+
+            }); //zoh_down
+
+
+
+
+
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="drop_box">
+        <div id="drop_menu">
+            <p><img id="close" src="img/close.png">
+            </p>
+            <p>최고관리자 <b>님</b> <img src="img/stire22.png">
+            </p>
+            <p class="off"><img id="desk" src="/img/desk.png">현황<img id="bus_hynhwang_up" style="position: absolute; right:25px;top:25px;left:unset;" src="./img/up.png">
+
+
+                <img id="bus_hynhwang_down_button" style="position: absolute; right:25px;top:25px;left:unset;" src="./img/arrow.png">
+            </p>
+
+
+
+            <ul id="h_up">
+                <li class="normal">현황 01</li>
+                <li class="normal">현황 02</li>
+                <li class="normal">현황 03</li>
+            </ul>
+
+
+            <p style="background: #2C2E46;" class="off"><img src="./img/sidebar_img03.png">조회<img id="zoh_up" style=" position: absolute; right:25px;top:25px;left:unset;" src="./img/up.png">
+
+
+                <img id="zoh_down" style="position: absolute; right:25px;top:25px;left:unset;" src="./img/arrow.png">
+
+
+
+            </p>
+
+            <ul id="h_up_two">
+                <li class="normal">현황 01</li>
+                <li class="normal">현황 02</li>
+                <li class="normal">현황 03</li>
+            </ul>
+
+
+
+            <p style="background: #2C2E46;" class="off"><img id="topimg" src="./img/top.png">관리<img id="k_up" style="position: absolute; right:25px;top:25px;left:unset;" src="./img/up.png">
+
+                <img id="k_down" style="position: absolute; right:25px;top:25px;left:unset;" src="./img/arrow.png">
+
+
+
+
+            </p>
+            <ul id="h_up_three">
+                <li class="normal">현황 01</li>
+                <li class="normal">현황 02</li>
+                <li class="normal">현황 03</li>
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="side_bar">
+
+
+    </div>
+    <!--side_bar-->
+
+    <div class="headerLeft">
+        <nav><img id="side_1" src="img/sidebar_img01.png"></nav>
+        <nav><img src="img/sidebar_img02.png"></nav>
+        <nav><img src="img/sidebar_img03.png"></nav>
+        <nav><img src="img/top.png"></nav>
+    </div>
+    <!--headerLeft-->
+    <header>
+        <div class="area_1">
+            <div class="material_iconslist">
+
+            </div>
+
+        </div>
+        <div class="area_2">
+            <div class="material_iconclose">
+
+            </div>
+        </div>
+        <div class="header_one">
+            <p>버스 상세 현황</p>
+            <div>
+                <div>
+                    <img style="position:absolute; padding-left: 15px;" src="img/count.png">
+                    <img src="img/front_bus.png">
+                </div>
+                <!--div-->
+
+                <div>
+                    <img style="position: absolute; padding-left: 15px;" src="img/count.png">
+                    <img src="img/plug_solid.png">
+                </div>
+                <!--div-->
+
+            </div>
+        </div>
+        <!--header_one-->
+        <div class="header_two">
+
+            <div>
+                <div class="header_two_left_div">
+                    <ul class="header_two_left_div_left">
+
+                        <li class="header_two_left_div_menu">
+                            <img class="stir" src="img/stir.png">
+                            운수사
+
+
+                            <span class="test">
+
+                                <select class="select_box1">
+                                    <option>
+                                        경인버스
+                                    </option>
+                                </select>
+                            </span>
+
+                            <span class="test2">
+
+                                <select class="select_box1">
+                                    <option>
+                                        경인버스
+                                    </option>
+                                </select>
+                            </span>
+                        </li>
+
+
+                    </ul>
+                    <!--header_two_left_div_left-->
+
+                    <ul class="header_two_left_div_right">
+                        <li class="header_two_right_div_menu">
+                            <img src="img/roadmap.png">
+                            노선
+                            <span class="test">
+                                <select class="select_box2">
+
+                                    <option id="kbus">
+
+                                        <a>경인버스</a>
+
+                                    </option>
+
+                                    <option id="kbus">
+
+                                        <a>인천버스</a>
+
+                                    </option>
+
+                                    <option id="kbus">
+
+                                        <a>경남버스</a>
+
+                                    </option>
+
+                                </select>
+
+                            </span>
+                            <!--test1-->
+
+
+                            <span class="test2">
+                                <select class="select_box2">
+
+                                    <option id="kbus">
+
+                                        <a>경인버스</a>
+
+                                    </option>
+
+                                    <option id="kbus">
+
+                                        <a>인천버스</a>
+
+                                    </option>
+
+                                    <option id="kbus">
+
+                                        <a>경남버스</a>
+
+                                    </option>
+
+                                </select>
+
+                            </span>
+                            <!--test2-->
+
+                        </li>
+                    </ul>
+                    <!--header_two_left_div_right-->
+
+                    <!--첫번째 -->
+
+
+                    <!--두번째 -->
+                </div>
+                <!--header_two_left_div-->
+
+                <div class="header_two_right_div">
+
+                    <ul>
+                        <li><span><img src="img/front_bus.png"><a>전체</a></span></li>
+                        <li><span><img src="img/front_bus.png"><a>운행 04</a></span></li>
+                        <li><span><img src="img/front_bus.png"><a>충전 04</a></span></li>
+                        <li><span><img src="img/front_bus.png"><a>경고 04</a></span></li>
+                        <li><span><img src="img/front_bus.png"><a>오류 04</a></span></li>
+                        <li><span><img class="opline" src="img/front_bus.png"><a>오프라인04</a> </span></li>
+                        <li><a>범례</a></li>
+                    </ul>
+
+                </div>
+                <!--header_two_right_div-->
+            </div>
+        </div>
+        <!--header_two-->
+        <main>
+            <div class="main_container">
+                <!--acoa-->
+                <div>
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+                </div>
+                <!--acoa-->
+
+
+                <div>
+                    <!--orange-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+
+                </div>
+                <!--orange-->
+
+
+                <div>
+                    <!--purple-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+
+                </div>
+                <!--purple-->
+
+                <div>
+                    <!--sky-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+                </div>
+                <!--sky-->
+
+                <div>
+                    <!--yellow-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+                    <!--yellow-->
+                </div>
+
+
+                <div>
+                    <!--purple-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+                    <!--purple-->
+
+                </div>
+
+                <div>
+                    <!--acoa-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+                    <!--acoa-->
+
+                </div>
+
+                <div>
+                    <!--orange-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+                    <!--orange-->
+
+                </div>
+
+                <div>
+                    <!--purple-->
+                    <nav class="p1">
+                        <nav>
+                            <ul>
+                                <li class="smallfont">오류</li>
+                                <li class="smallfont_2 a">대전 75자 2360</li>
+                            </ul>
+                            <ul>
+                                <li style="position: relative;">91%
+                                    <img style="position: absolute; right:-25px; top:-10px;" src="img/energy.png">
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </nav>
+                    <nav class="p2">
+                        <img src="img/status_normal.png">
+                    </nav>
+                    <nav class="p3">
+                        <p>주행가능거리 : 122.2km</p>
+                    </nav>
+                    <!--purple-->
+
+                </div>
+            </div>
+        </main>
+    </header>
+    <!--header-->
+</body>
+<!--body-->
+
+</html>
