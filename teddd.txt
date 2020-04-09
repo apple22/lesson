@@ -1,0 +1,290 @@
+<html>
+<!-- 
+//////// table 기본
+<table>
+	<tbody>
+		<tr> 행(줄)
+			<td></td> 셀(칸)
+			<td></td> 셀(칸)
+			<td></td> 셀(칸)
+		</tr>
+		<tr> 
+			<td colspan="2">셀 병합</td> 
+			<td></td> 
+			<td></td> 
+		</tr>
+	</tbody>
+</table>
+
+////////table 속성 
+
+width="800"			가로
+height="30"			세로
+cellspacing="0"		선과 선 사이 여백
+cellpadding="0"	셀(칸) 여백
+border="0"			테이블 선 두께
+align="center"		테이블 셀 정렬
+colspan="3"			테이블 셀(칸) 3칸 병합
+rowspan ="3"		테이블 행 3줄 병합
+
+
+
+////////style 속성 정리 
+
+width: 100px; 가로크기
+height: 100px; 세로크기
+color: #000000;  글자색
+line-height: 32px; 글자 행간
+font-size: 17px; 글자 크기
+font-family:Dotum ; 폰트
+border: 1px solid #e5e5e5;  선 두께,선 종류, 선 색깔
+vertical-align: top; 세로 정렬 top, middle, bottom;
+text-aling: left; 가로 정렬  left, center, right, justify 
+padding: 20px 20px 20px 20px; 안쪽 여백(위, 오른쪽, 아래, 왼쪽 순)
+
+-->
+
+
+
+<meta charset="utf-8" />
+
+<table width="800" cellspacing="0" cellpadding="0" border="0" align="center" style="color: #383838; line-height: 32px; font-size: 17px; font-family:Dotum, 돋움, 돋움체;">
+	<tbody>
+		<tr><td colspan="3" height="53"></td></tr> <!-- 상하 여백 -->
+
+	<!-- START 상단 타이틀 이미지 -->
+		<tr>
+			<td colspan="3" align="center" style="line-heieght: 0; ">
+				<img src="http://coachingi.cafe24.com/mail_form/img/top_title_200226.png" alt="" style="border: 0 none; vertical-align: top;width:100%;" /> <!-- 상단 이미지 -->
+			</td>
+		</tr>
+	<!-- END 상단 타이틀 이미지 -->
+		<tr><td colspan="3" height="18"></td></tr> <!-- 상하 여백 -->
+
+	<!-- START 본문 텍스트 -->
+		<tr>
+			<td colspan="3" style="padding: 20px; line-height: 32px; font-size: 17px;text-align: justify; ">
+				<!--본문 텍스트 -->세상에 독서의 중요성을 모르는 사람은 없다. 하지만 실천하는 사람은 많지 않다. 가장 큰 이유와 변명은 바로 시간부족이다. 책 읽을 시간이 없기 때문에 책을 읽지 않는다는 것이다. 정말 징글징글하게 이런 변명을 들었다. 난 그 얘길 들을 때마다 가슴 속에서 뭔가가 치밀어 오르면서 이런 말을 하고 싶다. “이 사람아, 세상에 그런 거짓말이 어디 있는가? 왜 그렇게 바쁜 줄 아는가? 바로 책을 읽지 않기 때문에 바쁜 거야. 시간이 없어 책을 못 읽는 게 아니라 책을 읽지 않기 때문에 자꾸 뭔가 일이 생기면서 바빠지는 거야. 그게 악순환이야. 평소에 독서를 통해 지식을 쌓고 뇌 근육을 단련시키면 바쁜 일이 덜 생기고 훨씬 생산적인 사람이 될 수 있어”란 말을 해주고 싶다. 내 생각은 명확하다. “여유가 있어 책을 읽는 게 아니다. 책을 읽어야 여유가 생긴다. 책을 읽지 않는 사람은 여유가 생겨도 책을 읽지 않고 늘 쫓기는 생활을 하게 된다”는 것이다. 책을 읽지 않으면 엉뚱한 일을 하게 된다. 이상한 사람을 만나 그와 얽혀 쓸데없이 길을 헤매게 된다. 책 속에는 길이 있다. 지혜와 영감이 들어 있다. 꾸준히 책을 읽으면 철학의 뼈대를 굳건히 할 수 있다. 우선순위가 명확해지면서 쓸데없는 일을 하지 않는다. 쓸데없는 사람은 만날 일도 없다. 당연히 엉뚱한 일에 시간을 쓰지 않는다. 심플하면서 생산적인 삶을 살 수 있다.<br>근데 왜 그들은 시간이 없다고 하소연을 할까? 누구는 시간이 남아도는가? 재벌이나 노숙자나 하루 24시간만 주어져 있다. 근데 어떤 사람은 시간이 없어 책을 읽지 못한다고 한다. 도대체 시간이 없다는 건 무슨 뜻일까? 내가 생각하는 시간이 없다는 것의 정의는 평소 해야 할 일을 하지 않는다는 것이다. 운동, 독서, 충분한 수면, 대인관계 등 급하진 않지만 소중한 일을 게을리하고 있다는 것이다. 단기적으론 티가 나지 않지만 이런 일이 누적되면 장기적으로 문제가 생긴다. 일단 공부하지 않으니 절대 지식이 부족하고, 별다른 아이디어도 없고, 남들과 다른 생각을 할 수 없다. 나만이 할 수 있는 뚜렷한 주특기가 없으니 누구나 할 수 있는 뻔한 일을 할 수밖에 없다. 운동을 게을리하고 수면부족에 시달리니 건강에도 문제가 생겨 시간을 낭비하게 된다. 대인관계에 소홀하니 좋은 기회를 만날 확률도 떨어진다. 늘 경기 탓이나 하면서 삶의 진흙탕을 뒹굴 가능성이 높다. 생각만 해도 한숨이 나온다. 별다른 노력 없이 남들 얘기를 듣고 투자를 하니 사기를 당할 가능성도 높다. 책을 읽지 않으면서 열심히 산다고 생각하는 건 밥을 먹지 않은 빈속으로 열심히 뛰는 것과 비슷하다. 무뎌진 도끼로 열심히 나무를 베겠다는 것과 같다. 딴에는 열심히 산다고 생각하지만 난 동의하지 않는다. 그게 바로 게으름이다. 내가 생각하는 부지런함은 자신의 잠재력을 갈고 닦아 극대화시키는 것이고 독서가 그 역할의 중심에 있다. <br>책 읽을 시간이 없다는 사람에게는 한양대 정민 교수 얘기를 해주고 싶다. “책 한 권을 다 읽을 만큼 한가한 때를 기다린 뒤에 책을 편다면 평생 가도 책을 읽을만한 날은 없다. 비록 아주 바쁜 중에도 한 글자를 읽을 만한 틈이 생기면 한 글자라도 읽는 것이 옳다. 너무 바빠 시간이 없어 책을 못 읽는다는 것처럼 슬픈 일은 없다. 마음이 일을 만든다. 쓸데없는 일은 끊임없이 궁리해내면서 나를 반듯하게 세워줄 책은 멀리하니 마음 밭이 날로 황폐해진다. 오가는 지하철에서만 책을 읽어도 삶이 바뀐다. 휴대폰을 잠깐 내려놓아도 낙오하지 않는다.” <br>“일독일행 독서법”을 쓴 유근용은 바쁜 영어선생을 하면서 1년에 520권의 책을 읽고 5년에 2천권을 읽었는데 도대체 어떻게 시간을 냈을까? 그의 말이다. “아침에 일어나 자기까지 모든 시간을 기록했습니다. 특히 그냥 흘러가는 조각 시간들을 확실하게 체크했습니다. 의외로 낭비되는 시간이 많더군요. 나는 이 시간을 무조건 책 읽는 시간으로 만들었습니다. 그랬더니 평일에는 한 권, 주말에는 두 권의 책을 읽을 수 있는 시간이 확보됐습니다. 시간이 지날수록 날로 발전한 책 근육이 독서에 속도를 붙여주었습니다. 이렇게 꾸준히 9개월을 했을 때 목표했던 365권을 다 읽을 수 있었습니다. 1년이 되었을 때는 520권의 책을 읽었습니다. 나조차 놀랍기만 한 수치였습니다. 내 주변에는 1년에 365권의 책을 읽은 사람들이 많습니다. 그 중에는 한 해에 수십억 원의 매출을 올리며 누구보다 바쁜 삶을 살고 있는 젊은 CEO도 있고 어린 자녀를 세 명이나 키우는 워킹맘도 있습니다. 그 워킹맘은 아이 돌보랴, 주말에도 회사 나가랴 정신 없이 바쁘지만 새벽 4시에 일어나 책을 읽는, 말 그대로 슈퍼맘입니다. 물론 무리해가며 매일 책 한 권씩 읽으라는 건 아닙니다. 책을 단 한 줄도 읽을 시간이 없다라는 게 핑계에 불과하다는 것을 알려주고 싶은 겁니다.” <br>여러분은 스스로를 사랑하는가? 만약 사랑한다면 사랑한다는 증거를 대보라? 말로는 사랑한다고 하지만 사실은 스스로를 학대한다. 스스로에 대한 예의가 없다. 책을 읽지 않는 것이 바로 증거다. 자신을 존중한다면서, 자신을 사랑한다면서, 잘 살고 싶다면서 책 하나 읽지 않는 것만큼 자신에게 무례한 일이 있을까? 매일 밥은 먹으면서 책 한 줄 읽지 않는 걸 어떻게 해석해야 할까? 내가 생각하는 최고의 자기학대 행위는 바로 분서갱유다. 대학졸업 후 말 그대로 책을 구덩이에 파묻고 책에 불을 지르는 것이다. 분서갱유한 사람은 조만간 자신이 파놓은 구덩이에 자신이 빠질 수 있다. 당장 일어나 책을 읽으라. 이 핑계, 저 핑계 대지 말고 생각나면 바로 읽어라. 단 10분이라도 좋다. 
+
+
+				<!--//본문 텍스트 -->
+
+				<!--본문 메일 -->
+				<div style="margin-top:40px; line-height: 16px; font-size: 14px; text-align:right;">
+					* 칼럼에 대한 회신은 <a href="mailto:kthan@assist.ac.kr" style="color:#d49400;padding:0!important;display:inline-block;!important;">kthan@assist.ac.kr</a>로 해주시기 바랍니다.
+				</div>
+				<!--//본문 메일 -->
+			</td>
+		</tr>
+	<!-- END 본문 텍스트 -->
+		<tr><td colspan="3" height="20"></td></tr> <!-- 상하 여백 -->
+
+	<!-- START 편집자주 
+		<tr>
+			<td colspan="3">
+				<img src="http://coachingi.cafe24.com/mail_form/img/coaching_tit01.png" alt="편집자주" style="border: 0 none; vertical-align: top;" /> <!--편집자주 타이틀 -->
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="padding: 20px; line-height: 32px; font-size: 17px; text-align: justify;">
+				<!--편집자주 내용 텍스트 --
+			
+				<!--//편집자주 내용 텍스트 -->
+			</td>
+		</tr>
+		<tr><td colspan="3" height="55"></td></tr> <!-- 상하 여백 -->
+	<!-- END 편집자주 -->
+
+	<!-- START 코칭자료실 -->
+		<!-- 코칭 자료실 타이틀 -->
+	
+	</tbody>
+</table>
+
+
+<div style="width:45%;
+margin:auto;" id="coaching_data_room">
+<header style="width:100%;
+height:700px;
+text-align:center;">	<img src="http://coachingi.cafe24.com/mail_form/img/coaching_tit02.png" alt="코칭자료실" style="border: 0 none; vertical-align: top;" />
+
+<ul  style="  LIST-STYLE: NONE;
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: SPACE-AROUND;
+	margin-top:10px;padding-top:30px;" id="effi">
+
+<li style="width:33%;
+text-align:center;">	<img style="" src="http://coachingi.cafe24.com/mail_form/img/tit_recommend_article.png" alt="추천아티클" style="border: 0 none; vertical-align: top;" ></li>
+<li  style="width:33%;
+text-align:center;">	<img src="http://coachingi.cafe24.com/mail_form/img/tit_coaching_news.png" alt="코칭소식" style="border: 0 none; vertical-align: top;" /></li>
+<li  style="width:33%;
+text-align:center;"><img src="http://coachingi.cafe24.com/mail_form/img/tit_coaching_news.png" alt="코칭소식" style="border: 0 none; vertical-align: top;" /></li>
+</ul>
+
+<ul style="  LIST-STYLE: NONE;
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: SPACE-AROUND;
+	margin-top:10px;" id="eff">
+<li  style="margin:20px;
+width:20%;">	<img src="http://coachingi.cafe24.com/mail_form/img/thum_article_200226.png" alt="" style="border: 0 none; vertical-align: top;width:100%;" /></li>
+<li  style="margin:20px;
+width:20%;">		<img src="http://coachingi.cafe24.com/mail_form/img/thum_article_200226.png" alt="" style="border: 0 none; vertical-align: top;width:100%;" /></li>
+<li style="margin:20px;
+width:20%;">	<img src="http://coachingi.cafe24.com/mail_form/img/thum_article_200226.png" alt="" style="border: 0 none; vertical-align: top;width:100%;" /></li>
+</ul>
+
+<ul style="  LIST-STYLE: NONE;
+    DISPLAY: FLEX;
+    JUSTIFY-CONTENT: SPACE-AROUND;
+	margin-top:10px;" id="effa">
+<li  style="width:30%;
+text-align:center;">	<div style="padding: 19px; height: 190px; max-height: 190px;; border: 1px solid #fac750; overflow: hidden; ">
+					<strong style="display: block; margin-bottom: 12px; height: 40px; color:#000000; line-height: 20px; font-size: 16px; overflow:hidden;">
+				      The Elements of Good Judgment 
+					</strong>
+					<p style="margin: 0 0 15px 0; height: 110px; max-height: 110px; color: #4b4b4b; line-height: 22px; font-size: 14px; overflow: hidden; text-align: justify;">
+					관리자라는 자리의 핵심 역할은 판단을 내리는 것입니다. 즉, 관점을 형성하고 모호한 증거들을 해석해서 좋은 결정을 이끌어내는 것이 중요합니다, 본 아티클은 좋은 판단력을 기르기 위한 여섯가지 요소를 살펴봅니다. 리더들은 이러한 역량을 키워 불확실한 상황을 이해하는 능력을 향상시킬 수 있습니다.
+					</p>
+					<a href="https://www.coachingi.com/bbs/board.php?bo_table=review&wr_id=182" target="_blank" title="새 창 열림" style="color: #d49400; line-height: 16px; font-size: 14px; text-decoration: none " >
+						* 자세히 보기
+					</a>
+				</div></li>
+<li  style="width:30%;
+text-align:center;">		<div style="padding: 19px; height: 190px; max-height: 190px;; border: 1px solid #fac750; overflow: hidden; ">
+					<strong style="display: block; margin-bottom: 12px; height: 40px; color:#000000; line-height: 20px; font-size: 16px; overflow:hidden;">
+				    L그룹 임원 대상 그룹코칭 진행
+					</strong>
+					<p style="margin: 0 0 15px 0; height: 110px; max-height: 110px; color: #4b4b4b; line-height: 22px; font-size: 14px; overflow: hidden; text-align: justify;">
+					코칭경영원이 L그룹 임원 12명을 대상으로 그룹코칭을 진행합니다. 총 6회에 걸쳐 진행되는 본 프로젝트는 지난 2월 17일 1차 코칭 세션을 마쳤습니다. L그룹의 임원들은 구성원의 몰입도 향상을 이끌어내는 리더십 역량 향상을 코칭 목표로 삼았습니다. 앞으로 진행될 세션에서는 조직 간 협력 강화와 얼라인먼트에 대한 관점을 공유하고, 조직의 실행력을 높이기 위한 실행방안을 도출하고자 합니다. 이를 위하여 강점, 몰입도 향상, 협력, 커뮤니케이션 등 다양한 주제와 함께 조직 내 실제 사례를 취합하여 다룰 예정입니다. </p>
+					<a href="https://www.coachingi.com/bbs/board.php?bo_table=information&wr_id=564" target="_blank" title="새 창 열림" style="color: #d49400; line-height: 16px; font-size: 14px; text-decoration: none " >
+						* 자세히 보기
+					</a>
+				</div></li>
+<li  style="width:30%;
+text-align:center;">		<div style="padding: 19px; height: 190px; max-height: 190px;; border: 1px solid #fac750; overflow: hidden; ">
+					<strong style="display: block; margin-bottom: 12px; height: 40px; color:#000000; line-height: 20px; font-size: 16px; overflow:hidden;">
+						 코칭경영원 제20기 강점코칭 고급과정 성료
+					</strong>
+					<p style="margin: 0 0 15px 0; height: 110px; max-height: 110px; color: #4b4b4b; line-height: 22px; font-size: 14px; overflow: hidden; text-align: justify;">
+					코칭경영원이 지난 2월 19일부터 23일까지 코트야드 바이 메리어트 타임스퀘어에서 제20기 강점코칭 고급과정을 진행하였습니다.이번 과정은 2020년의 첫 운영으로 총 20명의 신규 강점코치를 양성하였습니다. 4.5일에 걸친 교육은 미국 Gallup 社의 Danny Lee와 코칭경영원 한상욱 코치의 지도 아래 진행되었습니다. 참가자들은 강점의 중요성을 인식하고, 강점 진단 도구(Strength Finder)를 활용하는 방법을 익혔으며, 다양한 실습을 통하여 코칭 스킬을 체화하였습니다. </p>
+					<a href="https://www.coachingi.com/bbs/board.php?bo_table=information&wr_id=563" target="_blank" title="새 창 열림" style="color: #d49400; line-height: 16px; font-size: 14px; text-decoration: none " >
+						* 자세히 보기
+					</a>
+				</div></li>
+</ul>
+</header>
+</div>
+
+
+
+
+
+<!-- 여기부터-->
+
+<table width="800" cellspacing="0" cellpadding="0" border="0" align="center" style="color: #383838; line-height: 32px; font-size: 17px; font-family:Dotum, 돋움, 돋움체;">
+	<tbody>
+	
+
+	<!-- START Coaching Letter from CMI -->
+		<!-- Coaching Letter from CMI 타이틀 -->
+		<tr>
+			<td colspan="3">
+				<img src="http://coachingi.cafe24.com/mail_form/img/coaching_tit05.png" alt="Coaching Letter from CMI" style="border: 0 none; vertical-align: top;" />
+			</td>
+		</tr>
+		<!-- //Coaching Letter from CMI 타이틀 -->
+
+		<tr><td colspan="3" height="20"></td></tr> <!-- 상하 여백 -->
+		
+		<!-- //Coaching Letter from CMI 텍스트 -->
+		<tr>
+			<td colspan="3">
+				<img src="http://coachingi.cafe24.com/mail_form/img/txt_letter_from_cmi.png" alt="코칭경영원 코칭레터를 다른 분께 추천하고 싶으시다면, 아래 버튼을 클릭해주시기 바랍니다." style="border: 0 none; vertical-align: top;" />
+			</td>
+		</tr>
+		<!-- //Coaching Letter from CMI 텍스트 -->
+
+		<tr><td colspan="3" height="36"></td></tr> <!-- 상하 여백 -->
+
+		</table>
+
+		<!-- 추천하기 버튼 -->
+		<tr>
+			<td colspan="3" align="center">
+				<a href="http://coachingi.com/bbs/write.php?bo_table=letterapp" target="_blank" title="새 창 열림" style="    border: 0 none;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: auto;    padding-bottom: 30px;">
+					<img src="http://coachingi.cafe24.com/mail_form/img/btn_recommend.png" alt="btn_recommend" style="border: 0 none; vertical-align: top;" />
+				</a>
+			</td>
+		</tr>
+		<!-- //추천하기 버튼 -->
+	<!-- END Coaching Letter from CMI -->
+		<tr><td colspan="3" height="82"></td></tr> <!-- 상하 여백 -->
+
+	<!-- START 푸터 -->
+		<tr>
+			<td colspan="3" height="82">
+				<table width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+					<tbody>
+						<tr>
+							<!-- 메일 회신 -->
+							<td width="457" style="">
+								<a href="mailto:cmi@coachingi.com" style="color:#d49400; border: 0 none; ">
+									<img src="http://coachingi.cafe24.com/mail_form/img/txt_mail.png" alt="본 메일에 대한 회신은 cmi@coachingi.com으로 해주시기 바랍니다. " style="border: 0 none; vertical-align: bottom;" />
+								</a>
+							</td>
+							<!-- //메일 회신 -->
+							<!-- 홈페이지, 페이스북, 블로그 바로가기 링크-->
+							<td width="250" style="        padding-top: 20px;line-height: 0;
+    display: flex;
+    font-size: 0;
+    justify-content: space-around;">
+							<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<!-- 가운데 배치 -->
+
+		
+	<!-- 카카오톡 공유 버튼 -->
+	<!-- 카카오톡 버튼 이미지 -->
+	<a href="javascript:shareKatalk()"><img src="http://coachingi.cafe24.com/img/btn_kakao.png"></a>  
+	<!-- 카카오톡 공유 JavaScript -->
+	<script>
+		// 사용할 앱의 JavaScript 키를 설정해 주세요.
+		Kakao.init('f759c99356398029571d8974775a426d');
+		function shareKatalk() {
+			<!-- 카카오 Link 공유 API 사용-->
+			Kakao.Link.sendScrap({
+				requestUrl: location.href
+			});	
+	};
+	</script>
+
+								<a href="http://www.coachingi.com/" target="_blank" title="새 창 열림" style="display: inline-block; width: 34px; height: 34px; text-decoration: none;">
+									<img src="http://coachingi.cafe24.com/mail_form/img/btn_homepage.png" alt="홈페이지" style="border: 0 none; vertical-align: bottom;" />
+								</a>
+								<a href="https://www.facebook.com/coachingi" target="_blank" title="새 창 열림" style="display: inline-block; width: 34px; height: 34px; text-decoration: none;">
+									<img src="http://coachingi.cafe24.com/mail_form/img/btn_facebook.png" alt="페이스북" style="border: 0 none; vertical-align: bottom;" />
+								</a>
+								<a href="https://blog.naver.com/kuntaihan" target="_blank" title="새 창 열림" style="display: inline-block; width: 34px; height: 34px; text-decoration: none;">
+									<img src="http://coachingi.cafe24.com/mail_form/img/btn_blog.png" alt="블로그" style="border: 0 none; vertical-align: bottom;" />
+								</a>
+
+							</td>
+							<!-- //홈페이지, 페이스북, 블로그 바로가기 링크 -->
+							<!-- 코칭 로고 -->
+							<td width="200" align="right" style="vertical-align: bottom; ">
+								<a href="http://www.coachingi.com/" target="_blank" title="새 창 열림" style="margin-right: 20px; width: 34px; height: 34px; text-decoration: none;">
+									<img src="http://coachingi.cafe24.com/mail_form/img/logo.png" alt="코칭경영원" style="border: 0 none; vertical-align: bottom ;" />
+								</a>
+							</td>
+							<!-- //코칭 로고 -->
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+
+</div>
+</html>
