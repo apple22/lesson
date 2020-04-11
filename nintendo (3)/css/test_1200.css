@@ -1,0 +1,637 @@
+body {
+
+    clear: both;
+    width: 100%;
+
+
+}
+
+
+.header_1 {
+    width: 100%;
+    height: 80px;
+}
+
+.header_1 ul {
+    display: flex;
+    border-bottom: 0.5px solid #DDDDDD;
+    height: inherit;
+    justify-content: space-around;
+    z-index: 99;
+    position: relative;
+}
+
+
+.header_1 ul li {
+    height: 100%;
+    width: 16%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.05px solid gray;
+    text-align: center;
+
+
+}
+
+.header_1 ul li a {
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.1em;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+
+}
+
+
+.drop,
+.drop_1,
+.drop_2,
+.drop_3,
+.drop_4{
+    display: block !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+.drop li,
+.drop_1 li,
+.drop_2 li,
+.drop_3 li,
+.drop_4 li{
+    width: 100% !important;
+    background: white !important;
+    border: unset !important;
+    height: 50px !important;
+}
+
+
+.drop li a {
+    line-height: 50px !important;
+}
+
+.drop_1 li a {
+    line-height: 50px !important;
+}
+
+.drop_2 li a {
+    line-height: 50px !important;
+}
+
+.drop_3 li a {
+    line-height: 50px !important;
+}
+
+.drop_4 li a {
+    line-height: 50px !important;
+}
+
+.header_1 ul li:nth-child(1) {
+
+    width: 15%;
+    background-image: url(../img/logo_nintendo_red.gif);
+    background-color: #E60012;
+
+
+}
+
+
+.header_1 ul li:nth-child(7) {
+    width: 8%;
+    background-color: orange;
+}
+
+
+.header_1 ul li:nth-child(7) span {
+    float: right;
+    display: inline-block;
+    font-weight: 800;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    word-break: keep-all;
+    line-height: 1.4em;
+    color: white;
+    font-size: 1.1em;
+}
+
+.header_1 ul li:nth-child(8) {
+    width: 5%;
+    background-color: white;
+    background-image: url(../img/baseline_search_black_18dp.png);
+
+}
+
+
+
+.main {
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: block;
+}
+
+.mainscreen {
+    width: 100%;
+    height: 700px;
+    clear: both;
+    overflow: hidden;
+
+}
+
+.bx-wrapper{
+    box-shadow: none !important;
+    margin-bottom: 0;
+    border:none!important;
+}
+
+
+.mainscreen div:nth-child(1) {
+    background-image: url("../img/200205_slide_img_park.jpg");
+    height: 700px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+
+.mainnotice {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+.mainnotice_middletitle {
+    width: 100%;
+    height: 50px;
+    left: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.mainnotice_middletitle_1 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.mainnoticenews {
+    width: 23%;
+    box-sizing: border-box;
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+    padding-bottom: 30px;
+
+}
+
+.mainnoticenews_1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainnoticenews_1 {
+    width: 100%;
+    height: 170px;
+    background-image: url(../img/list_news_game_trial_200214.jpg);
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+
+
+}
+
+.mainnoticenews_2 {
+    width: 100%;
+    height: auto;
+}
+
+
+.mainnoticenews_2_box {
+    width: 100%;
+    height: 150px;
+}
+
+
+.mns_2_font_1 {
+    width: 100%;
+    float: left;
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+
+}
+
+
+.mns_2_font_2 {
+
+    width: 100%;
+    left: 0;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+
+.mns_2_font_3 {
+
+    margin-top: 10px;
+    bottom: 0;
+    float: left;
+    text-align: left;
+
+
+}
+
+
+
+
+
+.mainDownloadBy {
+    width: 100%;
+    height: 150px;
+    background-color: #fe7c0a;
+    clear: both;
+}
+
+.mainDownloadBy_P1 {
+    width: 100%;
+    font-size: 1.8em;
+    color: white;
+    padding-top: 45px;
+    text-align: center;
+    vertical-align: middle;
+    vertical-align: middle;
+
+}
+
+.mainDownloadBy_P2 {
+    width: 100%;
+    top: 40px;
+    font-size: 1.8em;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+
+.mainGameContents {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 50px;
+    flex-direction: row;
+
+
+}
+
+
+
+
+.mainnotice_middletitle_1 {
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+.mainGameTrailer_center_title {
+    font-size: 1.6em;
+    font-weight: 800;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+
+
+
+
+.mainGameTrailer {
+
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    clear: both;
+    overflow: hidden;
+
+}
+
+.mainGameTrailer_box {
+    width: 31%;
+    height: 150px;
+    margin: 0 10px;
+    display: inline-block;
+    clear: both;
+    background-color: beige;
+
+}
+
+.mainGameTrailer_box_1 {
+    width: 30%;
+    height: 100%;
+    background-color: #e60012;
+    float: left;
+    color: white;
+    overflow: hidden;
+}
+
+
+.mainGameTrailer_box_1 div {
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 56%;
+    padding-left: 15px;
+    padding-right: 40px;
+
+}
+
+
+.mainGameTrailer_box_2 div {
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 56%;
+    padding-left: 15px;
+    padding-right: 40px;
+
+}
+
+
+.news {
+    margin: auto;
+    line-height: 30px;
+    width: 67%;
+    font-weight: 600;
+    word-break: keep-all;
+    margin-top: 30px;
+    text-align: left;
+
+
+}
+
+
+.EasyDownload_Container {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 110px;
+    padding-right: 110px;
+
+}
+
+.EasyDownload_tle {
+    width: 97%;
+    height: 130px;
+    margin: auto;
+}
+
+
+
+.EasyDownload {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+
+}
+
+
+.EasyDownload_box {
+    width: 33.33%;
+    height: 100%;
+    font-size: 1.2em;
+    border: 0.5px solid gray;
+}
+
+
+.EasyDownload_box p {
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 30px;
+    margin-bottom: -bottom: 40px;
+    width: 55%;
+}
+
+
+
+
+.SubNotice {
+
+    height: 50px;
+    width: 83%;
+    display: inline-block;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    padding-top: 30px;
+    overflow: hidden;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.span_1 {
+
+    float: left;
+    margin-left: 30px;
+    font-size: 1.1em;
+    list-style: none;
+}
+
+.span_2 {
+    float: left;
+    margin-left: 30px;
+    font-size: 1.1em;
+}
+
+.span_3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 1.1em;
+}
+
+
+.footer {
+    width: 100%;
+    height: 600px;
+    clear: both;
+}
+
+
+.footer_head {
+
+    height: 100px;
+    background-color: #e60012;
+    position: relative;
+    text-align: center;
+}
+
+.footer_head_left {
+    width: 15%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    float: left;
+    position: absolute;
+    text-align: left;
+    padding-left: 205px;
+
+}
+
+
+.header_left_nitendo_logo_under {}
+
+
+
+.footer_BigIcon {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    clear: both;
+    background-color: white;
+}
+
+.footer_BigIcon_Icon {
+    width: 100%;
+    height: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+
+.footer_BigIcon_Icon_1 {
+    width: 5%;
+    height: 80px;
+    background-color: red;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer_BigIcon_Icon_2 {
+    width: 5%;
+    height: 80px;
+    background-color: orange;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer_BigIcon_Icon_3 {
+    width: 5%;
+    height: 80px;
+    background-color: darkslateblue;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer_BigIcon_Icon_4 {
+    width: 20%;
+    height: 80px;
+    background-color: red;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer_BigIcon_Icon_5 {
+    width: 20%;
+    height: 80px;
+    background-color: lightgray;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.footer_BigIcon_notice {
+    width: 100%;
+    height: 250px;
+    vertical-align: top;
+
+
+}
+
+.footer_BigIcon_notice_1 {
+    width: 15%;
+    vertical-align: top;
+    display: inline-block;
+    height: 230px;
+    clear: both;
+
+
+}
+
+.footer_BigIcon_notice_1_smalltitle {
+    font-size: 1.1em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+
+}
+
+
+.footer_BigIcon_notice_1 ul li {
+    line-height: 2em;
+}
+
+
+.footer_under {
+    width: 100%;
+    bottom: 0;
+    height: 120px;
+    background-color: gainsboro;
+    clear: both;
+    padding-top: 30px;
+
+}
+
+.footer_under div {
+    height: auto;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.footer_under_1 {
+    width: 49%;
+    float: left;
+    line-height: 25px;
+}
+
+.footer_under_2 {
+    width: 45%;
+    float: right;
+    text-align: right;
+    line-height: 25px;
+}
