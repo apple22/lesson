@@ -15,20 +15,29 @@
 
 
 <script>
+
     $(document).ready(function() {
+        
+        $('#top').click(function(){
+            $("html,body").animate({
+                scrollTop: 0
+            }, 400);
+
+        });
+        
+        
         $('.mainscreen').bxSlider({
             auto: true,
             speed: 500,
             pager: false,
             controls: false
-<<<<<<< HEAD
-=======
 
->>>>>>> cf7f1ef145cc243ce5d87c26c4716d7f931a8ca4
         });
 
     });
 </script>
+
+
 
 
 <script>
@@ -114,17 +123,17 @@
                 height: 200
             }).mouseleave(function() {
                 $(".drop_2").stop().animate({
-<<<<<<< HEAD
+
                     height: 0
                 })
-=======
+
                     height:200
                     
             }).mouseleave(function(){
                  $(".drop_2").stop().animate({
                     height:0                
                  })
->>>>>>> cf7f1ef145cc243ce5d87c26c4716d7f931a8ca4
+
             });
 
         });
@@ -145,17 +154,17 @@
 
             }).mouseleave(function() {
                 $(".drop_3").stop().animate({
-<<<<<<< HEAD
+
                     height: 0
                 })
-=======
+
                     height:200
                     
             }).mouseleave(function(){
                  $(".drop_3").stop().animate({
                     height:0                
                  })
->>>>>>> cf7f1ef145cc243ce5d87c26c4716d7f931a8ca4
+
             });
 
         });
@@ -175,17 +184,14 @@
 
             }).mouseleave(function() {
                 $(".drop_4").stop().animate({
-<<<<<<< HEAD
                     height: 0
                 })
-=======
                     height:200
                     
             }).mouseleave(function(){
                  $(".drop_4").stop().animate({
                     height:0                
                  })
->>>>>>> cf7f1ef145cc243ce5d87c26c4716d7f931a8ca4
             });
 
         });
@@ -775,7 +781,7 @@
                 <img style="header_left_nitendo_logo_under" src="../nintendo/img/nintendo_logo.png">
             </div>
             <div class="footer_head_right">
-
+                <img id="top" src="./img/baseline_keyboard_arrow_up_white_18dp.png">
             </div>
 
         </div>
@@ -783,11 +789,15 @@
         <div class="footer_BigIcon">
 
             <div class="footer_BigIcon_Icon">
-                <div class="footer_BigIcon_Icon_1"></div>
-                <div class="footer_BigIcon_Icon_2">2</div>
-                <div class="footer_BigIcon_Icon_3">3</div>
-                <div class="footer_BigIcon_Icon_4">4</div>
-                <div class="footer_BigIcon_Icon_5">5</div>
+                <div class="footer_BigIcon_Icon_1">
+                    <nav></nav>
+                </div>
+                <div class="footer_BigIcon_Icon_2">
+                    <nav></nav>
+                </div>
+                <div class="footer_BigIcon_Icon_3">
+                    <nav></nav>
+                </div>
             </div>
 
 
