@@ -14,7 +14,7 @@ body {
 
 .header_1 ul {
     display: flex;
-    border-bottom: 0.5px solid #DDDDDD;
+
     height: inherit;
     justify-content: space-around;
     z-index: 99;
@@ -111,7 +111,7 @@ body {
     font-weight: 800;
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 100%;
+    width: 70%;
     word-break: keep-all;
     line-height: 1.4em;
     color: white;
@@ -120,6 +120,7 @@ body {
 
 .header_1 ul li:nth-child(8) {
     width: 5%;
+    background-size: 45%!important;
     background-color: white;
     background-image: url(../img/baseline_search_black_18dp.png);
 
