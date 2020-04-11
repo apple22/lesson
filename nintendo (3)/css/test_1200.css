@@ -1,9 +1,6 @@
 body {
-
     clear: both;
     width: 100%;
-
-
 }
 
 
@@ -14,11 +11,14 @@ body {
 
 .header_1 ul {
     display: flex;
-    border-bottom: 0.5px solid #DDDDDD;
     height: inherit;
     justify-content: space-around;
     z-index: 99;
     position: relative;
+}
+
+.header_1 ul li:nth-child(8) {
+    background-size: 50% !important;
 }
 
 
@@ -51,7 +51,7 @@ body {
 .drop_1,
 .drop_2,
 .drop_3,
-.drop_4{
+.drop_4 {
     display: block !important;
     width: 100% !important;
     overflow: hidden;
@@ -61,7 +61,7 @@ body {
 .drop_1 li,
 .drop_2 li,
 .drop_3 li,
-.drop_4 li{
+.drop_4 li {
     width: 100% !important;
     background: white !important;
     border: unset !important;
@@ -142,10 +142,10 @@ body {
 
 }
 
-.bx-wrapper{
+.bx-wrapper {
     box-shadow: none !important;
     margin-bottom: 0;
-    border:none!important;
+    border: none !important;
 }
 
 
@@ -249,14 +249,25 @@ body {
     padding-bottom: 10px;
     margin: 0 10px;
     font-size: 1.1em;
+    line-height: 1.3em;
     font-weight: 700;
     text-align: left;
 
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.mainGameTrailer_box_2 {
+    width: 70%;
+    float: right;
+}
 
 .mns_2_font_3 {
-
+    line-height: 20px;
     margin-top: 10px;
     bottom: 0;
     float: left;
@@ -281,6 +292,7 @@ body {
     font-size: 1.8em;
     color: white;
     padding-top: 45px;
+    padding-bottom: 10px;
     text-align: center;
     vertical-align: middle;
     vertical-align: middle;
@@ -391,11 +403,11 @@ body {
 
 .news {
     margin: auto;
-    line-height: 30px;
+    line-height: 20px;
     width: 67%;
     font-weight: 600;
     word-break: keep-all;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: left;
 
 
@@ -433,13 +445,18 @@ body {
     border: 0.5px solid gray;
 }
 
+ul.EasyDownload li:nth-child(1) p {
+    margin-top: 30px !important;
+}
 
 .EasyDownload_box p {
     text-align: left;
-    margin-top: 40px;
+    margin-top: 15px;
     padding-left: 30px;
     margin-bottom: -bottom: 40px;
     width: 55%;
+    line-height: 2;
+
 }
 
 
@@ -523,6 +540,8 @@ body {
 .footer_BigIcon_Icon {
     width: 100%;
     height: 80px;
+    display: flex;
+    justify-content: space-around;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -530,48 +549,46 @@ body {
 
 
 .footer_BigIcon_Icon_1 {
-    width: 5%;
     height: 80px;
-    background-color: red;
+    background-image: url('../img/bottom.png');
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-position: 0 -160px;
+
 }
 
 .footer_BigIcon_Icon_2 {
-    width: 5%;
+
     height: 80px;
     background-color: orange;
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+
 }
 
 .footer_BigIcon_Icon_3 {
-    width: 5%;
     height: 80px;
     background-color: darkslateblue;
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+
 }
 
 .footer_BigIcon_Icon_4 {
-    width: 20%;
+
     height: 80px;
     background-color: red;
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+
+}
+
+.footer_BigIcon_Icon div {
+    width: 20%;
 }
 
 .footer_BigIcon_Icon_5 {
-    width: 20%;
+
     height: 80px;
     background-color: lightgray;
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+
 }
 
 
