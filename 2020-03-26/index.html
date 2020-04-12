@@ -29,7 +29,28 @@
                 left: 0,
             });
         });
-        $(".a1").click(function() {
+
+
+        $("li.a1 span.down").click(function() {
+
+            $("li.a1 ul").stop(0).animate({
+                height: 150
+
+            });
+        }); /*a1 event*/
+
+        $("li.a3 span.down").click(function() {
+            alert("a3");
+
+        }); /*a2 event*/
+
+        $("li.a4 span.down").click(function() {
+            alert("a4");
+
+        }); /*a3 event*/
+
+
+        /*$(".a1").click(function() {
 
             $(".a1 .up").css("display", "block")
             $(".a1 .down").css("display", "none")
@@ -58,7 +79,7 @@
                 top: -150,
             }, 500);
 
-        });
+        });*/
     });
 </script>
 
@@ -79,15 +100,26 @@
             <ul>
                 <li class="a1"><img src="./img/layer1.png">
 
-                    <span id="a1_logo">현황</span> <span class="up">▲</span><span class="down">▼</span></li>
-                <li class="a2">
+                    <span id="a1_logo">현황</span>
+                    <span class="up">▲</span><span class="down">▼</span>
+                    <Ul>
+                        <li>현황 01</li>
+                        <li>현황 02</li>
+                        <li>현황 03</li>
+
+                    </Ul>
+                </li>
+                <!--a1-->
+
+
+                <!--<li class="a2">
                     <img src="./img/layer1.png">
                     <span id="a2_logo">현황 </span><span class="up">▲</span><span class="down">▼</span></li>
                 <span id="now">
                     <li>현황 01</li>
                     <li>현황 02</li>
                     <li>현황 03</li>
-                </span>
+                </span>-->
 
             </ul>
 
