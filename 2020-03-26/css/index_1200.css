@@ -11,16 +11,23 @@ header {
 li.a1 ul {
     height: 0px;
     overflow: hidden;
+    background: #2C2E46 !important;
 }
 
 li.a3 ul{
   height: 0px;
   overflow: hidden;
+  background: #2C2E46 !important;
 }
 
 li.a4 ul{
   height: 0px;
   overflow: hidden;
+  background: #2C2E46 !important;
+}
+
+div#header_dropdown_sidebar nav:nth-child(3){
+  padding-left: 10px;
 }
 
 header div:nth-child(1) {
@@ -288,7 +295,7 @@ header div:nth-child(1) nav:nth-child(2) ul li span {
 #header_dropdown_sidebar nav:nth-child(3) ul {
     line-height: 50px;
     margin: auto;
-    width: 90%;
+    width: 100%;
 }
 
 #header_dropdown_sidebar nav:nth-child(3) ul li {

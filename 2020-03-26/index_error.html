@@ -37,6 +37,8 @@
             });
             $("li.a1 span.down").css("display","none")
             $("li.a1 span.up").css("display","block")
+            $("div#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(1)").css("background-color","#1AFFDC")
+            $("li.a1 span").css("color","black")
         }); /*a1 event*/
 
         $("li.a1 span.up").click(function() {
@@ -45,6 +47,9 @@
           });
           $("li.a1 span.up").css("display","none")
           $("li.a1 span.down").css("display","block")
+          $("div#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(1)").css("background-color","#2C2E46")
+          $("li.a1 span").css("color","lightgray")
+
         }); /*a1 event*/
 
         $("li.a3 span.down").click(function() {
@@ -53,6 +58,7 @@
             });
             $("li.a3 span.down").css("display","none")
             $("li.a3 span.up").css("display","block")
+            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2)").css("background-color","#1AFFDC")
         });
         $("li.a3 span.up").click(function() {
             $("li.a3 ul").stop(0).animate({
@@ -60,6 +66,7 @@
             });
             $("li.a3 span.down").css("display","block")
             $("li.a3 span.up").css("display","none")
+            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2) li:nth-child(1)").css("background-color","#2C2E46")
         });
         /*a3 event*/
 
@@ -67,15 +74,16 @@
           $("li.a4 ul").stop(0).animate({
             height:150
           });
-          $("li.a4 span down").css("display","none")
-          $("li.a4 span up").css("display","block")
+          $("li.a4 span.down").css("display","none")
+          $("li.a4 span.up").css("display","block")
         });
+
         $("li.a4 span.up").click(function() {
           $("li.a4 ul").stop(0).animate({
             height:0
           });
-          $("li.a4 span down").css("display","block")
-          $("li.a4 span up").css("display","none")
+          $("li.a4 span.down").css("display","block")
+          $("li.a4 span.up").css("display","none")
         }); /*a4 event*/
 
 
@@ -131,12 +139,12 @@
 
                     <span id="a1_logo">현황</span>
                     <span class="up">▲</span><span class="down">▼</span>
-                    <Ul>
+                    <ul>
                         <li>현황 01</li>
                         <li>현황 02</li>
                         <li>현황 03</li>
 
-                    </Ul>
+                    </ul>
                 </li>
                 <!--a1-->
 
@@ -163,10 +171,11 @@
                       <li>현황 03</li>
                      </ul>
                   </li>
-
+            </ul>
+            <ul>
                 <li class="a4">
                     <img src="./img/layer1.png">
-                    <span id="a4_logo">현황 </span><span class="up">▲</span><span class="down">▼</span>
+                    <span id="a1_logo">현황 </span><span class="up">▲</span><span class="down">▼</span>
                     <ul>
                       <li>현황 01</li>
                       <li>현황 02</li>
