@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--자간(word-spacing), 행간(line-height) , 어간(word-break , preline)  -->
+    <!--reset.css(초기화) / nomalize.css(획일화)-->
+    <meta charset="UTF-8">
+    <title>레이아웃</title>
+    <link rel="stylesheet" href="../Web/reset.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            border: 1px solid black;
+            /*dotted(점선)*/
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        header {
+            border: 1px solid black;
+            width: 400px;
+            height: 50px;
+            line-height: 50px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #container {
+            border: 1px solid black;
+            width: 400px;
+            height: 30%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #container nav {
+            width: 45%;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        #container nav:nth-child(1) {
+            float: left;
+        }
+
+
+        #container nav:nth-child(1) p:nth-child(2) {
+            word-break: break-all;
+            width: 100%;
+        }
+
+
+        #container nav:nth-child(2) {
+            float: right;
+        }
+
+        footer {
+            border: 1px solid black;
+            width: 400px;
+            height: 70px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+    <!--내부 스타일 선언 방법-->
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Responsive Layout</h1>
+        </header>
+        <!--header-->
+        <!--인라인 스타일 선언 방법-->
+        <div id="container">
+            <nav>
+                <p>content</p>
+
+                <p>LqddddddddddMddddddddddddddddddddddddddddddddddddd</p>
+
+            </nav>
+            <!--nav:nth-child(1)-->
+            <nav>
+                <p>sidebar</p>
+                <ul>
+                    <li>Learn</li>
+                    <li>studdy</li>
+                    <li>studdy</li>
+                </ul>
+            </nav>
+        </div>
+        <!--container-->
+        <footer>
+            <h3>Copylight</h3>
+        </footer>
+        <!--footer-->
+    </div>
+    <!--div-->
+</body></html>
