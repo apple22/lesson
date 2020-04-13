@@ -63,7 +63,12 @@ a:hover {
 
 }
 
-
+.copyright {
+    padding-top: 201px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #999999;
+}
 
 #wrapper form ul li {
 
