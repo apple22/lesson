@@ -1,0 +1,548 @@
+body{
+
+clear: both;
+width:100%;
+  
+    
+}
+
+
+
+.header_1{
+    width: 100%;
+    height: 80px;
+    background-color:#E60012;
+}
+
+.header_1 ul li:nth-child(1){
+    background-image: url(../img/logo_nintendo_red.gif);
+    background-color: #E60012;
+}
+
+
+.header_1 ul li {
+    display: none;
+    
+    
+}
+
+
+
+
+.main{
+    width:100%;
+    height: auto;
+    clear: both;
+}
+
+
+.mainscreen {
+    display: none;
+}
+
+       .mainscreen_m{
+        display: block;
+        width:100%;
+        height: 594px;
+        clear: both;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: aliceblue;
+           z-index: 99;
+        
+    }
+    
+            
+
+
+.bx-wrapper{
+    display: block!important;
+    box-shadow: none !important;
+    margin-bottom: 0!important;
+    border:none!important;
+}
+
+
+    .mainnotice{
+            display: flex;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width:100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+       
+        
+    }
+
+
+
+        .mainnotice_middletitle{
+            width:100%;
+            position: relative;
+            height:50px;
+            left: 0;
+            
+        }
+
+
+.mainnotice_middletitle span:nth-child(2) {
+    display: none;
+}
+
+
+            .mainnotice_middletitle div{
+              float: left;   
+              
+            }
+
+                .mainnotice_middletitle_1{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+
+            .mainnoticenews{
+                width:40%;
+                height: auto;
+                margin: 0 10px;
+                display: inline-block;
+                margin-bottom: 30px;
+    
+            }
+
+               .mainnoticenews_1 img {
+                    width:100%; height:100%;
+                }
+
+                .mainnoticenews_1{
+                    width:100%;
+                    height: 150px;
+                    background-image: url(../img/list_news_game_trial_200214.jpg);
+                    background-color: aquamarine;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    overflow: hidden;
+                    background-size: 100% 100%;
+
+
+                }
+                
+                .mainnoticenews_2{
+                    width:100%;
+                    height: auto;
+                }
+
+
+                  .mainnoticenews_2_box{
+                      width:100%;
+                      height: auto;
+                  }
+
+
+                    .mns_2_font_1{
+
+                    }
+
+
+                    .mns_2_font_2{
+                        
+                      padding-top: 20px;
+                      padding-bottom: 20px;
+                        
+                    }
+
+
+                    .mns_2_font_3{
+                        
+                        margin-top: 10px;
+       
+        
+                        
+                    }
+
+.mainnoticenews:nth-child(5),.mainnoticenews:nth-child(6),.mainnoticenews:nth-child(7),.mainnoticenews:nth-child(8){
+    display: none;
+}
+
+
+
+    .mainDownloadBy {
+        width:100%;
+        height: auto;
+        background-color: #fe7c0a;
+        clear: both;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+        .mainDownloadBy_P1{
+            width:100%;
+            font-size: 1.2em;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            vertical-align: middle;
+
+        }
+
+     .mainDownloadBy_P2{
+            width:100%;
+            top:40px;
+            font-size: 1.6em;
+            color: white;
+            font-weight: 800;
+            text-align: center;
+            vertical-align: middle;
+
+
+        }
+
+    .mainGameContents{
+        width:100%;
+        height:auto;
+        background-color: white;
+        text-align: center;
+        padding-top: 25px;
+
+    }
+
+
+
+
+.mainnotice_middletitle_1{
+    width:100%;
+    text-align: center;
+
+}
+
+
+
+        .mainGameTrailer_center_title {
+            font-size:1.6em;
+            font-weight: 800;
+            padding-top:20px;
+            padding-bottom: 30px;
+            
+        }
+
+
+ 
+
+
+        .mainGameTrailer{
+    
+                width:100%;
+                height:auto;
+                background-color: white;
+                text-align: center;
+                clear: both;
+                overflow: hidden;
+                left: 0;
+                padding-bottom: 0;
+    
+        }
+
+            .mainGameTrailer_box{
+                width:100%;
+                height: 150px;
+                display: inline-block;
+                clear: both;
+                margin-top: 10px;
+                background-color: beige;
+    
+            }
+
+                .mainGameTrailer_box_1{
+                    width:60%;
+                    height: 100%;
+                    background-color: #e60012;
+                    float: left;
+                    color: white;
+                }
+
+                .news{
+                        text-align: left;
+                        font-weight: 800;
+                        padding-top: 34px;
+                        padding-bottom: 34px;
+                        padding-left: 30px;
+                        width: 70%;
+                        word-break: keep-all;
+                        line-height: 1.6em;
+                        color: white;
+                        font-size: 1.1em;
+
+                }
+
+                .mainGameTrailer_box_2{
+                    width:40%;
+                    height: 100%;
+
+                    float: left;
+                    color: white;
+                }
+
+
+                    .mainGameTrailer_box_1 div{
+                        text-align: left;
+                        padding-left: 15px;
+                        line-height: 150px;
+
+                    }
+
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+
+
+                    .EasyDownload_Container{
+                        margin: 0 auto;
+                        text-align: center;
+                        padding-left: 50px;
+                        padding-right: 50px;
+
+                    }
+
+                    
+                
+                .EasyDownload_tle{
+                width: 94%;
+                height: auto;
+                margin: auto;
+                margin-top: 30px;
+            }
+
+
+                
+                    .EasyDownload{
+                        flex-direction: column;
+                        height: auto;
+
+                    }
+
+
+                       .EasyDownload_box{
+                            width:100%;
+                            height: 100%;
+                            border:0.5px solid gray;
+                        }
+
+
+                    .EasyDownload_box p{
+                        text-align: left;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        padding-left: 10px;
+                        word-break: keep-all;
+                        width:60%;
+                    }
+
+
+
+
+
+            .SubNotice{
+
+                height:auto;
+                width:100%;
+                display: inline-block;
+                margin-top:50px;
+                vertical-align: middle;
+                padding-top: 30px;
+                overflow: hidden;
+                border-top:1px solid gray;
+                border-bottom:1px solid gray;
+                text-align: left;
+                word-break: normal;
+                padding-bottom: 30px;
+            }
+                
+                .span_1{
+                    width:100%;
+                    float: left;
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                    list-style: none;
+                    
+                }
+
+                .span_2{
+                    width:100%;
+                    float: left;
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                }
+
+                .span_3{
+                    width:100%;
+                    float: left;
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                }
+
+
+.footer{
+    width:100%;
+    height: auto;
+    clear: both;
+}
+
+
+.footer_head{
+    height: 100px;
+    background-color: #e60012;
+    position: relative;
+    padding-left:-205px;
+    text-align: center;
+}
+
+
+.footer_head_left{
+    padding-top:9px;
+    position: relative;
+
+    
+}
+
+
+.footer_head_right {
+    text-align: center;
+    float: right;
+    width: 10%;
+    z-index: 99;
+
+    
+}
+
+
+
+.footer_BigIcon{
+    width:100%;
+    height: auto;
+    text-align: center;
+    clear: both;
+    background-color: white;
+    overflow:hidden;
+}
+
+    .footer_BigIcon_Icon{
+        width:100%;
+        height: auto;
+
+
+    }
+
+
+        .footer_BigIcon_Icon_1{
+            width:12%;
+            height: 80px;
+            background-color: red;
+            display: inline-block;
+        }
+
+        .footer_BigIcon_Icon_2{
+            width:12%;
+            height: 80px;
+            background-color: orange;
+            display: inline-block;
+        }
+
+        .footer_BigIcon_Icon_3{
+            width:12%;
+            height: 80px;
+            background-color: darkslateblue;
+            display: inline-block;
+        }
+
+        .footer_BigIcon_Icon_4{
+            width:80%;
+            height: 80px;
+            background-color: red;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: inline-block;
+
+        }
+        .footer_BigIcon_Icon_5{
+            width:80%;
+            height: 80px;
+            background-color: lightgray;
+            display: inline-block;
+
+        }
+
+
+            .footer_BigIcon_notice{
+                    width:100%;
+                    height: auto;
+                    vertical-align: top;
+                    
+            }
+
+            .footer_BigIcon_notice_1{
+                width:100%;
+                vertical-align: left;
+                height: auto;
+                text-align: center;
+                
+                
+            }
+
+                .footer_BigIcon_notice_1_smalltitle{
+                
+                    font-size: 1.1em;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 700;
+                    border-top:1px solid gray;
+                    border-bottom: 1px solid gray;
+                    
+
+                }
+
+
+                .footer_BigIcon_notice_1 ul li{
+                    line-height: 2em;
+                    background-color: #f7f7f7;
+                    
+                }
+
+
+.footer_under{
+    width:100%;
+    bottom:0;
+    margin-top: 30px;
+    height:auto;
+    background-color: #f7f7f7;
+    clear: both;
+
+}
+
+.footer_under div{
+    height: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer_under_1{
+    width:100%;
+    float: left;
+    line-height: 25px;
+}
+
+.footer_under_2{
+    width:100%;
+    float: right;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 25px;
+}

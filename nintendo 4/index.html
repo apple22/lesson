@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>한국닌텐도</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:1199px)" href="./css/test_1190.css">
+    <link rel="stylesheet" type="text/css" media="all and (min-width:1200px)" href="./css/test_1200.css">
+
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+<script>
+
+    $(document).ready(function() {
+        
+        $('#top').click(function(){
+            $("html,body").animate({
+                scrollTop: 0
+            }, 400);
+
+        });
+        
+        
+        $('.mainscreen,.mainscreen_m').bxSlider({
+            auto: true,
+            speed: 500,
+            pager: false,
+            controls: false
+
+        });
+        
+
+    });
+</script>
+
+
+
+
+<script>
+    $(document).ready(function() {
+
+
+
+        $(".ns").mouseleave(function() {
+            $(".drop").stop().animate({
+                height: 0
+            });
+        });
+        $(".ns_1").mouseleave(function() {
+            $(".drop_1").stop().animate({
+                height: 0
+            });
+        });
+
+        $(".ns_2").mouseleave(function() {
+            $(".drop_2").stop().animate({
+                height: 0
+            });
+        });
+
+        $(".ns_3").mouseleave(function() {
+            $(".drop_3").stop().animate({
+                height: 0
+            });
+        });
+
+
+        $(".ns_4").mouseleave(function() {
+            $(".drop_4").stop().animate({
+                height: 0
+            });
+        });
+
+
+
+
+
+
+        $(".ns").mouseenter(function() {
+
+
+            $(".drop").stop().animate({
+                height: 400
+
+
+            }).mouseleave(function() {
+                $(".drop").stop().animate({
+                    height: 0
+                })
+            });
+
+        });
+
+        $(".ns_1").mouseenter(function() {
+
+
+            var target = $("u1.drop_1");
+
+
+            target.not($(this)).css('height', '0');
+
+
+
+            $(".drop_1").stop().animate({
+                height: 250
+
+            }).mouseleave(function() {
+                $(".drop_1").stop().animate({
+                    height: 0
+                })
+            });
+
+        });
+
+        $(".ns_2").mouseenter(function() {
+            var target = $("u1.drop_2");
+            target.not($(this)).css('height', '0');
+            $(".drop_2").stop().animate({
+                height: 200
+            }).mouseleave(function() {
+                $(".drop_2").stop().animate({
+
+                    height: 0
+                })
+
+                    height:200
+                    
+            }).mouseleave(function(){
+                 $(".drop_2").stop().animate({
+                    height:0                
+                 })
+
+            });
+
+        });
+
+
+        $(".ns_3").mouseenter(function() {
+
+
+            var target = $("u1.drop_3");
+
+
+            target.not($(this)).css('height', '0');
+
+
+
+            $(".drop_3").stop().animate({
+                height: 200
+
+            }).mouseleave(function() {
+                $(".drop_3").stop().animate({
+
+                    height: 0
+                })
+
+                    height:200
+                    
+            }).mouseleave(function(){
+                 $(".drop_3").stop().animate({
+                    height:0                
+                 })
+
+            });
+
+        });
+
+        $(".ns_4").mouseenter(function() {
+
+
+            var target = $("u1.drop_4");
+
+
+            target.not($(this)).css('height', '0');
+
+
+
+            $(".drop_4").stop().animate({
+                height: 200
+
+            }).mouseleave(function() {
+                $(".drop_4").stop().animate({
+                    height: 0
+                })
+                    height:200
+                    
+            }).mouseleave(function(){
+                 $(".drop_4").stop().animate({
+                    height:0                
+                 })
+            });
+
+        });
+
+    });
+</script>
+
+<body>
+    <div class="header_1">
+        <ul>
+            <li></li>
+            <li id="target" class="li_menu">
+
+                <a class="ns" href="#">Nintendo Switch</a>
+
+
+                <ul style="height: 0;" class="drop">
+                    <!--drop-->
+
+                    <li><a href="#">Nintendo Switch Lite</a></li>
+                    <li><a href="#">어떤 Switch</a></li>
+                    <li><a href="#">라인업</a></li>
+                    <li><a href="#">기능＊사양</a></li>
+                    <li><a href="#">주변기기</a></li>
+                    <li><a href="#">Nintendo Switch Online</a></li>
+                    <li><a href="#">Nintendo 지킴이 Switch</a></li>
+                    <li><a href="#">닌텐도 E숍</a></li>
+
+                </ul>
+                <!--drop-->
+
+            </li>
+
+            <li id="target" class="li_menu_1">
+                <a class="ns_1" href="#">닌텐도 3DS</a>
+
+                <ul style="height: 0;" class="drop_1">
+                    <!--drop-->
+
+                    <li><a href="#">닌텐도 3DS란?</a></li>
+                    <li><a href="#">NEW 닌텐도 3DS XL</a></li>
+                    <li><a href="#">NEW 닌텐도 2DS XL</a></li>
+                    <li><a href="#">기타 시리즈</a></li>
+                    <li><a href="#">닌텐도 E숍</a></li>
+
+                </ul>
+                <!--drop-->
+
+
+            </li>
+
+
+
+            <li id="target" class="li_menu_2">
+
+                <a class="ns_2" href="#">소프트웨어</a>
+
+                <ul style="height: 0;" class="drop_2">
+                    <!--drop-->
+
+                    <li><a href="#">Nintendo Switch 소프트웨어</a></li>
+                    <li><a href="#">닌텐도 3Ds 소프트웨어</a></li>
+                    <li><a href="#">발매 예정 소프트웨어</a></li>
+                    <li><a href="#">스마트폰 앱</a></li>
+
+                </ul>
+                <!--drop-->
+
+            </li>
+
+
+
+
+
+            <li id="target" class="li_menu_3">
+                <a class="ns_3" href="#">고객지원</a>
+
+                <ul style="height: 0;" class="drop_3">
+                    <!--drop-->
+
+                    <li><a href="#">Nintendo Switch 고객지원</a></li>
+                    <li><a href="#">Nintendo Switch Online 서포트</li>
+                    <li><a href="#">닌텐도 3Ds 고객지원</a></li>
+                    <li><a href="#">고객지원 홈페이지</a></li>
+                    <li><a href="#">네트워크 장애상황 발생</a></li>
+
+                </ul>
+                <!--drop-->
+            </li>
+
+            <li id="target" class="li_menu_4">
+                <a class="ns_4" href="#">News</a>
+
+                <ul style="height: 0;" class="drop_4">
+                    <!--drop-->
+
+                    <li><a href="#">Nintendo Switch 고객지원</a></li>
+                    <li><a href="#">닌텐도 3Ds 고객지원</a></li>
+                    <li><a href="#">고객지원 홈페이지</a></li>
+                    <li><a href="#">네트워크 장애상황 발생</a></li>
+
+                </ul>
+                <!--drop-->
+
+
+
+
+
+            </li>
+
+
+
+
+
+
+            <li><span>다운로드 구입안내</span></li>
+            <li></li>
+        </ul>
+
+    </div>
+
+
+
+    <div class="main">
+        <div class="mainscreen">
+            <div><img src="img/200205_slide_img_park.jpg"></div>
+            <div><img src="img/slide_img_Zelda_island.jpg"></div>
+            <div><img src="img/slide_img_Nintendo_Switch_Lite.jpg"></div>
+            <div><img src="img/slide_img_Dragon_Quest_DE.jpg"></div>
+            <div><img src="img/slide_img_expansion.png"></div>
+            <div><img src="img/slide_img_Fire_Emblem.jpg"></div>
+        </div>
+        
+        <div class="mainscreen_m">
+            <div><img src="img/slide_img_Zelda_island_m.jpg"></div>
+            <div><img src="img/slide_img_Ring_191011_m.jpg"></div>
+            <div><img src="img/slide_img_Dragon_Quest_DE_m.jpg"></div>
+            <div><img src="img/slide_img_Ring_191024_m.png"></div>
+            <div><img src="img/slide_img_expansion_m.png"></div>
+            <div><img src="img/200205_slide_img_park_mo.jpg"></div>
+        </div>
+
+
+
+        <div class="mainnotice">
+
+
+            <div class="mainnotice_middletitle">
+                <span class="mainnotice_middletitle_1">새롭게 알려드립니다.</span>
+                <span>NEWS & Update</span>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+
+                </div>
+                <div class="mainnoticenews_2">
+                    <div class="mainnoticenews_2_box">
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+                        <p class="mns_2_font_2">
+                            『데드 셀 (Dead Cells)』을<br>무료로 마음껏 즐기자!<br> Nintendo Switch Online가입자 <br>한정 이벤트
+                        </p>
+                    </div>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/list_news_park_200205.png">
+                </div>
+                <div class="mainnoticenews_2">
+                    <div class="mainnoticenews_2_box">
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+                        <p class="mns_2_font_2">
+                            Nintendo Switch 소프트웨어<br>「모여봐요 동물의 숲」의<br> 티저 페이지가 공개되었습니다.
+                        </p>
+                    </div>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/list_news_Tet1cup_200128.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <div class="mainnoticenews_2_box">
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+                        <p class="mns_2_font_2">
+                            「TETRIS® 99」 제9회 테트1 컵<br>새해맞이! 포인트 쟁탈전! 개최
+                        </p>
+                    </div>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/list_news.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <div class="mainnoticenews_2_box">
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+                        <p class="mns_2_font_2">
+                            다운로드 번호 스토어 명칭 변경 안내<br>(2020년 2월 12일)
+                        </p>
+                    </div>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/list_news_pokemon_home_200131.png" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <div class="mainnoticenews_2_box">
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+                        <p class="mns_2_font_2">
+                            「Pokémon HOME」의 서비스 개시!
+                        </p>
+                    </div>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/list_news.jpg" width="420" height="230">
+                </div>
+
+                <div class="mainnoticenews_2">
+
+                    <div class="mainnoticenews_2_box">
+
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+
+                        <p class="mns_2_font_2">
+                            신종 코로나바이러스감염증에 따른 <br>
+                            Nintendo Switch 등의<br>
+                            생산 및 출하의 영향에 대해
+                        </p>
+
+                    </div>
+
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/list_news_animal_forest_200131.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <div class="mainnoticenews_2_box">
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+                        <p class="mns_2_font_2">
+                            구매처별 예약 특전 안내 페이지가<br>
+                            공개되었습니다.
+                        </p>
+                    </div>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_cross2_fighters_byleth.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <div class="mainnoticenews_2_box">
+                        <p class="mns_2_font_1">
+                            뉴스
+                        </p>
+                        <p class="mns_2_font_2">
+                            「슈퍼 스매시브라더스 얼티밋」<br>
+                            벨레트／벨레스의 배포 및 Ver.7.0의<br> 업데이트 내용 공개!
+                        </p>
+                    </div>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        Nintendo Switch
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <div class="mainDownloadBy">
+            <p class="mainDownloadBy_P1">Nintendo Switch & Nintendo 3DS</p>
+            <p class="mainDownloadBy_P2">다운로드 번호 구입하기</p>
+        </div>
+
+        <div class="mainGameContents">
+
+            <div class="mainnotice_middletitle">
+                <div>
+                    <span class="mainnotice_middletitle_1">주요 소프트웨어</span>
+                    <span>NEWS & Update</span>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_sword_shield.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        포켓몬스터 소드 쉴드
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_ring.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        링 피트 어드벤쳐
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_Luigis_Mansion3.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        루이지맨션
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_Zelda_island.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        젤다의 전설 꿈꾸는 섬
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_Dragon_Quest_DE.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        드래곤 퀘스트 XI S 지나간 시간을 찾아서<br> - Definitive Edition
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_Super_Mario_Maker2.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        슈퍼 마리오 메이커 2
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_Fire_Emblem_Three_Houses.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        파이어 엠블렘 풍화설월
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainnoticenews">
+                <div class="mainnoticenews_1">
+                    <img src="img/img_sw_list_aaaaa.jpg" width="420" height="230">
+                </div>
+                <div class="mainnoticenews_2">
+                    <p class="mns_2_font_1">
+                        Nintendo Switch
+                    </p>
+                    <p class="mns_2_font_2">
+                        젤다의 전설 브레스 오브 더 와일드
+
+
+                    </p>
+                    <p class="mns_2_font_3">
+                        2019.12.27<br>
+                        한국닌텐도
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="mainGameTrailer">
+
+                <div class="mainGameTrailer_box">
+                    <div class="mainGameTrailer_box_1">
+                        <p class="news">
+                            Nintendo
+                            Switch
+                            소개영상
+                        </p>
+
+
+
+                    </div>
+                    <div class="mainGameTrailer_box_2">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BJEs4fJmdNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="mainGameTrailer_box">
+                    <div class="mainGameTrailer_box_1">
+                        <p class="news">
+                            Nintendo
+                            Switch Lite
+                            첫 공개 영상
+
+                        </p>
+
+                    </div>
+                    <div class="mainGameTrailer_box_2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BJEs4fJmdNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="mainGameTrailer_box">
+                    <div class="mainGameTrailer_box_1">
+
+                        <p class="news">
+                            링 피트
+                            어드벤쳐
+                            2nd 트레일러
+                        </p>
+
+                    </div>
+                    <div class="mainGameTrailer_box_2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BJEs4fJmdNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="EasyDownload_Container">
+                    <p class="mainGameTrailer_center_title">
+                        쉽고 간편한 다운로드 버전으로 즐길 수 있습니다.
+                    </p>
+                </div>
+
+                <div class="EasyDownload_tle">
+                    <ul class="EasyDownload">
+
+                        <li class="EasyDownload_box">
+                            <p>다운로드 번호 구입하기</p>
+                        </li>
+
+                        <li class="EasyDownload_box">
+                            <p>닌텐도 3DS 전용 닌텐도 선불 카드 구입하기</p>
+                        </li>
+
+                        <li class="EasyDownload_box">
+                            <p>닌텐도 3DS 전용 닌텐도 선불 번호 구입하기</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="SubNotice">
+
+                    <li class="span_1">알려드립니다.</li>
+                    <li class="span_2">다운로드 번호 스토어 이용약관 변경공지(2019년 12월 11일)</li>
+                    <li class="span_3">홈페이지 정보 오류 안내 관해</li>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="EasyDownload">
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <div class="footer_head">
+
+            <div class="footer_head_left">
+                <img style="header_left_nitendo_logo_under" src="../nintendo/img/nintendo_logo.png">
+            </div>
+            <div class="footer_head_right">
+                <img id="top" src="./img/baseline_keyboard_arrow_up_white_18dp.png">
+            </div>
+
+        </div>
+
+        <div class="footer_BigIcon">
+
+            <div class="footer_BigIcon_Icon">
+                <div class="footer_BigIcon_Icon_1">
+                    <nav></nav>
+                </div>
+                <div class="footer_BigIcon_Icon_2">
+                    <nav></nav>
+                </div>
+                <div class="footer_BigIcon_Icon_3">
+                    <nav></nav>
+                </div>
+            </div>
+
+
+            <div class="footer_BigIcon_notice">
+                <ul class="footer_BigIcon_notice_1">
+                    <li class="footer_BigIcon_notice_1_smalltitle">
+                        <a>한국닌텐도</a>
+                    </li>
+                    <ul>
+                        <li>- 회사개요</li>
+                        <li>- 찾아오시는길</li>
+                    </ul>
+                </ul>
+
+                <ul class="footer_BigIcon_notice_1">
+                    <li class="footer_BigIcon_notice_1_smalltitle">
+                        <a>본체 / amiibo</a>
+                    </li>
+                    <ul>
+                        <li>- Nitendo Switch</li>
+                        <li>- New 닌텐도 3DS XL</li>
+                        <li>- New 닌텐도 2DS XL</li>
+                        <li>- amiibo</li>
+                        <li>- Wii</li>
+                    </ul>
+                </ul>
+
+                <ul class="footer_BigIcon_notice_1">
+                    <li class="footer_BigIcon_notice_1_smalltitle">
+                        <a>한국닌텐도</a>
+                    </li>
+                    <ul>
+                        <li>- 회사개요</li>
+                        <li>- 찾아오시는길</li>
+                    </ul>
+                </ul>
+
+
+                <ul class="footer_BigIcon_notice_1">
+                    <li class="footer_BigIcon_notice_1_smalltitle">
+                        <a>한국닌텐도</a>
+                    </li>
+                    <ul>
+                        <li>회사개요</li>
+                        <li>찾아오시는길</li>
+                    </ul>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="footer_contents"></div>
+
+        <div class="footer_under">
+            <div>
+                <p class="footer_under_1"> 이용약관 개인정보취급방침<br>
+                    ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br>
+                    상호명 : 한국닌텐도주식회사 대표자명 : 미우라 타카히로 사업자등록번호 : 120-87-03578
+                </p>
+                <p class="footer_under_2">
+                    고객지원 문의전화 : 1670-9900 (평일 오전 9시 30분~오후 5시 30분)<br>
+                    ※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
