@@ -1,0 +1,33 @@
+header{
+  position: relative;
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+h1{
+  display:inline-block;
+  padding: 10px 80px;
+}
+nav>div{
+  float: right;
+  display: inline-block;
+  padding: 25px 80px 0 80px;
+  text-align: center;
+  color: white;
+  /* font: bold 20px "돋움","sans-selif"; */
+}
+section{
+  padding: 0 0 50px 0;
+}
+#main .BP{
+  text-align: center;
+  padding: 50px 0;
+  /* display: inline-block; */
+}
+#main .main{
+  float: left;
+}
+.main2{
+  float: right;
+  display: inline-block;
+}

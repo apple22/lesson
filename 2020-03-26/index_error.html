@@ -59,14 +59,16 @@
             $("li.a3 span.down").css("display","none")
             $("li.a3 span.up").css("display","block")
             $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2)").css("background-color","#1AFFDC")
+            $("li.a3 span").css("color","black")
         });
         $("li.a3 span.up").click(function() {
             $("li.a3 ul").stop(0).animate({
               height:0
             });
-            $("li.a3 span.down").css("display","block")
-            $("li.a3 span.up").css("display","none")
+            $("li.a4 span.down").css("display","block")
+            $("li.a4 span.up").css("display","none")
             $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2) li:nth-child(1)").css("background-color","#2C2E46")
+            $("li.a3 span").css("color","lightgray")
         });
         /*a3 event*/
 
@@ -76,6 +78,8 @@
           });
           $("li.a4 span.down").css("display","none")
           $("li.a4 span.up").css("display","block")
+          $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(3)").css("background-color","#1AFFDC")
+          $("li.a4 span").css("color","black")
         });
 
         $("li.a4 span.up").click(function() {
@@ -84,6 +88,8 @@
           });
           $("li.a4 span.down").css("display","block")
           $("li.a4 span.up").css("display","none")
+          $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(3)").css("background-color","#2C2E46")
+          $("li.a4 span").css("color","lightgray")
         }); /*a4 event*/
 
 
