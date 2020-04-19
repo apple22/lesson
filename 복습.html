@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>복습</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        border: 1px solid black;
+        margin: auto;
+        height: 800px;
+        width: 1500px;
+        margin-top: 70px;
+    }
+
+    header {
+        border: solid 1px black;
+        text-align: center;
+        background-color: cadetblue;
+        height: 68px;
+        width: 1500px;
+        font-family: cursive;
+    }
+
+    #container {
+        border: 1px solid black;
+        word-break: break-all;
+        width: 1500px;
+        height: 300px;
+        margin: auto;
+        margin-top: 3px;
+
+
+    }
+
+    #container nav:nth-child(1) {
+        border: 1px solid black;
+        margin-top: 1px;
+        margin-left: 1px;
+        height: 296px;
+        width: 745px;
+        float: left;
+        margin-bottom: 4px;
+    }
+
+    #container nav:nth-child(1) p:nth-child(2) {
+        word-break: break-all;
+        width: 100%;
+    }
+
+    #container nav:nth-child(2) {
+        border: 1px solid black;
+        margin-top: 1px;
+        margin-left: 1px;
+        margin-right: 2px;
+        width: 745px;
+        height: 296px;
+        float: right;
+    }
+
+    #container2 {
+        border: 1px solid black;
+        word-break: break-all;
+        height: 300px;
+        width: 1500px;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    #container2 nav:nth-child(1) {
+        border: 1px solid black;
+        word-break: break-all;
+        height: 296px;
+        width: 745px;
+        margin: auto;
+        margin-top: 1px;
+        margin-left: 1px;
+        float: left;
+    }
+
+    #container2 nav:nth-child(2) {
+        border: 1px solid black;
+        word-break: break-all;
+        height: 296px;
+        width: 745px;
+        margin: auto;
+        margin-top: 1px;
+        margin-right: 2px;
+        float: right;
+    }
+
+    #container2 nav:nth-child(1) p:nth-child(2) {
+        word-break: break-all;
+        width: 100%;
+    }
+
+    #block1 {
+        text-align: center;
+        font-family: fantasy;
+        background-color: aqua;
+    }
+
+    #block2 {
+        text-align: center;
+        font-family: fantasy;
+        background-color: antiquewhite;
+    }
+
+    #block3 {
+        text-align: center;
+        font-family: fantasy;
+        background-color: beige;
+    }
+
+    #block4 {
+        text-align: center;
+        font-family: fantasy;
+        background-color: blueviolet;
+    }
+
+    #container nav #footer {
+        margin: auto;
+    }
+
+    footer {
+        background-color: chartreuse;
+        height: 118px;
+        margin: auto;
+        margin-top: 4px;
+        border: 1px solid black;
+        text-align: center;
+
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <p>Header</p>
+        </header>
+        <!--header부분-->
+
+        <div id="container">
+            <nav id="block1">
+                <p>contents</p>
+                <hr>
+                <ul>
+                    <ol>Web</ol>
+                    <br>
+                    <ol>Programing</ol>
+                    <br>
+                    <ol>Coding</ol>
+                </ul>
+            </nav>
+            <nav id="block2">
+                <p>contents2</p>
+                <hr>
+                <ul>
+                    <ol>step1</ol>
+                    <br>
+                    <ol>step2</ol>
+                    <br>
+                    <ol>step3</ol>
+                </ul>
+            </nav>
+        </div>
+        <!--container-->
+
+        <div id="container2">
+            <nav id="block3">
+                <p>contents</p>
+                <hr>
+                <ul>
+                    <ol>Web</ol>
+                    <br>
+                    <ol>Programing</ol>
+                    <br>
+                    <ol>Coding</ol>
+                </ul>
+            </nav>
+            <nav id="block4">
+                <p>contents2</p>
+                <hr>
+                <ul>
+                    <ol>step1</ol>
+                    <br>
+                    <ol>step2</ol>
+                    <br>
+                    <ol>step3</ol>
+                </ul>
+            </nav>
+        </div>
+        <!--container2-->
+
+        <footer>
+            <p>Copyligt 2020-4-12</p>
+        </footer>
+        <!--footer-->
+
+    </div>
+    <!--wrapper>
+</body></html>
