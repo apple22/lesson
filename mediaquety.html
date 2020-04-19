@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미디어쿼리 사용법 </title>
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".gnb").mouseenter(function() {
+            $(this).stop().animate({
+                height: 230
+
+            })
+
+        });
+
+        $(".gnb").mouseleave(function() {
+            $(this).stop().animate({
+                height: 50
+
+            })
+        });
+
+    });
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .gnb {
+        height: 50px;
+
+    }
+
+    header ul:nth-child(1) span {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    header ul li {
+        height: 50px;
+        text-align: center;
+
+    }
+
+    header ul {
+
+        line-height: 50px;
+        width: 100%;
+        background: gray;
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <ul class="gnb">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <ul class="gnb1">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <ul class="gnb2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <ul class="gnb3">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+    </header>
+</body>
+</html>
