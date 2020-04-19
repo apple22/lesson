@@ -8,15 +8,15 @@
 
 <script>
     $(document).ready(function() {
-        $(".gnb").mouseenter(function() {
+        $(".gnb,.gnb1,.gnb2,.gnb3").mouseenter(function() {
             $(this).stop().animate({
-                height: 230
+                height: 150
 
             })
 
         });
 
-        $(".gnb").mouseleave(function() {
+        $(".gnb,.gnb1,.gnb2,.gnb3").mouseleave(function() {
             $(this).stop().animate({
                 height: 50
 
@@ -41,7 +41,10 @@
 
     }
 
-    .gnb {
+    .gnb,
+    .gnb1,
+    .gnb2,
+    .gnb3 {
         height: 50px;
 
     }
