@@ -1,0 +1,107 @@
+body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 2%;
+    border: 1px solid lightgray;
+}
+
+#wrapper header {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#container {
+    margin: auto;
+    padding: 5%;
+    background-color: lightyellow;
+    margin-bottom: 2%;
+}
+
+
+#wrapper footer {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.outText {
+    color: #343434;
+    margin-bottom: 2.5%;
+}
+
+.innerContents{
+}
+
+.box {
+    background-color: #fff;
+    border:1px solid #d9d9d9;
+    margin-bottom: 2.5%;
+}
+
+.box .title {
+    background-color: orange;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 3%;
+}
+
+.box .text {
+    height: 200px;
+    font-size: 12px;
+    padding: 3%;
+    overflow: scroll;
+}
+
+.box p {
+    margin-bottom: 3%;
+}
+
+.box p:last-child {
+    margin-bottom: 0;
+}
+
+.box .text span.subTitle {
+    display: block;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.box .text ul {
+    padding-left: 5%;
+    margin-bottom: 3%;
+    color: #999;
+}
+
+.box .text ul li {
+    margin-bottom: 1%;
+}
+
+.agreeBox {
+    margin-bottom: 1%;
+    text-align: right;
+    display: block;
+}
+
+.agreeBox:last-child {
+    margin-bottom: 0;
+}
+
+.yellowBtn {
+    width: 30%;
+    margin: 0 auto;
+    background-color: orange;
+    color: #fff;
+}
