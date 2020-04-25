@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>한국닌텐도</title>
@@ -8,49 +7,31 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width:1199px)" href="./css/test_1190.css">
     <link rel="stylesheet" type="text/css" media="all and (min-width:1200px)" href="./css/test_1200.css">
-
 </head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-
 <script>
     $(document).ready(function() {
-
-
-
         $('span.animate').click(function() {
             $("html,body").animate({
                 scrollTop: 0
             }, 400);
-
         });
-
-
         $('.mainscreen').bxSlider({
             auto: true,
             speed: 500,
             pager: false,
             controls: false
-
         });
-
     });
 </script>
 
-
-
-
 <script>
     $(document).ready(function() {
-
-
         $(".mainnoticenews_1 img").mouseenter(function() {
             /* $(this).css("transform", "scale(1.5)");*/
-
         });
-
         $("span.animate").mouseenter(function() {
             $("span.animate a").stop().animate({
                 width: 120
@@ -66,14 +47,10 @@
             $("span.animate a").stop().animate({
                 width: 38
             });
-
             $("span.animate a").css("background", "transparent");
             $("span#test").css("display", "none");
             $("#ta").css("display", "block");
-
         });
-
-
         $(".ns").mouseleave(function() {
             $(".drop").stop().animate({
                 height: 0

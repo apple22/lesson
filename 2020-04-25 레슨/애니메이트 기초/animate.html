@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(function() {
+        setInterval(function() {
+            $('.box1').animate({
+                marginLeft: 1000
+            }, 1000, 'swing', function() {
+                $(this).delay(1000).animate({
+                    marginLeft: 200
+                }, 1000)
+            });
+        }, 3000);
+    }); //end
+</script>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+        position: relative;
+        left: 200;
+
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>animate</title>
+</head>
+
+<body>
+    <div class="box box1">
+
+    </div>
+    <div class="box box2">
+
+    </div>
+</body>
+
+</html>
