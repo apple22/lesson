@@ -14,16 +14,77 @@ width:100%;
     background-color:#E60012;
 }
 
-.header_1 ul li:nth-child(1){
-    background-image: url(../img/logo_nintendo_red.gif);
+
+.m_header{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #E60012;
+    display: flex;
+    position: absolute;
+    top:0;
+    justify-content: space-around;
+    z-index: 99;
+    
+
+}
+
+
+.m_header li {
+    text-align: center;
+    height: inherit;
+    width: 33.33%;
+    
+}
+
+.m_header li:nth-child(1) {
+    text-align: left;
+    width: 70%;
+}
+
+
+.m_header li:nth-child(1) img {
+    position: relative;
+    top: 24px;
+    margin-left: 40px;
+}
+
+.m_header li:nth-child(2) {
+
+    width: 15%;
+}
+
+
+
+.m_header li:nth-child(2) img {
+
+    position: relative;
+    top: 24px;
+}
+
+.m_header li:nth-child(3) {
+
+    width: 15%;
+    background-color: #fe7c0a;
+}
+
+.m_header li:nth-child(3) img {
+
+    position: relative;
+    top: 24px;
+}
+
+
+
+.header_1 ul li:nth-child(1),.header_1 ul li:nth-child(2),.header_1 ul li:nth-child(3){
     background-color: #E60012;
 }
 
 
+
+
 .header_1 ul li {
-    display: none;
-    
-    
+    display: none; 
 }
 
 
@@ -35,9 +96,15 @@ width:100%;
     clear: both;
 }
 
+.bx-viewport {
+    height: auto !important;
+}
+
+
 
 .mainscreen {
     display: none;
+   
 }
 
        .mainscreen_m{
@@ -50,11 +117,81 @@ width:100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: aliceblue;
-           z-index: 99;
+        z-index: 99;
         
     }
-    
-            
+
+
+
+#a{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/200205_slide_img_park_mo.jpg");
+    background-position: center center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+
+#b{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Ring_191024_m.png");
+    background-position x: -400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#c{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Ring_191011_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#d{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Fire_Emblem_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#e{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Dragon_Quest_DE_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#f{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Zelda_island_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+   
 
 
 .bx-wrapper{
@@ -81,10 +218,9 @@ width:100%;
 
 
         .mainnotice_middletitle{
-            width:100%;
-            position: relative;
+            width:85%;
             height:50px;
-            left: 0;
+            left: 52px;
             
         }
 
@@ -138,11 +274,14 @@ width:100%;
 
                   .mainnoticenews_2_box{
                       width:100%;
-                      height: auto;
+                      height: 150px;
                   }
 
 
                     .mns_2_font_1{
+                        font-size: 1.2em;
+                        font-weight: 600;
+                        line-height: 40px;
 
                     }
 
@@ -151,6 +290,8 @@ width:100%;
                         
                       padding-top: 20px;
                       padding-bottom: 20px;
+                      height: 40px;
+                      line-height: 20px;
                         
                     }
 
@@ -201,12 +342,14 @@ width:100%;
         }
 
     .mainGameContents{
-        width:100%;
-        height:auto;
-        background-color: white;
-        text-align: center;
-        padding-top: 25px;
-
+         display: flex;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width:100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
     }
 
 
@@ -223,7 +366,7 @@ width:100%;
         .mainGameTrailer_center_title {
             font-size:1.6em;
             font-weight: 800;
-            padding-top:20px;
+            padding-top:30px;
             padding-bottom: 30px;
             
         }
@@ -280,7 +423,6 @@ width:100%;
                 .mainGameTrailer_box_2{
                     width:40%;
                     height: 100%;
-
                     float: left;
                     color: white;
                 }
@@ -306,6 +448,7 @@ width:100%;
                         text-align: center;
                         padding-left: 50px;
                         padding-right: 50px;
+                        line-height: 40px;
 
                     }
 
@@ -338,7 +481,7 @@ width:100%;
                         text-align: left;
                         padding-top: 30px;
                         padding-bottom: 30px;
-                        padding-left: 10px;
+                        padding-left: 80px;
                         word-break: keep-all;
                         width:60%;
                     }
@@ -360,6 +503,7 @@ width:100%;
                 border-bottom:1px solid gray;
                 text-align: left;
                 word-break: normal;
+                padding-left: 20px;
                 padding-bottom: 30px;
             }
                 
@@ -407,18 +551,26 @@ width:100%;
 
 
 .footer_head_left{
+    width: 90%;
     padding-top:9px;
+    float: left;
     position: relative;
 
     
 }
 
 
+.footer_head_left img{
+        margin-left: 35px;
+}
+
+
 .footer_head_right {
     text-align: center;
-    float: right;
-    width: 10%;
+    float: left;
+    width: 5%;
     z-index: 99;
+    padding-top: 30px;
 
     
 }
@@ -450,35 +602,24 @@ width:100%;
         }
 
         .footer_BigIcon_Icon_2{
-            width:12%;
-            height: 80px;
-            background-color: orange;
+            background-image: url(../img/bottom.png);
             display: inline-block;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            width: 36%;
+            margin: auto;
+            height: 70px;
+
         }
 
         .footer_BigIcon_Icon_3{
-            width:12%;
-            height: 80px;
-            background-color: darkslateblue;
-            display: inline-block;
-        }
-
-        .footer_BigIcon_Icon_4{
-            width:80%;
-            height: 80px;
-            background-color: red;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            display: inline-block;
-
-        }
-        .footer_BigIcon_Icon_5{
-            width:80%;
-            height: 80px;
-            background-color: lightgray;
-            display: inline-block;
-
-        }
+               background-image: url(../img/bottom.png);
+                display: inline-block;
+                background-position: 0 -160px;
+                width: 20%;
+                margin: auto;
+                height: 80px;
+            }
 
 
             .footer_BigIcon_notice{

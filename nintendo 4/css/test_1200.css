@@ -4,10 +4,46 @@ body {
 }
 
 
+#ta{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    white-space: pre;
+}
+
+.animate_a{
+    
+    display: block;
+    width:80px;
+    height: 38px;
+    border-radius: 38px;
+    border: 1px solid white;
+    float: right;
+    cursor: pointer;
+}
+
+
+.animate{
+    display: block;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    margin: auto;
+    border-radius: 38px;
+}
+
+
 .header_1 {
     width: 100%;
     height: 80px;
 }
+
+
+.m_header{
+    display: none;
+}
+
 
 .header_1 ul {
     display: flex;
@@ -68,7 +104,7 @@ body {
     background: white !important;
     border: unset !important;
     height: 50px !important;
-    background-color: #f7f7f7;
+    background-color: ghostwhite;
 }
 
 
@@ -145,12 +181,79 @@ body {
     clear: both;
     overflow: hidden;
     display: block;
-    
 
 }
 
+
 .mainscreen_m{
     display: none;
+}
+
+#a{
+    width:100%;
+    height: 700px;
+    background-image: url("../img/200205_slide_img_park.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+
+#b{
+    width:100%;
+    height: 700px;
+    background-image: url("../img/slide_img_Ring_191024.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#c{
+    width:100%;
+    height: 700px;
+    background-image: url("../img/slide_img_Ring_191011.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#d{
+    width:100%;
+    height: 700px;
+    background-image: url("../img/slide_img_Fire_Emblem.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#e{
+    width:100%;
+    height: 700px;
+    background-image: url("../img/slide_img_Dragon_Quest_DE.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#f{
+    width:100%;
+    height: 700px;
+    background-image: url("../img/slide_img_Zelda_island.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
 }
 
 
@@ -163,16 +266,10 @@ body {
      
 }
 
-
-.mainscreen div:nth-child(1) {
-    background-image: url("../img/200205_slide_img_park.jpg");
-    height: 700px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aliceblue;
-
+.bx-viewport {
+    height: auto !important;
 }
+
 
 
 .mainnotice {
@@ -214,16 +311,11 @@ body {
 
 }
 
-.mainnoticenews_1 img {
-    width: 100%;
-    height: 100%;
-}
+
 
 .mainnoticenews_1 {
     width: 100%;
     height: 170px;
-    background-image: url(../img/list_news_game_trial_200214.jpg);
-    background-color: aquamarine;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
@@ -231,6 +323,28 @@ body {
 
 
 }
+
+
+.mainnoticenews_1 img {
+    width: 100%;
+    height: 100%;
+    transition:.3s;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+     transform: scale(1);
+}
+
+.mainnoticenews_1 img:hover {
+    transform: scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    opacity: 0.5;
+}
+
 
 .mainnoticenews_2 {
     width: 100%;
