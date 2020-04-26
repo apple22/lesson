@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!--시간 지연 함수
+setInterval : 일정한 시간 간격으로 작업을 수행 (무한)
+setTimeout : 일정한 시간 후에 작업을 한번 수행하고 종료
+clearInterval : 실행한 작업후에 작업을 실행
+clearTimeout : 실행한 작업후에 작업을 한번 실행하고 종료
+-->
+<script>
+    $(document).ready(function() {
+        setInterval(function() {
+            $(".box1").animate({
+                marginLeft: 200
+            }, 1000, 'swing', function() {
+                $(this).delay(1000).animate({
+                    marginLeft: 10
+                }, 1000)
+            }); /*animate*/
+        }, 2000); /*setInterval*/
+
+
+        setInterval(function() {
+            $(".box2").animate({
+                marginLeft: 200
+            }, 1000, 'swing', function() {
+                $(this).delay(1000).animate({
+                    marginLeft: 10
+                }, 1000)
+            }); /*animate*/
+        }, 2000); /*setInterval*/
+
+
+    });
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>animate</title>
+</head>
+<style>
+    .box1 {
+        background: red;
+        width: 200px;
+        position: relative;
+        height: 100px;
+    }
+
+    .box2 {
+        background: yellow;
+        width: 200px;
+        height: 100px;
+    }
+
+</style>
+
+<body>
+    <div class="box box1">
+    </div>
+
+    <div class="box box2">
+
+    </div>
+</body>
+
+</html>
