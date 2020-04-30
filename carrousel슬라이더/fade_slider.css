@@ -1,0 +1,13 @@
+*{margin:0;padding:0;}
+li{list-style:none;}
+.slider{overflow:hidden;position:relative;margin:20px auto;width:300px;height:300px;border:1px solid black;}
+.img_container{position:absolute;left:0;width:1500px;height:300px;}
+.img_container li{float:left;width:300px;height:300px;}
+.img_container li:first-child{position:absolute;left:-20%;}
+.img_container li:last-child{position:absolute;left:100%;}
+.next , .prev{position:absolute;top:130px;width:40px;height:40px;}
+.next{right:0;}
+.paging{position:absolute;left:35px;bottom:20px;width:230px;height:10px;}
+.paging li{float:left;margin-left:30px;width:10px;height:10px;}
+.paging button{cursor:pointer;display:block;width:10px;height:10px;border-radius:10px;border:none;background:white;}
+.paging button.active{background:black;transform:scale(1.5);}
