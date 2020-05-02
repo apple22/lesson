@@ -8,6 +8,7 @@ width:100%;
 
 
 
+
 .header_1{
     width: 100%;
     height: 80px;
@@ -249,15 +250,34 @@ width:100%;
     
             }
 
-               .mainnoticenews_1 img {
-                    width:100%; height:100%;
+
+                .mainnoticenews_1 img {
+                    width: 100%;
+                    height: 100%;
+                    transition:.3s;
+                    -webkit-transition:.3s;
+                    -moz-transition:.3s;
+                    -ms-transition:.3s;
+                    -o-transition:.3s;
+                     transform: scale(1);
                 }
+
+                .mainnoticenews_1 img:hover {
+                    transform: scale(1.2);
+                    -webkit-transform:scale(1.2);
+                    -moz-transform:scale(1.2);
+                    -ms-transform:scale(1.2);
+                    -o-transform:scale(1.2);
+                    opacity: 0.5;
+                }
+
+
+
+
 
                 .mainnoticenews_1{
                     width:100%;
                     height: 150px;
-                    background-image: url(../img/list_news_game_trial_200214.jpg);
-                    background-color: aquamarine;
                     background-repeat: no-repeat;
                     position: relative;
                     overflow: hidden;
@@ -265,6 +285,14 @@ width:100%;
 
 
                 }
+
+
+
+
+           
+
+
+
                 
                 .mainnoticenews_2{
                     width:100%;
@@ -282,6 +310,7 @@ width:100%;
                         font-size: 1.2em;
                         font-weight: 600;
                         line-height: 40px;
+                        color: red;
 
                     }
 
@@ -290,15 +319,18 @@ width:100%;
                         
                       padding-top: 20px;
                       padding-bottom: 20px;
-                      height: 40px;
+                      height: auto;
                       line-height: 20px;
+                        
+                        
                         
                     }
 
 
                     .mns_2_font_3{
                         
-                        margin-top: 10px;
+                        margin-top: 30px;
+                        height: auto;
        
         
                         
@@ -551,7 +583,7 @@ width:100%;
 
 
 .footer_head_left{
-    width: 90%;
+    width: 93%;
     padding-top:9px;
     float: left;
     position: relative;
@@ -576,9 +608,42 @@ width:100%;
 }
 
 
+#ta{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    white-space: pre;
+}
+
+.animate_a{
+    
+    display: block;
+    width:80px;
+    height: 38px;
+    border-radius: 38px;
+    border: 1px solid white;
+    float: right;
+    cursor: pointer;
+}
+
+
+.animate{
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 18px;
+    margin: auto;
+    border-radius: 38px;
+}
+
+
+
+
 
 .footer_BigIcon{
     width:100%;
+    padding-top: 15px;
     height: auto;
     text-align: center;
     clear: both;
@@ -589,16 +654,23 @@ width:100%;
     .footer_BigIcon_Icon{
         width:100%;
         height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
 
 
     }
 
 
         .footer_BigIcon_Icon_1{
-            width:12%;
-            height: 80px;
-            background-color: red;
+            background-image: url(../img/btn_footer_amiibo.png);
             display: inline-block;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            width: 65%;
+            margin: auto;
+            height: 70px;
+
         }
 
         .footer_BigIcon_Icon_2{
@@ -606,7 +678,7 @@ width:100%;
             display: inline-block;
             background-position: 0 0;
             background-repeat: no-repeat;
-            width: 36%;
+            width: 65%;
             margin: auto;
             height: 70px;
 
@@ -616,7 +688,7 @@ width:100%;
                background-image: url(../img/bottom.png);
                 display: inline-block;
                 background-position: 0 -160px;
-                width: 20%;
+                width: 35%;
                 margin: auto;
                 height: 80px;
             }
@@ -672,6 +744,7 @@ width:100%;
     height: 250px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 30px;
 }
 
 .footer_under_1{
