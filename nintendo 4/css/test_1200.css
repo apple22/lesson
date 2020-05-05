@@ -390,6 +390,11 @@ iframe {
 }
 
 
+#slider_new{
+    display: none;
+}
+
+
 .mainGameTrailer_box_2 {
     width: 70%;
     float: right;
@@ -441,6 +446,14 @@ iframe {
 }
 
 .mainGameContents {
+  
+
+
+}
+
+
+.mainGameContents_hide{
+    
     display: flex;
     height: auto;
     justify-content: center;
@@ -449,11 +462,29 @@ iframe {
     width: 75%;
     margin-top: 50px;
     flex-direction: row;
-
-
+    
 }
 
 
+.mainGameContents_under{
+      display: flex;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 50px;
+    flex-direction: row;
+    
+}
+
+
+
+
+
+.slider_new_title{
+    display: none;
+}
 
 
 .mainnotice_middletitle_1 {
@@ -462,6 +493,14 @@ iframe {
 
 }
 
+.mainnotice_middletitle_plus{
+    float: right;
+    font-size: 2em;
+    font-weight: 500;
+    color:red;
+    cursor: pointer;
+
+}
 
 
 .mainGameTrailer_center_title {
@@ -482,7 +521,6 @@ iframe {
     height: auto;
     background-color: white;
     text-align: center;
-    padding-bottom: 100px;
     clear: both;
     overflow: hidden;
 
@@ -594,7 +632,7 @@ ul.EasyDownload li:nth-child(1) p {
 .SubNotice {
 
     height: 50px;
-    width: 83%;
+    width: 96%;
     display: inline-block;
     margin-top: 50px;
     padding-left: 10px;

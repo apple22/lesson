@@ -247,6 +247,7 @@ width:100%;
                 margin: 0 10px;
                 display: inline-block;
                 margin-bottom: 30px;
+          
     
             }
 
@@ -317,6 +318,7 @@ width:100%;
 
                     .mns_2_font_2{
                         
+                      font-size:0.8em;    
                       padding-top: 20px;
                       padding-bottom: 20px;
                       height: auto;
@@ -353,7 +355,7 @@ width:100%;
 
         .mainDownloadBy_P1{
             width:100%;
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: white;
             text-align: center;
             vertical-align: middle;
@@ -364,7 +366,7 @@ width:100%;
      .mainDownloadBy_P2{
             width:100%;
             top:40px;
-            font-size: 1.6em;
+            font-size: 1.3em;
             color: white;
             font-weight: 800;
             text-align: center;
@@ -374,7 +376,6 @@ width:100%;
         }
 
     .mainGameContents{
-         display: flex;
             height: auto;
             justify-content: center;
             flex-wrap: wrap;
@@ -385,6 +386,122 @@ width:100%;
     }
 
 
+.mainGameContents_hide{
+    display: none;
+}
+
+
+.slider_new_title{
+    width: 85%;
+    margin-top: 30px;
+    margin-left: 52px;
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
+
+
+
+
+.slider_new{
+    display: block;
+    width: 100%;
+    height: 160px;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto;
+    margin-left: 26%;
+    margin-top: 30px;
+    margin-right: 26%;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+.div_a{
+
+    background-image: url("../img/img_sw_list_cross2_fighters_byleth.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+
+.div_b{
+
+    background-image: url("../img/img_sw_list_Dragon_Quest_DE.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_c{
+
+    background-image: url("../img/img_sw_list_Fire_Emblem_Three_Houses.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_d{
+
+    background-image: url("../img/img_sw_list_Luigis_Mansion3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+
+.div_e{
+
+    background-image: url("../img/img_sw_list_park.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_f{
+
+    background-image: url("../img/img_sw_list_aaaaa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_g{
+
+    background-image: url("../img/img_sw_list_Zelda_island.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_h{
+
+    background-image: url("../img/img_sw_list_Super_Mario_Maker2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
 
 
 .mainnotice_middletitle_1{
@@ -394,9 +511,18 @@ width:100%;
 }
 
 
+.mainnotice_middletitle_plus{
+    float: right;
+    font-size: 2em;
+    font-weight: 500;
+    color:red;
+    cursor: pointer;
+
+}
+
 
         .mainGameTrailer_center_title {
-            font-size:1.6em;
+            font-size:1.3em;
             font-weight: 800;
             padding-top:30px;
             padding-bottom: 30px;
@@ -480,7 +606,6 @@ width:100%;
                         text-align: center;
                         padding-left: 50px;
                         padding-right: 50px;
-                        line-height: 40px;
 
                     }
 
@@ -490,7 +615,6 @@ width:100%;
                 width: 94%;
                 height: auto;
                 margin: auto;
-                margin-top: 30px;
             }
 
 
@@ -574,7 +698,7 @@ width:100%;
 
 
 .footer_head{
-    height: 100px;
+    height: 80px;
     background-color: #e60012;
     position: relative;
     padding-left:-205px;
@@ -584,7 +708,6 @@ width:100%;
 
 .footer_head_left{
     width: 93%;
-    padding-top:9px;
     float: left;
     position: relative;
 
@@ -602,7 +725,7 @@ width:100%;
     float: left;
     width: 5%;
     z-index: 99;
-    padding-top: 30px;
+    padding-top: 20px;
 
     
 }
@@ -663,11 +786,11 @@ width:100%;
 
 
         .footer_BigIcon_Icon_1{
-            background-image: url(../img/btn_footer_amiibo.png);
+            background-image: url(../img/bottom.png);
             display: inline-block;
-            background-position: 0 0;
+            background-position: 0 -160px;
             background-repeat: no-repeat;
-            width: 65%;
+            width: 39%;
             margin: auto;
             height: 70px;
 
@@ -678,17 +801,17 @@ width:100%;
             display: inline-block;
             background-position: 0 0;
             background-repeat: no-repeat;
-            width: 65%;
+            width: 72%;
             margin: auto;
             height: 70px;
 
         }
 
         .footer_BigIcon_Icon_3{
-               background-image: url(../img/bottom.png);
+               background-image: url(../img/btn_footer_amiibo.png);
                 display: inline-block;
                 background-position: 0 -160px;
-                width: 35%;
+                width:72%;
                 margin: auto;
                 height: 80px;
             }
@@ -716,6 +839,8 @@ width:100%;
                     padding-top: 20px;
                     padding-bottom: 20px;
                     font-weight: 700;
+                    text-align: left;
+                    padding-left: 20px;
                     border-top:1px solid gray;
                     border-bottom: 1px solid gray;
                     
@@ -726,6 +851,7 @@ width:100%;
                 .footer_BigIcon_notice_1 ul li{
                     line-height: 2em;
                     background-color: #f7f7f7;
+
                     
                 }
 
@@ -735,13 +861,15 @@ width:100%;
     bottom:0;
     margin-top: 30px;
     height:auto;
+    
     background-color: #f7f7f7;
     clear: both;
 
 }
 
 .footer_under div{
-    height: 250px;
+    height: 200px;
+    font-size: 0.8em;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
