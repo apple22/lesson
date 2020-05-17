@@ -1,0 +1,148 @@
+body {
+    background: #C0E1FD;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    width: 100%;
+    height: 50px;
+
+}
+
+header p {
+    width: 90%;
+    margin: auto;
+    line-height: 50px;
+    font-weight: 900;
+}
+
+#container {
+    width: 100%;
+    height: 95%;
+    background-color: cyan;
+}
+
+#container div:nth-child(1) {
+    float: left;
+    height: 100%;
+    width: 5%;
+
+}
+
+#container div:nth-child(2) {
+    float: right;
+    height: 100%;
+    width: 95%;
+}
+
+#container div:nth-child(2) nav:nth-child(1) {
+    width: 100%;
+    height: 7%;
+    background-color: #003773;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#container div:nth-child(2) nav:nth-child(2) {
+    width: 100%;
+    height: 93%;
+    position: relative;
+}
+
+#container div:nth-child(1) ul {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    background-color: #003773;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    margin-top: 67px;
+}
+
+#container div:nth-child(1) ul li {
+    white-space: nowrap;
+    font-size: 100%;
+}
+
+#container div:nth-child(2) nav:nth-child(1) ul {
+    float: right;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #003773;
+
+}
+
+#container div:nth-child(2) nav:nth-child(1) ul li {
+    line-height: 64px;
+    color: white;
+}
+
+.map a:nth-child(2) {
+    width: 100%;
+    height: 220px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.map a:nth-child(2) span {
+    background: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.map a:nth-child(2) span li {
+    height: 100%;
+    width: 30%;
+    background: green;
+
+}
+
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.map a {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.map a span {
+    display: block;
+    height: 20%;
+    widht: 33.33%;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+.map a:nth-child(1) span:nth-child(4) {
+    height: 30px;
+    width: 100%;
+    background: cyan;
+    display: block;
+    line-height: 30px;
+}
