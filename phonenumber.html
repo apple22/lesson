@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>전화번호 확인</title>
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+/*정규식 , 유효성검사*/
+<script>
+$(function(){
+    $(.phone-number-check).on('keydown',function(e){
+        //숫자만 입력받게
+        var num = $(this).val().replace(/-/gi,'');
+        var k = e.keycode;
+    }
+}
+</script>
+<body>
+   <input type="phone" class="phone-number-check">
+</body>
+</html>

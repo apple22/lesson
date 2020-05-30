@@ -1,0 +1,485 @@
+body {
+    background: #2C2E46;
+
+}
+
+header {
+    width: 100%;
+/*    height: 200px;*/
+}
+
+li.a1 ul {
+    height: 0px;
+    overflow: hidden;
+    background: #2C2E46 !important;
+}
+
+li.a3 ul{
+  height: 0px;
+  overflow: hidden;
+  background: #2C2E46 !important;
+}
+
+li.a4 ul{
+  height: 0px;
+  overflow: hidden;
+  background: #2C2E46 !important;
+}
+div#header_dropdown_sidebar {
+    z-index: 100;
+}
+
+
+div#header_dropdown_sidebar nav:nth-child(3){
+  padding-left: 10px;
+}
+
+header div:nth-child(1) {
+    width: 100%;
+    height: 100px;
+}
+
+header div:nth-child(2) {
+    width: 100%;
+/*    height: 100px;*/
+}
+
+
+header div:nth-child(1) nav:nth-child(1) {
+    width: 30%;
+    float: left;
+    height: inherit;
+    background: #2C2E46;
+}
+
+header div:nth-child(1) nav:nth-child(1) p {
+    color: white;
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    padding-top: 30px;
+
+}
+
+header div:nth-child(1) nav:nth-child(2) {
+    width: 20%;
+    height: inherit;
+    float: right;
+}
+
+
+
+header div:nth-child(2) nav:nth-child(1) {
+    width: 100%;
+    height: inherit;
+/*    float: left;*/
+    position: relative;
+    clear:both;
+}
+
+header div:nth-child(2) nav:nth-child(1) ul {
+    display: flex;
+    justify-content: space-around;
+    height: inherit;
+    margin: auto;
+    width: 63%;
+    color: white;
+
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li {
+    position: absolute;
+    left: 0;
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li {
+
+    height: inherit;
+    position: relative;
+    color: white;
+    width: 25%;
+    margin: 10px;
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li select {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: #2C2E46;
+    color: white;
+    padding-left: 8px;
+    margin-top: -5px;
+    -webkit-appearance: none;
+    /*크롬*/
+    -moz-appearance: none;
+    /*파이어폭스*/
+    -ms-appearance: none;
+    /*인터넷익스플로러*/
+    background: url('../img/arrow.png') 90% no-repeat;
+    /*오페라는 크로스브라우징 X*/
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li span img {
+    position: absolute;
+    left: 0;
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li:nth-child(1) {
+    text-align: center;
+    padding-left: 20px;
+}
+
+header div:nth-child(2) nav:nth-child(1) ul li span {
+    left: 0;
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+}
+
+header div:nth-child(2) nav:nth-child(2) {
+    width: 100%;
+    margin: auto;
+    height: inherit;
+/*    float: right;*/
+    clear:both;
+    position: relative;
+}
+
+header div:nth-child(2) nav:nth-child(2) ul li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header div:nth-child(2) nav:nth-child(2) ul {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    /*    float: right;*/
+    justify-content: space-around;
+}
+
+header div:nth-child(2) nav:nth-child(2) ul li {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 0px;
+}
+
+header div:nth-child(1) nav:nth-child(2) ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    padding-top: 30px;
+}
+
+header div:nth-child(1) nav:nth-child(2) ul li {
+    position: relative;
+
+}
+
+header div:nth-child(1) nav:nth-child(2) ul li span {
+    position: absolute;
+    right: -13px;
+
+}
+
+#dropdown ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 300px;
+}
+
+#dropdown ul li {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+#dropdown ul li img {
+    width: 50%;
+}
+
+#dropdown {
+    width: 80px;
+    height: 1000px;
+    background: #2C2E46;
+    position: absolute;
+    left: 0;
+    z-index: 50;
+}
+
+
+#open {
+    z-index: 99;
+
+
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 89% !important;
+    border: unset !important;
+    float: left;
+    /*왼쪽으로 붙임. 왼쪽은 고정*/
+    box-sizing: border-box;
+    /* float이나 border는 none 대신  unset */
+    margin: 0 !important;
+}
+
+.container nav {
+    height: 300px;
+    float: left;
+    width: 6%;
+    /* background: red; */
+}
+
+.container {
+    width: 100%;
+/*    height: 500px;*/
+    margin: auto;
+    position:relative;
+}
+
+.container div {
+    width: 30%;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 3px;
+    margin-bottom: 30px;
+
+}
+
+
+#header_dropdown_sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 80;
+    width: 258px;
+    background: #2C2E46;
+    height: 1200px;
+}
+
+#header_dropdown_sidebar nav:nth-child(1) {
+    width: 100%;
+    height: 50px;
+
+}
+
+#header_dropdown_sidebar nav:nth-child(1) p {
+    height: 100%;
+    width: 80%;
+    line-height: 100px;
+    margin: auto;
+}
+
+#header_dropdown_sidebar nav:nth-child(2) {
+    width: 100%;
+    height: 50px;
+
+
+}
+
+#header_dropdown_sidebar nav:nth-child(2) ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    float: right;
+
+}
+
+#header_dropdown_sidebar nav:nth-child(2) ul li {
+    color: white;
+
+}
+
+#header_dropdown_sidebar nav:nth-child(2) ul li:nth-child(2) img {
+    margin-top: -5px;
+
+}
+
+#header_dropdown_sidebar nav:nth-child(3) ul {
+    line-height: 50px;
+    margin: auto;
+    width: 100%;
+}
+
+#header_dropdown_sidebar nav:nth-child(3) ul li {
+
+    color: lightgray;
+}
+
+.down {
+    display: block;
+}
+
+.up {
+
+    display: none;
+}
+
+#now {
+    position: relative;
+    top: -150px;
+    display: none;
+}
+
+.a2 {
+    display: none;
+}
+
+.a1 img,
+.a2 img {
+    position: relative;
+    top: 4px;
+}
+
+.up,
+.down {
+    float: right;
+    width: 50%;
+
+}
+
+#a1_logo,
+#a2_logo {
+    padding-left: 10px;
+
+}
+
+#mask {
+    width: 200px;
+    height: 200px;
+    background: black;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+
+.a1,
+.a2 {
+    position: relative;
+
+}
+.wrap div ul{
+  width: 50%;
+  height: 70px;
+  float: left;
+}
+.wrap_ul_a,
+.wrap_ul_b{
+  display: flex;
+  justify-content: space-around;
+}
+.wrap_ul_a li{
+  text-align: center;
+  line-height: 70px;
+  color: white;
+}
+
+.wrap_ul_a li,
+.wrap_ul_b li{
+  text-align: center;
+  line-height: 70px;
+  color: white;
+}
+
+.wrap_ul_b li:nth-child(2) img{
+  margin-top: 15px;
+}
+
+#handler{
+  /* width: 50%;
+  margin: auto;
+  text-align: center;
+  border-style: none !important;
+  background-image: none !important; */
+  width: 20%;
+  margin: auto;
+  height: 160px;
+  background-image:url('../img/status_normal.png') !important;
+  border-style: none !important;
+  background-size: contain !important;
+}
+
+#handler img{
+  /* margin-top:50px; */
+}
+
+
+#bus_text{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  /* background: red; */
+}
+#bus_text li:nth-child(1){
+  width: 30%;
+}
+#bus_text li:nth-child(2){
+  width:50%;
+}
+
+#bus_text li{
+  line-height: 50px;
+  text-align: right;
+  color:white;
+  border-style: none;
+}
+
+
+
+ .wrap div{
+    position: relative;
+    overflow: hidden;
+    background-image: url('../img/status1.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+.wrap div p{
+  position: absolute;
+  top: 0;
+  width:100%;
+  height:10px;
+
+}
+
+.wrap div:nth-child(1) p{
+  background-color: red;
+}
+.wrap div:nth-child(2) p{
+  background-color: blue;
+}
+.wrap div:nth-child(3) p{
+  background-color: pink;
+}
+.wrap div:nth-child(4) p{
+  background-color: red;
+}
+.wrap div:nth-child(5) p{
+  background-color: lightgray;
+}
+.wrap div:nth-child(6) p{
+  background-color: red;
+}
+.wrap div:nth-child(7) p{
+  background-color: red;
+}
+.wrap div:nth-child(8) p{
+  background-color: red;
+}
+.wrap div:nth-child(9) p{
+  background-color: red;
+}

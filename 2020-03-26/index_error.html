@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <!--
+선택자
+}); 괄호가 잘 닫힌지를 파악
+;가 되어잇는지 파악
+자바스크립트/제이쿼리 문맥에 맞는지 파악
 1.flexible layout 반응형    -> 수업
 2.matchmedia js 반응형 ->자바스크립트 숙련도있어야
 3.미디어 쿼리 해상도를 이용한 반응형  ->노가다 -->
@@ -13,11 +17,17 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" type="text/css" media="all and (max-width:1199px)" href="./css/index.css">
     <link rel="stylesheet" type="text/css" media="all and (min-width:1200px)" href="./css/index_1200.css">
-
-
 </head>
 <script>
     $(document).ready(function() {
+        var target = $('.hover li');
+        target.mouseover(function() {
+            $(this).find('a').css('color', 'white');
+            $(this).css('background', 'purple');
+            target.not($(this)).css('background', '#2C2E46');
+
+        });
+
         $("#close").click(function() {
             $("div#header_dropdown_sidebar").animate({
                 left: -300,
@@ -35,61 +45,62 @@
             $("li.a1 ul").stop(0).animate({
                 height: 150
             });
-            $("li.a1 span.down").css("display","none")
-            $("li.a1 span.up").css("display","block")
-            $("div#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(1)").css("background-color","#1AFFDC")
-            $("li.a1 span").css("color","black")
+            $("li.a1 span.down").css("display", "none")
+            $("li.a1 span.up").css("display", "block")
+            $("div#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(1)").css("background-color", "#1AFFDC")
+            $("li.a1 span").css("color", "black")
         }); /*a1 event*/
 
         $("li.a1 span.up").click(function() {
-          $("li.a1 ul").stop(0).animate({
-              height: 0
-          });
-          $("li.a1 span.up").css("display","none")
-          $("li.a1 span.down").css("display","block")
-          $("div#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(1)").css("background-color","#2C2E46")
-          $("li.a1 span").css("color","lightgray")
+            $("li.a1 ul").stop(0).animate({
+                height: 0
+            });
+            $("li.a1 span.up").css("display", "none")
+            $("li.a1 span.down").css("display", "block")
+            $("div#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(1)").css("background-color", "#2C2E46")
+            $("li.a1 span").css("color", "lightgray")
 
         }); /*a1 event*/
 
         $("li.a3 span.down").click(function() {
             $("li.a3 ul").stop(0).animate({
-              height:150
+                height: 150
             });
-            $("li.a3 span.down").css("display","none")
-            $("li.a3 span.up").css("display","block")
-            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2)").css("background-color","#1AFFDC")
-            $("li.a3 span").css("color","black")
+            $("li.a3 span.down").css("display", "none")
+            $("li.a3 span.up").css("display", "block")
+            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2)").css("background-color", "#1AFFDC")
+            $("li.a3 span").css("color", "black")
         });
         $("li.a3 span.up").click(function() {
+
             $("li.a3 ul").stop(0).animate({
-              height:0
+                height: 0
             });
-            $("li.a4 span.down").css("display","block")
-            $("li.a4 span.up").css("display","none")
-            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2) li:nth-child(1)").css("background-color","#2C2E46")
-            $("li.a3 span").css("color","lightgray")
+            $("li.a3 span.down").css("display", "block")
+            $("li.a3 span.up").css("display", "none")
+            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(2)").css("background-color", "#2C2E46")
+            $("li.a3 span").css("color", "lightgray")
         });
         /*a3 event*/
 
         $("li.a4 span.down").click(function() {
-          $("li.a4 ul").stop(0).animate({
-            height:150
-          });
-          $("li.a4 span.down").css("display","none")
-          $("li.a4 span.up").css("display","block")
-          $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(3)").css("background-color","#1AFFDC")
-          $("li.a4 span").css("color","black")
+            $("li.a4 ul").stop(0).animate({
+                height: 150
+            });
+            $("li.a4 span.down").css("display", "none")
+            $("li.a4 span.up").css("display", "block")
+            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(3)").css("background-color", "#1AFFDC")
+            $("li.a4 span").css("color", "black")
         });
 
         $("li.a4 span.up").click(function() {
-          $("li.a4 ul").stop(0).animate({
-            height:0
-          });
-          $("li.a4 span.down").css("display","block")
-          $("li.a4 span.up").css("display","none")
-          $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(3)").css("background-color","#2C2E46")
-          $("li.a4 span").css("color","lightgray")
+            $("li.a4 ul").stop(0).animate({
+                height: 0
+            });
+            $("li.a4 span.down").css("display", "block")
+            $("li.a4 span.up").css("display", "none")
+            $("#header_dropdown_sidebar nav:nth-child(3) ul:nth-child(3)").css("background-color", "#2C2E46")
+            $("li.a4 span").css("color", "lightgray")
         }); /*a4 event*/
 
 
@@ -125,10 +136,15 @@
         });*/
     });
 </script>
+<style>
+    a {
+        display: block;
+        width: 100%;
+    }
+</style>
 
 <body>
     <div id="mask"></div>
-
     <div id="header_dropdown_sidebar" alt="헤더 메뉴 왼쪽 사이드바 ">
         <nav>
             <p><img id="close" src="./img/close.png"></p>
@@ -142,19 +158,15 @@
         <nav>
             <ul>
                 <li class="a1"><img src="./img/layer1.png">
-
                     <span id="a1_logo">현황</span>
                     <span class="up">▲</span><span class="down">▼</span>
                     <ul>
                         <li>현황 01</li>
                         <li>현황 02</li>
                         <li>현황 03</li>
-
                     </ul>
                 </li>
                 <!--a1-->
-
-
                 <!--<li class="a2">
                     <img src="./img/layer1.png">
                     <span id="a2_logo">현황 </span><span class="up">▲</span><span class="down">▼</span></li>
@@ -172,22 +184,22 @@
                 <li class="a3"><img src="./img/layer1.png">
                     <span id="a1_logo">현황</span> <span class="up">▲</span><span class="down">▼</span>
                     <ul>
-                      <li>현황 01</li>
-                      <li>현황 02</li>
-                      <li>현황 03</li>
-                     </ul>
-                  </li>
+                        <li>현황 01</li>
+                        <li>현황 02</li>
+                        <li>현황 03</li>
+                    </ul>
+                </li>
             </ul>
             <ul>
                 <li class="a4">
                     <img src="./img/layer1.png">
                     <span id="a1_logo">현황 </span><span class="up">▲</span><span class="down">▼</span>
                     <ul>
-                      <li>현황 01</li>
-                      <li>현황 02</li>
-                      <li>현황 03</li>
+                        <li>현황 01</li>
+                        <li>현황 02</li>
+                        <li>현황 03</li>
                     </ul>
-                  </li>
+                </li>
                 <!-- <span id="now">
                     <li>현황 01</li>
                     <li>현황 02</li>
@@ -250,14 +262,14 @@
                 </ul>
             </nav>
             <nav>
-                <ul>
-                    <li>전체</li>
-                    <li>운행 04</li>
-                    <li>충전 04</li>
-                    <li>경고 04</li>
-                    <li>오류 04</li>
-                    <li>오프라인 04</li>
-                    <li>범례</li>
+                <ul class="hover">
+                    <li><a>전체</a></li>
+                    <li><a>운행 04</a></li>
+                    <li><a>충전 04</a></li>
+                    <li><a>경고 04</a></li>
+                    <li><a>오류 04</a></li>
+                    <li><a>오프라인 04</a></li>
+                    <li><a>범례</a></li>
                 </ul>
             </nav>
         </div>
@@ -267,15 +279,140 @@
     <div class="container">
         <nav></nav>
         <div class="wrap">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <p></p>
+
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+
+                <ul id="bus_text">
+                    <li></li>
+                    <li>주행가능 거리 :110KM</li>
+
+                </ul>
+            </div>
+            <!--wrap div:nth-child(1)-->
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
+            <div>
+                <p></p>
+                <ul class="wrap_ul_a">
+                    <li>오류</li>
+                    <li>대전 75자 2360</li>
+                </ul>
+                <ul class="wrap_ul_b">
+                    <li>91%</li>
+                    <li><img src="img/energy.png"> </li>
+                </ul>
+                <div id="handler">
+
+                </div>
+            </div>
         </div>
         <!--wrap-->
     </div>
