@@ -1,0 +1,88 @@
+
+
+header{
+    width:100%;
+    height:63px;
+    background-color:#1C1C1D;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+header div{
+    width:25%;
+    height:inherit;
+}
+
+header div:nth-child(2){
+
+    width:16.80555555556%!important;
+}
+
+header div:nth-child(2) nav{
+    width:100%;
+    height:50%;
+    line-height: 31.5px;
+
+}
+
+header div:nth-child(2) nav:nth-child(1) span:nth-child(1){
+     font-family: DINAlternate;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #858585;
+
+}
+
+header div:nth-child(2) nav:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header div:nth-child(2) nav:nth-child(2) span{
+    width:33.33%;
+    height:100%;
+}
+
+.logo{
+    width:9.16666666667%!important;
+    padding-left:1.6%;
+    padding-top:17px;
+    position: relative;
+}
+
+.logo span:nth-child(1){
+   width:65.90909090909%;
+    height: inherit;
+  font-family: DINAlternate;
+  font-size: 24.8px;
+  font-weight: bold;
+    text-align:center;
+
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4.89px;
+  color: #3195f7;
+    float:left;
+}
+
+.logo span:nth-child(2){
+  font-size: 9.9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  width:19.69%;
+  letter-spacing: normal;
+  color: #eb3406;
+    right:0;
+      position: relative;
+    float:left;
+
+}
+
