@@ -1,0 +1,98 @@
+main .ship-lay {
+  box-shadow: 0 0 5px 0 #ff2625;
+  border: 2px solid #ff2625;
+  box-sizing: border-box;
+}
+
+main .ship-lay .ship-status .lay {
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 5px solid #3a8955;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  font-size: 32px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3a8955;
+}
+
+main .ship-lay .card-bottom .ship-warnings .active {
+  background-color: red;
+  font-size: 12px;
+  font-weight: bold;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+main .ship-lay .date {
+  justify-content: flex-start;
+  border-left: 2px solid #296a8c;
+}
+
+main .ship-lay .date .label {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #296a8c;
+  padding: 5px 3px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+main .ship-lay .date .calendar {
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+main .ship-lay .date .time span {
+  font-size: 18px;
+}
+
+main .ship-lay .card-bottom .working {
+  font-size: 10px;
+  font-weight: 600;
+  color: #3a8955;
+  position: absolute;
+  bottom: 8px;
+}
+
+main .ship-lay .dock-info {
+  display: flex;
+  align-items: center;
+  border: none;
+  right: 20px;
+}
+
+main .ship-lay .dock-info .count {
+  display: flex;
+  flex-direction: column;
+}
+
+main .ship-lay .dock-info .count-bar {
+  width: 20px;
+  background-color: #3a8955;
+}
+
+.card-bottom .dock-info .count-text {
+  color: #3a8955;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-bottom .dock-info .count-number {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  background-color: transparent;
+  color: #3a8955;
+}

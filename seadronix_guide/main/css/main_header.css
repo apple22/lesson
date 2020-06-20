@@ -1,0 +1,214 @@
+@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+
+@font-face {
+    font-family: DINAlternate;
+    src: url('/font/D-DINExp.otf');
+
+}
+
+@font-face {
+    font-family: "AppleSDGothicNeo";
+    src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
+    src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg");
+}
+
+
+@font-face {
+    font-family: MalayalamSangamMN;
+    src: url('/font/malayalam/malayalam.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: d-dingray;
+    src: url('/font/D-DIN-Bold.otf');
+    font-weight: normal;
+}
+
+
+
+body {
+    background-color: #eeeef2;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    height: 63px;
+    color: white;
+    background-color: #1c1c1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 28px;
+}
+
+nav .left-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-info .logo {
+    margin-right: 146px;
+    display: flex;
+    align-items: center;
+}
+
+.left-info .logo .aviss {
+    width: 87px;
+    height: 29px;
+    font-family: DINAlternate;
+    font-size: 24.8px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 4.89px;
+    color: #3195f7;
+    position: relative;
+}
+
+
+.logo .aviss .admin {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 26px;
+    height: 12px;
+    font-family: MalayalamSangamMN;
+    font-size: 9.9px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #eb3406;
+}
+
+.date-geolocation {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-geolocation .geolocation {
+    display: flex;
+}
+
+.date-geolocation .date {
+    width: 73px;
+    height: 19px;
+    opacity: 0.46;
+    font-family: DINAlternate;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 3px;
+}
+
+.date-geolocation .data-text {
+    height: 20px;
+    font-family: AppleSDGothicNeo;
+    font-size: 17px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--icon-active-white);
+}
+
+.geolocation .info {
+    display: flex;
+    align-items: center;
+}
+
+.geolocation .info .icon {
+    margin-right: 8px;
+}
+
+.geolocation .info:not(:last-child) {
+    margin-right: 8px;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu .btn {
+    height: 35px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+    background-color: #373737;
+    font-family: DINAlternate;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+nav .menu .history-btn {
+    width: 125px;
+    margin-right: 8px;
+}
+
+nav .menu .schedule-btn {
+    width: 174px;
+    margin-right: 16px;
+}
+
+nav .menu .profile-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url(/img/normal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.warning-board .crush-warning {
+    width: 100%;
+    height: 51px;
+    font-family: AppleSDGothicNeo;
+    font-size: 42px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 51px;
+    letter-spacing: normal;
+    text-overflow: clip;
+    overflow: hidden;
+    background-color: red;
+    color: #ffffff;
+    padding: 8px 0 10px 0;
+    text-align: center;
+}
+
+.warning-board .status-warning {
+    width: 100%;
+    background-color: #e2cdcd;
+    font-family: AppleSDGothicNeo;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3a8955;
+    text-overflow: clip;
+    overflow: hidden;
+    padding: 7px 0;
+}
+
+.container {
+    display: flex;
+}

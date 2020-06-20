@@ -16,7 +16,7 @@ header div{
 
 header div:nth-child(2){
 
-    width:16.80555555556%!important;
+    width:18%!important;
 }
 
 header div:nth-child(2) nav{
@@ -44,13 +44,44 @@ header div:nth-child(2) nav:nth-child(2){
     justify-content: space-around;
 }
 
+header div:nth-child(2) nav:nth-child(2) span img{
+    vertical-align: middle;
+    padding-right:6px;
+}
+
+header div:nth-child(2) nav:nth-child(2) span:nth-child(1){
+    width:27.3%!important;
+
+}
+
+header div:nth-child(2) nav:nth-child(2) span:nth-child(2){
+    width:33.1%!important;
+
+}
+
+header div:nth-child(2) nav:nth-child(2) span:nth-child(3){
+    width:27.3%!important;
+
+}
+
+header div:nth-child(2) nav:nth-child(1){
+    height:40%!important;
+}
+
+
 header div:nth-child(2) nav:nth-child(2) span{
-    width:33.33%;
-    height:100%;
+width: 33.33%;
+ height: 100%;
+ font-size: 17px;
+  text-align: left;
+    white-space: nowrap;
+    color:white;
+    font-weight:900;
+
 }
 
 .logo{
-    width:9.16666666667%!important;
+    width:11%!important;
     padding-left:1.6%;
     padding-top:17px;
     position: relative;

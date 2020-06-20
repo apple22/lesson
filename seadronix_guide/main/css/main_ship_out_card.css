@@ -1,0 +1,31 @@
+main .ship-out {
+    box-shadow: 0 0 5px 0 #d768ba;
+    border: 2px solid #d768ba;
+    box-sizing: border-box;
+}
+
+main .ship-out .ship-status .out {
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 5px solid #0d0d0d;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0d0d0d;
+}
+
+main .ship-out .card-bottom .ship-warnings .active {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}

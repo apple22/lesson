@@ -1,0 +1,267 @@
+aside {
+  width: 259px;
+  margin: 15px 8px;
+}
+
+aside .list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .list-title .info-text {
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171717;
+}
+aside .list-title .ship-count-text {
+  opacity: 0.35;
+  font-family: AppleSDGothicNeo;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171717;
+}
+
+aside ul {
+  width: 100%;
+}
+
+aside ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  font-family: DINAlternate;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0d0d0d;
+  box-sizing: border-box;
+  padding: 14px 16px;
+}
+
+aside ul li:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.ship-item .icon-name-container {
+  display: flex;
+}
+
+.ship-item .icon-name-container .icon {
+  margin-right: 5px;
+}
+
+.ship-item .pob {
+  width: 40px;
+  height: 20px;
+  border-radius: 3.2px;
+  border: solid 1.9px #9d1914;
+  font-family: Arial;
+  font-size: 12.8px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9d1914;
+  text-align: center;
+}
+
+.ship-item .out {
+  width: 40px;
+  height: 20px;
+  border-radius: 3.2px;
+  border: solid 1.9px #17074b;
+  font-family: Arial;
+  font-size: 12.8px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #17074b;
+  text-align: center;
+}
+
+.ship-item .lay {
+  width: 40px;
+  height: 20px;
+  border-radius: 3.2px;
+  border: solid 1.9px #3a8955;
+  font-family: Arial;
+  font-size: 12.8px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3a8955;
+  text-align: center;
+}
+
+.ship-item .emt {
+  width: 40px;
+  height: 20px;
+  border-radius: 3.2px;
+  border: solid 1.9px #727272;
+  font-family: Arial;
+  font-size: 12.8px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #727272;
+  text-align: center;
+}
+
+aside ul .smoke {
+  background-color: #c81dcf;
+  color: #ffffff;
+}
+
+aside ul .crush {
+  background-color: #ff2625;
+}
+
+aside .ship-list-board button {
+  width: 100%;
+  height: 33px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e8e8e8;
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171717;
+  outline: none;
+  cursor: pointer;
+}
+
+aside .ship-list-board button:active {
+  background-color: #ffffff;
+}
+
+aside #map-board {
+  margin-top: 32px;
+}
+
+#map-board .map-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 9px;
+}
+
+#map-board .map-top .ecdis {
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171717;
+}
+
+#map-board .map-top .current-location {
+  opacity: 0.35;
+  font-family: AppleSDGothicNeo;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171717;
+}
+
+#map-board .map {
+  width: 100%;
+  height: 340px;
+  background-color: yellowgreen;
+  position: relative;
+}
+
+#map-board .map .size-control-btns {
+  position: absolute;
+  left: 70px;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#map-board .map .btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #202629;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+#map-board .map .btn:active {
+  background-color: #eeeef2;
+  color: #202629;
+}
+
+#map-board .map .size-control-btns button {
+  width: 27px;
+  height: 27px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#map-board .map .size-control-btns button:not(:last-child) {
+  margin-right: 4px;
+}
+
+#map-board .map .size-control-btns button:active {
+  background-color: #eeeef2;
+  color: #202629;
+  outline: none;
+}
+
+#map-board .map .locate-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map-board .map .locate-btn .find-current-location-btn {
+  width: 44px;
+  height: 33px;
+}
+
+#map-board .map .locate-btn .locate-text {
+  font-family: DIN;
+  font-size: 13.5px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.73px;
+  text-align: center;
+  color: #293135;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel='stylesheet' type="text/css" href="./css/reset.css">
+    <title>숭신 앱</title>
+</head>
+
+<body>
+    <header>
+        <nav><img src="./img/logo-v-2.png"></nav>
+        <nav><img src="./img/btn-sidemenu.png"></nav>
+    </header>
+    <!--header-->
+    <div class="wrapper">
+        <div class="slider">
+            <div>
+                <div class="slider_a"></div>
+            </div>
+            <div>
+                <div class="slider_b"></div>
+            </div>
+
+            <div>
+                <div class="slider_b"></div>
+            </div>
+
+            <div>
+                <div class="slider_b"></div>
+            </div>
+
+            <div>
+                <div class="slider_b"></div>
+            </div>
+        </div>
+    </div>
+    <!--wrapper-->
+
+    <div class="container">
+        <div id="push"></div>
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-0lax">이름</th>
+                    <th class="tg-0lax">글</th>
+                    <th class="tg-0lax">날짜</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-0lax">홍길동</td>
+                    <td class="tg-0lax">빨리보고싶다 얘들아 ~ </td>
+                    <td class="tg-0lax">2020.01.24</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">홍길동</td>
+                    <td class="tg-0lax">빨리보고싶다 얘들아 ~ </td>
+                    <td class="tg-0lax">2020.01.24</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">홍길동</td>
+                    <td class="tg-0lax">빨리보고싶다 얘들아~</td>
+                    <td class="tg-0lax">2020.01.24</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">홍길동</td>
+                    <td class="tg-0lax">빨리보고싶다 얘들아~</td>
+                    <td class="tg-0lax">2020.01.24</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!--container-->
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                auto: true,
+                speed: 500,
+
+
+            });
+        });
+
+    </script>
+</body>
+
+</html>

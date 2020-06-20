@@ -1,0 +1,17 @@
+.popup {
+    background: #5D5D5D;
+    height: 70px; width: 200px;
+    border-radius: 7px;
+    z-index:999;
+    display : none;
+    position: absolute;
+    padding : 5px 5px 5px 5px;
+}
+.popup-item{
+    padding : 0px 5px 5px 5px;
+    border-radius: 4px;
+    color : #E6E6E6;
+    background: #4B4B4B;
+    font-size : 17px;
+    margin-top : 10px;
+}
