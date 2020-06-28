@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>지역변수 전역변수</title>
+</head>
+<script>
+    var num = 200; /*전역변수*/     
+    var theFnc = function() {
+        var num = 500; /*지역변수*/
+        document.write("hi");
+    }
+
+    theFnc();
+</script>
+
+<body>
+
+</body></html>

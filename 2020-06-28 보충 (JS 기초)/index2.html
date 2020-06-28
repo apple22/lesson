@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>응용예제</title>
+</head>
+<script>
+    //4개의 색상데이터를 배열에 저장 
+    var color = ["white", "yellow", "aqua", "purple"];
+    var i = 0;
+
+    function colorBg() {
+        i++; //변수 1씩 증가 
+        if (i >= color.length) {
+            i = 0;
+        }
+        var bodyTag = document.getElementsByTagName("body")[0];
+        /*body변수를 불러와서 배열 0에 저장*/
+        bodyTag.style.backgroundColor = color[i];
+        //css변경 
+    } //colorBg
+</script>
+
+<body>
+    <button onclick="colorBg();">배경색 바꾸기</button>
+</body></html>

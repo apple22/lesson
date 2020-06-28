@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>매개변수 응용예제</title>
+</head>
+<script>
+    function login(id, pw) {
+        if (id == "gildong") {
+            /*방문자의 ID가 길동과 일치할  경우 */
+            if (pw == "1234") {
+                document.write(id + "님 방문을 환영합니다");
+            } else {
+                document.write("잘못된 비밀번호 입니다!");
+            } /*PW 검사*/
+        } else {
+            /*gildong id가 틀릴경우 */
+            document.write("존재하지 않는 아이디 입니다");
+        } /*ID검사*/
+    } /*function login*/
+
+    var user_id = prompt("아이디를 입력해주세요", "");
+    var user_pw = prompt("비밀번호를 입력해주세요", "");
+    login(user_id, user_pw);
+</script>
+
+<body>
+
+</body></html>
