@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tag</title>
+</head>
+<!-- 분석 - > 설계 -> 제작 -> 디버깅 -->
+<!--
+
+HTML (hypertext markup launuage)
+어떠한 문서에 대한 구조를 정의 (설계)
+
+CSS (Cascading Style Sheet)
+어떠한 설계된 문서에 대한 디자인적인 요소를 담당 (설계)
+
+-->
+<!--
+tag : html 문단을 이루는 하나의 요소
+Sementic tag : 의미있는 태그
+
+div(division)
+nav(navigation)
+p(paragraph)
+article
+section
+span
+
+px : adaptive layout (적응형 레이아웃)
+
+%  : responsive layout (반응형 레이아웃)
+hybrid app , webapp (cordova , phonegap)
+
+selector
+class(.)
+id(#)
+
+
+align(열):정렬
+text-align: center : 글자를 가운데
+text-align: justify : 양방향정렬
+text-align: right : 오른쪽 정렬
+
+
+line-height(행 정렬)
+height와 line-height를 일치시키면 자동 가운데 정렬
+-->
+
+<style>
+    .wrapper {
+        width: 800px;
+        /*크기*/
+        height: 600px;
+        /*길이*/
+    }
+
+    header , footer {
+        width: 100%;
+        height: 15%;
+        border: 1px solid red;
+        text-align: center;
+        line-height: 90px;
+    }
+
+    .c {
+        background-color: red;
+    }
+
+    #container {
+        width: 100%;
+        height: 60%;
+    }
+
+
+    #container nav {
+        width: 48%;
+        border: 1px solid red;
+        height: 100%;
+    }
+
+    #a {
+        float: left;
+    }
+
+
+    #b {
+        float: right;
+    }
+</style>
+
+
+<body>
+    <div class="wrapper">
+        <header>header</header>
+        <div id="container">
+            <nav id="a"></nav>
+            <nav id="b"></nav>
+        </div>
+        <!--container-->
+        <footer>footer</footer>
+    </div>
+    <!--wrapper-->
+</body>
+
+</html>
