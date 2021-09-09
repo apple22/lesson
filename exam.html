@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>웹표준</title>
 </head>
+<!--
+flex: 1. 항상 부모 요소에게 적용되야 하는 속성
+      2. 전체 요소를 컨트롤 할수 있어야 함
+      3. flex의 기본속성은 row(가로)
+
+flex-wrap : 100%를 초과하는 넓이를 밑으로 내림
+jutify-content : space-between: 내부 여백 자동 정렬 속성
+
+align-item:center : 세로 가운데 정렬 속성
+-->
 <style>
     * {
         margin: 0;
         padding: 0;
     }
+
     #wrapper {
         width: 95%;
         height: 550px;
         border: 20px solid black;
         margin: auto;
     }
-    #wrapper header{
+
+    #wrapper header {
         padding: 10px;
         border-bottom: 1px solid black;
         margin: auto;
     }
-    #wrapper #container{
+
+    #wrapper #container {
         width: 90%;
         height: 50%;
         margin: auto;
         margin-top: 10px;
     }
+
     #container nav {
         width: 100%;
         height: 45%;
@@ -33,85 +48,94 @@
         border-radius: 5px;
         background-color: #96D5D7;
     }
+
     #container nav h1 {
         padding: 15px;
         text-align: center;
     }
+
     #container section {
         width: 100%;
         height: 90%;
         margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
+
     #container section #type-1 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
+
         border-radius: 5px;
         background-color: #DC6089;
         float: left;
     }
+
     #container section #type-2 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
-        margin-left: 10px;
+
         border-radius: 5px;
         background-color: #B2FA5C;
         float: left;
     }
+
     #container section #type-3 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
-        margin-left: 10px;
+
         border-radius: 5px;
         background-color: #8C8CF5;
         float: left;
     }
+
     #container section #type-4 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
-        margin-left: 10px;
+
         border-radius: 5px;
         background-color: purple;
         float: right;
     }
+
     #container section #type-5 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
+
         border-radius: 5px;
         background-color: orange;
         float: left;
     }
+
     #container section #type-6 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
-        margin-left: 10px;
+
         border-radius: 5px;
         background-color: plum;
-        float: left;   
+        float: left;
     }
+
     #container section #type-7 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
-        margin-left: 10px;
+
         border-radius: 5px;
         background-color: #40E0D0;
         float: left;
     }
+
     #container section #type-8 {
         width: 23%;
         height: 45%;
-        margin-top: 10px;
-        margin-left: 10px;
+
         border-radius: 5px;
         background-color: #FFFA78;
         float: right;
     }
+
     #wrapper footer {
         width: 100%;
         height: 45%;
@@ -119,11 +143,14 @@
         border-radius: 5px;
         background-color: #96D5D7;
     }
-    footer p{
+
+    footer p {
         text-align: center;
         padding: 15px;
     }
+
 </style>
+
 <body>
     <div id="wrapper">
         <header>
@@ -131,7 +158,7 @@
         </header>
         <div id="container">
             <nav>
-               <h1>lonic Technologies</h1>
+                <h1>lonic Technologies</h1>
             </nav>
             <section>
                 <div id="type-1">
@@ -165,7 +192,7 @@
                 <div id="type-8">
                     <h1 style="font-size: 100%; padding-top: 25px; padding-left: 15px;">Web Components</h1>
                     <p style="font-size: 50%; padding-top: 10px; padding-left: 15px;"><strong>Self-packaged modules</strong></p>
-                </div>              
+                </div>
             </section>
             <footer>
                 <p><strong>Footer</strong></p>
@@ -173,6 +200,7 @@
         </div>
     </div>
 </body>
+
 </html>
 <!--
                <h1>Angular</h1>
