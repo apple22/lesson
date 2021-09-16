@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="./css/main.css">
     <!--메인 css에 index html을 연결해준거-->
     <title>main</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
+
+<script>
+    $(document).ready(function() {
+        $(".sub").hide();
+
+        $("#drop ul li a").mouseover(function() {
+            $(".sub").slideDown(
+                300);
+        });
+
+        $(".c").mouseout(function() {
+            $(".sub").slideUp(
+                300);
+        });
+    });
+</script>
+
 
 <body>
     <div class="wrapper">
@@ -28,35 +46,34 @@
                 <div class="sub b">
                 </div>
 
-                <div class="sub">
+                <div class="sub c">
                     <nav>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li>SubMenu-1</li>
+                        <li>SubMenu-2</li>
+                        <li>SubMenu-3</li>
+                        <li>SubMenu-4</li>
                     </nav>
                     <nav>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li>SubMenu-1</li>
+                        <li>SubMenu-2</li>
+                        <li>SubMenu-3</li>
+                        <li>SubMenu-4</li>
                     </nav>
                     <nav>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li>SubMenu-1</li>
+                        <li>SubMenu-2</li>
+                        <li>SubMenu-3</li>
+                        <li>SubMenu-4</li>
                     </nav>
                     <nav>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                    </nav>
-
+                        <li>SubMenu-1</li>
+                        <li>SubMenu-2</li>
+                        <li>SubMenu-3</li>
+                        <li>SubMenu-4</li>
                     </nav>
                 </div>
-                <!--drop 드롭박스 밑에 깔려있는, 로고박스 옆에 있는 박스-->
+            </div>
+            <!--drop 드롭박스 밑에 깔려있는, 로고박스 옆에 있는 박스-->
         </header>
         <!--header-->
 
