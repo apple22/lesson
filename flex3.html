@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex3</title>
+</head>
+<style>
+    .container {
+        width: 80%;
+        height: 30%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .wrapper {
+        width: 800px;
+        margin: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .wrapper div:nth-child(1) .a {
+        width: 30%;
+        height: 100%;
+        background: red;
+    }
+
+    .wrapper div:nth-child(1) .b {
+        width: 60%;
+        height: 100%;
+        background: blue;
+    }
+
+    .wrapper div:nth-child(2) .a {
+        width: 20%;
+        height: 100%;
+        background: red;
+    }
+
+    .wrapper div:nth-child(2) .b {
+        width: 70%;
+        height: 100%;
+        background: blue;
+    }
+
+
+    .wrapper div:nth-child(3) .a {
+        width: 60%;
+        height: 100%;
+        background: red;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper div:nth-child(3) .a nav {
+        width: 30%;
+        height: 100%;
+        background: yellow;
+    }
+
+    .wrapper div:nth-child(3) .b {
+        width: 30%;
+        height: 100%;
+        background: blue;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+        <div class="container">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+        <div class="container">
+            <div class="a">
+                <nav></nav>
+                <nav></nav>
+                <nav></nav>
+            </div>
+            <div class="b"></div>
+
+        </div>
+    </div>
+</body></html>
