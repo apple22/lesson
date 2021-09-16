@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>snap</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            var test = $(".circle").css("top");
+            if (test == "13px") {
+                alert("hi");
+
+            } else {
+
+
+            }
+
+
+
+
+            $(".circle").draggable({
+                "axis": "y"
+            });
+
+        });
+    </script>
+    <!--
+스크롤 하는 위치를 계산
+원페이지 형식처럼 되서 overflow hidden으로 페이지를 자름
+위치마다 이미지 변경
+-->
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+        }
+
+        .onepage_wrapper {
+            width: 100%;
+        }
+
+        .image {
+            width: 50%;
+            height: 30%;
+            margin: auto;
+        }
+
+        .scroll {
+            width: 20px;
+            height: 70%;
+            background: black;
+            position: absolute;
+            right: 20px;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background: white;
+            position: absolute;
+            right: 14px;
+            border: 1px solid black;
+            z-index: 99;
+        }
+
+        .outline {}
+    </style>
+</head>
+
+
+<body>
+    <div class="onepage_wrapper">
+        <div class="outline">
+            <div class="circle">
+
+            </div>
+
+            <div class="scroll">
+            </div>
+
+        </div>
+        <div class="image">
+            <img id="default" src="/IMG/0_0.png">
+        </div>
+        <!--image-->
+    </div>
+    <!--onepage_wrapper-->
+</body></html>
