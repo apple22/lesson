@@ -7,6 +7,20 @@
     list-style: none;
 }
 
+.b {
+    width: 47% !important;
+}
+
+.sub {
+    width: 52.3%;
+    height: 150px;
+    border: 1px solid black;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
 #drop ul li a:hover {
     background: black;
     color: white;
@@ -81,8 +95,10 @@
     float: right;
     box-sizing: border-box;
     display: flex;
-    align-itmes: center;
+    align-items: center;
     justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 .slide {
