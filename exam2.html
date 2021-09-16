@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exam2</title>
+</head>
+<style>
+    .wrapper {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 500px;
+        margin: auto;
+        align-items: center;
+        background-color: black;
+    }
+    
+    .container {
+        width: 80%;
+        height: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .wrapper div:nth-child(1) .a {
+        width: 30%;
+        height: 100%;
+        background-color: hotpink;
+    }
+    
+    .wrapper div:nth-child(1) .b {
+        width: 60%;
+        height: 100%;
+        background-color: hotpink;
+    }
+    
+    .wrapper div:nth-child(2) .a {
+        width: 20%;
+        height: 100%;
+        background-color: hotpink;
+    }
+    
+    .wrapper div:nth-child(2) .b {
+        width: 70%;
+        height: 100%;
+        background-color: hotpink;
+    }
+    
+    .wrapper div:nth-child(3) .a {
+        width: 60%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .wrapper div:nth-child(3) .a nav {
+        width: 30%;
+        height: 100%;
+        background-color: hotpink;
+    }
+    
+    .wrapper div:nth-child(3) .b {
+        width: 30%;
+        height: 100%;
+        background-color: hotpink;
+    }
+    
+</style>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+        <div class="container">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+        <div class="container">
+            <div class="a">
+                <nav></nav>
+                <nav></nav>
+                <nav></nav>
+            </div>
+            <div class="b"></div>
+        </div>
+    </div>
+</body>
+</html>
