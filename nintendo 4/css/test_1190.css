@@ -1,0 +1,890 @@
+body{
+
+clear: both;
+width:100%;
+  
+    
+}
+
+
+
+
+.header_1{
+    width: 100%;
+    height: 80px;
+    background-color:#E60012;
+}
+
+
+.m_header{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #E60012;
+    display: flex;
+    position: absolute;
+    top:0;
+    justify-content: space-around;
+    z-index: 99;
+    
+
+}
+
+
+.m_header li {
+    text-align: center;
+    height: inherit;
+    width: 33.33%;
+    
+}
+
+.m_header li:nth-child(1) {
+    text-align: left;
+    width: 70%;
+}
+
+
+.m_header li:nth-child(1) img {
+    position: relative;
+    top: 24px;
+    margin-left: 40px;
+}
+
+.m_header li:nth-child(2) {
+
+    width: 15%;
+}
+
+
+
+.m_header li:nth-child(2) img {
+
+    position: relative;
+    top: 24px;
+}
+
+.m_header li:nth-child(3) {
+
+    width: 15%;
+    background-color: #fe7c0a;
+}
+
+.m_header li:nth-child(3) img {
+
+    position: relative;
+    top: 24px;
+}
+
+
+
+.header_1 ul li:nth-child(1),.header_1 ul li:nth-child(2),.header_1 ul li:nth-child(3){
+    background-color: #E60012;
+}
+
+
+
+
+.header_1 ul li {
+    display: none; 
+}
+
+
+
+
+.main{
+    width:100%;
+    height: auto;
+    clear: both;
+}
+
+.bx-viewport {
+    height: auto !important;
+}
+
+
+
+.mainscreen {
+    display: none;
+   
+}
+
+       .mainscreen_m{
+        display: block;
+        width:100%;
+        height: 594px;
+        clear: both;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: aliceblue;
+        z-index: 99;
+        
+    }
+
+
+
+#a{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/200205_slide_img_park_mo.jpg");
+    background-position: center center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+
+#b{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Ring_191024_m.png");
+    background-position x: -400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#c{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Ring_191011_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#d{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Fire_Emblem_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#e{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Dragon_Quest_DE_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+#f{
+    width:100%;
+    height: 594px;
+    background-image: url("../img/slide_img_Zelda_island_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+
+}
+
+   
+
+
+.bx-wrapper{
+    display: block!important;
+    box-shadow: none !important;
+    margin-bottom: 0!important;
+    border:none!important;
+}
+
+
+    .mainnotice{
+            display: flex;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width:100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+       
+        
+    }
+
+
+
+        .mainnotice_middletitle{
+            width:85%;
+            height:50px;
+            left: 52px;
+            
+        }
+
+
+.mainnotice_middletitle span:nth-child(2) {
+    display: none;
+}
+
+
+            .mainnotice_middletitle div{
+              float: left;   
+              
+            }
+
+                .mainnotice_middletitle_1{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+
+            .mainnoticenews{
+                width:40%;
+                height: auto;
+                margin: 0 10px;
+                display: inline-block;
+                margin-bottom: 30px;
+          
+    
+            }
+
+
+                .mainnoticenews_1 img {
+                    width: 100%;
+                    height: 100%;
+                    transition:.3s;
+                    -webkit-transition:.3s;
+                    -moz-transition:.3s;
+                    -ms-transition:.3s;
+                    -o-transition:.3s;
+                     transform: scale(1);
+                }
+
+                .mainnoticenews_1 img:hover {
+                    transform: scale(1.2);
+                    -webkit-transform:scale(1.2);
+                    -moz-transform:scale(1.2);
+                    -ms-transform:scale(1.2);
+                    -o-transform:scale(1.2);
+                    opacity: 0.5;
+                }
+
+
+
+
+
+                .mainnoticenews_1{
+                    width:100%;
+                    height: 150px;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    overflow: hidden;
+                    background-size: 100% 100%;
+
+
+                }
+
+
+
+
+           
+
+
+
+                
+                .mainnoticenews_2{
+                    width:100%;
+                    height: auto;
+                }
+
+
+                  .mainnoticenews_2_box{
+                      width:100%;
+                      height: 150px;
+                  }
+
+
+                    .mns_2_font_1{
+                        font-size: 1.2em;
+                        font-weight: 600;
+                        line-height: 40px;
+                        color: red;
+
+                    }
+
+
+                    .mns_2_font_2{
+                        
+                      font-size:0.8em;    
+                      padding-top: 20px;
+                      padding-bottom: 20px;
+                      height: auto;
+                      line-height: 20px;
+                        
+                        
+                        
+                    }
+
+
+                    .mns_2_font_3{
+                        
+                        margin-top: 30px;
+                        height: auto;
+       
+        
+                        
+                    }
+
+.mainnoticenews:nth-child(5),.mainnoticenews:nth-child(6),.mainnoticenews:nth-child(7),.mainnoticenews:nth-child(8){
+    display: none;
+}
+
+
+
+    .mainDownloadBy {
+        width:100%;
+        height: auto;
+        background-color: #fe7c0a;
+        clear: both;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+        .mainDownloadBy_P1{
+            width:100%;
+            font-size: 1.1em;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            vertical-align: middle;
+
+        }
+
+     .mainDownloadBy_P2{
+            width:100%;
+            top:40px;
+            font-size: 1.3em;
+            color: white;
+            font-weight: 800;
+            text-align: center;
+            vertical-align: middle;
+
+
+        }
+
+    .mainGameContents{
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width:100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+    }
+
+
+.mainGameContents_hide{
+    display: none;
+}
+
+
+.slider_new_title{
+    width: 85%;
+    margin-top: 30px;
+    margin-left: 52px;
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
+
+
+
+
+.slider_new{
+    display: block;
+    width: 100%;
+    height: 160px;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto;
+    margin-left: 26%;
+    margin-top: 30px;
+    margin-right: 26%;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+.div_a{
+
+    background-image: url("../img/img_sw_list_cross2_fighters_byleth.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+
+.div_b{
+
+    background-image: url("../img/img_sw_list_Dragon_Quest_DE.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_c{
+
+    background-image: url("../img/img_sw_list_Fire_Emblem_Three_Houses.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_d{
+
+    background-image: url("../img/img_sw_list_Luigis_Mansion3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+
+.div_e{
+
+    background-image: url("../img/img_sw_list_park.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_f{
+
+    background-image: url("../img/img_sw_list_aaaaa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_g{
+
+    background-image: url("../img/img_sw_list_Zelda_island.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+.div_h{
+
+    background-image: url("../img/img_sw_list_Super_Mario_Maker2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    
+}
+
+
+.mainnotice_middletitle_1{
+    width:100%;
+    text-align: center;
+
+}
+
+
+.mainnotice_middletitle_plus{
+    float: right;
+    font-size: 2em;
+    font-weight: 500;
+    color:red;
+    cursor: pointer;
+
+}
+
+
+        .mainGameTrailer_center_title {
+            font-size:1.3em;
+            font-weight: 800;
+            padding-top:30px;
+            padding-bottom: 30px;
+            
+        }
+
+
+ 
+
+
+        .mainGameTrailer{
+    
+                width:100%;
+                height:auto;
+                background-color: white;
+                text-align: center;
+                clear: both;
+                overflow: hidden;
+                left: 0;
+                padding-bottom: 0;
+    
+        }
+
+            .mainGameTrailer_box{
+                width:100%;
+                height: 150px;
+                display: inline-block;
+                clear: both;
+                margin-top: 10px;
+                background-color: beige;
+    
+            }
+
+                .mainGameTrailer_box_1{
+                    width:60%;
+                    height: 100%;
+                    background-color: #e60012;
+                    float: left;
+                    color: white;
+                }
+
+                .news{
+                        text-align: left;
+                        font-weight: 800;
+                        padding-top: 34px;
+                        padding-bottom: 34px;
+                        padding-left: 30px;
+                        width: 70%;
+                        word-break: keep-all;
+                        line-height: 1.6em;
+                        color: white;
+                        font-size: 1.1em;
+
+                }
+
+                .mainGameTrailer_box_2{
+                    width:40%;
+                    height: 100%;
+                    float: left;
+                    color: white;
+                }
+
+
+                    .mainGameTrailer_box_1 div{
+                        text-align: left;
+                        padding-left: 15px;
+                        line-height: 150px;
+
+                    }
+
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+
+
+                    .EasyDownload_Container{
+                        margin: 0 auto;
+                        text-align: center;
+                        padding-left: 50px;
+                        padding-right: 50px;
+
+                    }
+
+                    
+                
+                .EasyDownload_tle{
+                width: 94%;
+                height: auto;
+                margin: auto;
+            }
+
+
+                
+                    .EasyDownload{
+                        flex-direction: column;
+                        height: auto;
+
+                    }
+
+
+                       .EasyDownload_box{
+                            width:100%;
+                            height: 100%;
+                            border:0.5px solid gray;
+                        }
+
+
+                    .EasyDownload_box p{
+                        text-align: left;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        padding-left: 80px;
+                        word-break: keep-all;
+                        width:60%;
+                    }
+
+
+
+
+
+            .SubNotice{
+
+                height:auto;
+                width:100%;
+                display: inline-block;
+                margin-top:50px;
+                vertical-align: middle;
+                padding-top: 30px;
+                overflow: hidden;
+                border-top:1px solid gray;
+                border-bottom:1px solid gray;
+                text-align: left;
+                word-break: normal;
+                padding-left: 20px;
+                padding-bottom: 30px;
+            }
+                
+                .span_1{
+                    width:100%;
+                    float: left;
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                    list-style: none;
+                    
+                }
+
+                .span_2{
+                    width:100%;
+                    float: left;
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                }
+
+                .span_3{
+                    width:100%;
+                    float: left;
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                }
+
+
+.footer{
+    width:100%;
+    height: auto;
+    clear: both;
+}
+
+
+.footer_head{
+    height: 80px;
+    background-color: #e60012;
+    position: relative;
+    padding-left:-205px;
+    text-align: center;
+}
+
+
+.footer_head_left{
+    width: 93%;
+    float: left;
+    position: relative;
+
+    
+}
+
+
+.footer_head_left img{
+        margin-left: 35px;
+}
+
+
+.footer_head_right {
+    text-align: center;
+    float: left;
+    width: 5%;
+    z-index: 99;
+    padding-top: 20px;
+
+    
+}
+
+
+#ta{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    white-space: pre;
+}
+
+.animate_a{
+    
+    display: block;
+    width:80px;
+    height: 38px;
+    border-radius: 38px;
+    border: 1px solid white;
+    float: right;
+    cursor: pointer;
+}
+
+
+.animate{
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 18px;
+    margin: auto;
+    border-radius: 38px;
+}
+
+
+
+
+
+.footer_BigIcon{
+    width:100%;
+    padding-top: 15px;
+    height: auto;
+    text-align: center;
+    clear: both;
+    background-color: white;
+    overflow:hidden;
+}
+
+    .footer_BigIcon_Icon{
+        width:100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+
+        .footer_BigIcon_Icon_1{
+            background-image: url(../img/bottom.png);
+            display: inline-block;
+            background-position: 0 -160px;
+            background-repeat: no-repeat;
+            width: 39%;
+            margin: auto;
+            height: 70px;
+
+        }
+
+        .footer_BigIcon_Icon_2{
+            background-image: url(../img/bottom.png);
+            display: inline-block;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            width: 72%;
+            margin: auto;
+            height: 70px;
+
+        }
+
+        .footer_BigIcon_Icon_3{
+               background-image: url(../img/btn_footer_amiibo.png);
+                display: inline-block;
+                background-position: 0 -160px;
+                width:72%;
+                margin: auto;
+                height: 80px;
+            }
+
+
+            .footer_BigIcon_notice{
+                    width:100%;
+                    height: auto;
+                    vertical-align: top;
+                    
+            }
+
+            .footer_BigIcon_notice_1{
+                width:100%;
+                vertical-align: left;
+                height: auto;
+                text-align: center;
+                
+                
+            }
+
+                .footer_BigIcon_notice_1_smalltitle{
+                
+                    font-size: 1.1em;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 700;
+                    text-align: left;
+                    padding-left: 20px;
+                    border-top:1px solid gray;
+                    border-bottom: 1px solid gray;
+                    
+
+                }
+
+
+                .footer_BigIcon_notice_1 ul li{
+                    line-height: 2em;
+                    background-color: #f7f7f7;
+
+                    
+                }
+
+
+.footer_under{
+    width:100%;
+    bottom:0;
+    margin-top: 30px;
+    height:auto;
+    
+    background-color: #f7f7f7;
+    clear: both;
+
+}
+
+.footer_under div{
+    height: 200px;
+    font-size: 0.8em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.footer_under_1{
+    width:100%;
+    float: left;
+    line-height: 25px;
+}
+
+.footer_under_2{
+    width:100%;
+    float: right;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 25px;
+}

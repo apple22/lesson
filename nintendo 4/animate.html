@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animate</title>
+</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+</script>
+
+
+<script>
+
+    $(function() {
+        
+        setInterval(function(){  
+                $('.box1').animate({
+                    marginLeft: 1000 
+                }, 1000,'swing',function(){
+                    $(this).delay(1000).animate({
+                        marginLeft: 200
+                }, 1000)      
+            });
+
+        }, 3000);
+        
+        
+        setInterval(function(){
+            
+                $('.box2').animate({
+                    marginLeft:1500
+                }, 1000,'swing',function(){
+                   $(this).delay(1000).animate({
+                    marginLeft:200
+                }, 1000)
+                    
+                });
+            
+        }, 3000);
+        
+    });
+      
+</script>
+
+<style>
+    .box{
+        width:100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+        position: relative;
+    }
+    
+    </style>
+<body>
+    <div class="box box1">
+        
+        
+    </div>
+    <div class="box box2">
+        
+        
+    </div>
+</body>
+</html>

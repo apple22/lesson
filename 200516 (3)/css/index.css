@@ -1,0 +1,329 @@
+
+.head {
+    width: 100%;
+    height: 100px;
+    clear: both;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 99;
+
+
+}
+
+
+.history ul{
+    flex-direction: column;
+    justify-content: space-around!important;
+    width: 20%;
+    position: absolute!important;
+    z-index: 99;
+}
+
+
+.history ul li{
+    
+    width: 100%;
+    height: 60px;
+}
+
+
+.head nav {
+
+    line-height: 50px;
+
+
+}
+
+
+
+.head li img {
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+
+
+.head li:nth-child(1) {
+    width: 20%;
+}
+
+
+.head li:nth-child(7) {
+    cursor: pointer;
+}
+
+
+.head li:nth-child(7) a {
+    background-color: red;
+    color: white;
+    display: block;
+    border-radius: 30px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.head nav ul {
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    z-index: 99;
+    position: relative;
+    margin: auto;
+    left: 100px;
+    width: 60%;
+    line-height: 100px;
+
+}
+
+
+.head nav ul li {
+    width: 10%;
+    text-align: center;
+}
+
+
+
+.list {
+    width: 100%;
+    height: 300px;
+    line-height: 50px;
+}
+
+
+.list ul{
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    z-index: 99;
+    position: relative;
+    margin: auto;
+    left: 100px;
+    width: 60%!important;
+    line-height: 100px;
+    background-color: white;
+    background-color: aqua;
+
+}
+
+.list ul li{
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.list_4 ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.list_4 ul li{
+    height: 50px;
+    
+}
+
+
+
+.screen {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    clear: both;
+
+}
+
+
+.screen_under {
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: center center;
+    background-image: url(../img/main_bg.png);
+    position: relative;
+}
+
+
+.screen_under_push {
+    width: 100%;
+    height: 350px;
+}
+
+
+.screen_up {
+    text-align: center;
+    position: relative;
+
+
+}
+
+
+.screen_up ul {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: space-around;
+
+}
+
+
+
+.screen_up ul li {
+    text-align: center;
+}
+
+
+
+.title {}
+
+.title_1 {
+    width: 100%;
+    font-size: 40px;
+    padding-bottom: 70px;
+    color: red;
+    text-align: center;
+    position: relative;
+}
+
+
+.title_2 {
+    cursor: pointer;
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+
+}
+
+
+
+.title_2 a {
+    background-color: red;
+    color: black;
+    font-weight: 600;
+    display: block;
+    border: 1px solid gray;
+    line-height: 60px;
+    width: 20%;
+    margin: auto;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 2px;
+    color: white;
+}
+
+
+
+
+.main {
+    width: 100%;
+    height: 700px;
+    background-color: rebeccapurple;
+    background-image: url(../img/main_img.png);
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+.main div{
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+
+.side_1{
+    width:55%;
+    left: 0;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+
+.side_2{
+    width:55%;
+    right: 0;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.inside{
+   
+    font-size: 180px;
+    color: white;
+    text-align: center;
+    font-stretch: normal;
+    padding-bottom: 30px;
+    font-weight: lighter!important;
+}
+
+.title_3 {
+    width: 80%;
+    letter-spacing: 10px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    word-break: keep-all;
+}
+
+.main ul{
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    z-index: 99;
+    position: relative;
+    margin: auto;
+    width: 60%;
+    line-height: 100px;
+
+}
+
+
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: darkgray;
+    clear: both;
+
+}
+
+
+.footer nav ul{
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+    z-index: 99;
+    position: relative;
+    margin: auto;
+    left: 100px;
+    width: 68%;
+   
+
+}
+
+.footer nav{
+
+}
+
+.footer li img{
+      float: left;
+       text-align: center;
+       margin-top: 30px;
+}
+
+.footer li:nth-child(6) {
+    padding-top: 50px;
+    color: white;
+    word-break: keep-all;
+    line-height: 1.4em;
+    text-align: right;
+}

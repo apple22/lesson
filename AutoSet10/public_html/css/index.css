@@ -1,0 +1,153 @@
+@font-face {
+    font-family: DINAlternate;
+    src: url('/font/din_alternate_bold.woff');
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: MalayalamSangamMN;
+    src: url('/font/malayalam/malayalam.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: d-dingray;
+    src: url('/font/D-DIN-Bold.otf');
+    font-weight: normal;
+}
+
+
+
+.main_header {
+    width: 100%;
+    height: 63px;
+    background: #1C1C1D;
+}
+
+.logo {
+    width: 73.72881355932%;
+    font-family: DINAlternate;
+    font-size: 24.8px;
+    letter-spacing: 4.89px;
+    color: #3195f7;
+    text-align: right;
+    padding-top: 17px;
+    float: left;
+}
+
+.admin {
+    width: 22.03389830508%;
+    height: 12px;
+    float: right;
+    font-family: DINAlternate;
+    color: #eb3406;
+    font-size: 9.9px;
+    padding-top: 17px;
+
+}
+
+
+.main_header_time {
+    width: 25.13888888889%;
+    height: 44px;
+    padding-top: 10px;
+    float: left;
+}
+
+.main_header_time .time {
+    font-weight: bold;
+    font-size: 16px;
+    color: #858585;
+
+}
+
+.main_header_time .location {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_header_time .location ul {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    width: 33.33%;
+}
+
+.main_header_time .location ul li {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main_header_time .location ul li img {
+    vertical-align: middle;
+    padding-right: 6px;
+}
+
+.main_header_time .location ul li {
+    color: white;
+    font-family: d-dingray;
+}
+
+.main_header_time div {
+    width: 66.85082872928%;
+    height: 50%;
+    float: right;
+    font-weight: normal;
+}
+
+.main_header_status {
+    width: 62.5%;
+    height: 48px;
+    float: left;
+}
+
+.main_header_status ul {
+    width: 37.77777777778%;
+    display: flex;
+    float: right;
+    justify-content: space-around;
+    margin-top: 13px;
+    height: 35px;
+}
+
+.main_header_status ul .history {
+    width: 36.76470588235%;
+    height: 35px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    background: #373737;
+    font-family: DINAlternate;
+    font-size: 16px;
+    line-height: 35px;
+    margin-right: 8px;
+
+}
+
+.main_header_status .schedule {
+    width: 51.17647058824%;
+    height: 35px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    background: #373737;
+    font-family: DINAlternate;
+    font-size: 16px;
+    margin-right: 16px;
+    line-height: 35px;
+
+
+}
+
+.main_header_status .login {
+    width: 9.41176470588%;
+    height: 35px;
+}
+
+.main_header_logo {
+    width: 8.19444444444%;
+    height: 46%;
+    float: left;
+}

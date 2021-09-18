@@ -1,0 +1,164 @@
+2020-06-10 21:36:09 5448 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2020-06-10 21:36:09 5448 [Note] InnoDB: The InnoDB memory heap is disabled
+2020-06-10 21:36:09 5448 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-06-10 21:36:09 5448 [Note] InnoDB: Memory barrier is not used
+2020-06-10 21:36:09 5448 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-06-10 21:36:09 5448 [Note] InnoDB: Not using CPU crc32 instructions
+2020-06-10 21:36:09 5448 [Note] InnoDB: Initializing buffer pool, size = 8.0M
+2020-06-10 21:36:09 5448 [Note] InnoDB: Completed initialization of buffer pool
+2020-06-10 21:36:09 5448 [Note] InnoDB: Highest supported file format is Barracuda.
+2020-06-10 21:36:10 1548  InnoDB: Operating system error number 2 in a file operation.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2020-06-10 21:36:10 5448 [ERROR] InnoDB: Could not find a valid tablespace file for 'mysql/gtid_slave_pos'. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2020-06-10 21:36:10 5448 [ERROR] InnoDB: Tablespace open failed for '"mysql"."gtid_slave_pos"', ignored.
+2020-06-10 21:36:10 5448 [Warning] InnoDB: Resizing redo log from 2*3072 to 2*640 pages, LSN=1616799
+2020-06-10 21:36:10 5448 [Warning] InnoDB: Starting to delete and rewrite log files.
+2020-06-10 21:36:10 5448 [Note] InnoDB: Setting log file .\ib_logfile101 size to 10 MB
+2020-06-10 21:36:10 5448 [Note] InnoDB: Setting log file .\ib_logfile1 size to 10 MB
+2020-06-10 21:36:11 5448 [Note] InnoDB: Renaming log file .\ib_logfile101 to .\ib_logfile0
+2020-06-10 21:36:11 5448 [Warning] InnoDB: New log files created, LSN=1616908
+2020-06-10 21:36:11 5448 [Note] InnoDB: 128 rollback segment(s) are active.
+2020-06-10 21:36:11 5448 [Note] InnoDB: Waiting for purge to start
+2020-06-10 21:36:11 5448 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 1616799
+2020-06-10 21:36:11 6732 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2020-06-10 21:36:12 5448 [Note] Plugin 'FEEDBACK' is disabled.
+2020-06-10 21:36:12 5448 [Note] Server socket created on IP: '::'.
+2020-06-10 21:36:12 5448 [ERROR] Missing system table mysql.roles_mapping; please run mysql_upgrade to create it
+2020-06-10 21:36:12 5448 [ERROR] Incorrect definition of table mysql.event: expected column 'sql_mode' at position 14 to have type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','IGNORE_BAD_TABLE_OPTIONS','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH'), found type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','NOT_USED','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_A
+2020-06-10 21:36:12 5448 [ERROR] mysqld.exe: Event Scheduler: An error occurred when initializing system tables. Disabling the Event Scheduler.
+2020-06-10 21:36:12 6948 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1146: Table 'mysql.gtid_slave_pos' doesn't exist
+2020-06-10 21:36:12 5448 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: ready for connections.
+Version: '10.1.9-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2020-06-11  3:45:47 6944 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Normal shutdown
+
+2020-06-11  3:45:48 6740 [Note] InnoDB: FTS optimize thread exiting.
+2020-06-11  3:45:48 6944 [Note] InnoDB: Starting shutdown...
+2020-06-11  3:45:49 6944 [Note] InnoDB: Shutdown completed; log sequence number 1616918
+2020-06-11  3:45:49 6944 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Shutdown complete
+
+2020-06-11  3:48:55 5364 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2020-06-11  3:48:55 5364 [Note] InnoDB: The InnoDB memory heap is disabled
+2020-06-11  3:48:55 5364 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-06-11  3:48:55 5364 [Note] InnoDB: Memory barrier is not used
+2020-06-11  3:48:55 5364 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-06-11  3:48:55 5364 [Note] InnoDB: Not using CPU crc32 instructions
+2020-06-11  3:48:55 5364 [Note] InnoDB: Initializing buffer pool, size = 8.0M
+2020-06-11  3:48:55 5364 [Note] InnoDB: Completed initialization of buffer pool
+2020-06-11  3:48:55 5364 [Note] InnoDB: Highest supported file format is Barracuda.
+2020-06-11 03:48:56 14f4  InnoDB: Operating system error number 2 in a file operation.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2020-06-11  3:48:56 5364 [ERROR] InnoDB: Could not find a valid tablespace file for 'mysql/gtid_slave_pos'. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2020-06-11  3:48:56 5364 [ERROR] InnoDB: Tablespace open failed for '"mysql"."gtid_slave_pos"', ignored.
+2020-06-11  3:48:56 5364 [Note] InnoDB: 128 rollback segment(s) are active.
+2020-06-11  3:48:56 5364 [Note] InnoDB: Waiting for purge to start
+2020-06-11  3:48:56 5364 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 1616918
+2020-06-11  3:48:56 6020 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2020-06-11  3:48:56 5364 [Note] Plugin 'FEEDBACK' is disabled.
+2020-06-11  3:48:56 5364 [Note] Server socket created on IP: '::'.
+2020-06-11  3:48:56 5364 [ERROR] Missing system table mysql.roles_mapping; please run mysql_upgrade to create it
+2020-06-11  3:48:56 5364 [ERROR] Incorrect definition of table mysql.event: expected column 'sql_mode' at position 14 to have type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','IGNORE_BAD_TABLE_OPTIONS','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH'), found type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','NOT_USED','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_A
+2020-06-11  3:48:56 5364 [ERROR] mysqld.exe: Event Scheduler: An error occurred when initializing system tables. Disabling the Event Scheduler.
+2020-06-11  3:48:56 6100 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1146: Table 'mysql.gtid_slave_pos' doesn't exist
+2020-06-11  3:48:56 5364 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: ready for connections.
+Version: '10.1.9-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2020-06-11  8:14:16 6096 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Normal shutdown
+
+2020-06-11  8:14:17 6028 [Note] InnoDB: FTS optimize thread exiting.
+2020-06-11  8:14:17 6096 [Note] InnoDB: Starting shutdown...
+2020-06-11  8:14:18 6096 [Note] InnoDB: Shutdown completed; log sequence number 1616928
+2020-06-11  8:14:18 6096 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Shutdown complete
+
+2020-06-12  0:01:06 6552 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2020-06-12  0:01:06 6552 [Note] InnoDB: The InnoDB memory heap is disabled
+2020-06-12  0:01:06 6552 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-06-12  0:01:06 6552 [Note] InnoDB: Memory barrier is not used
+2020-06-12  0:01:06 6552 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-06-12  0:01:06 6552 [Note] InnoDB: Not using CPU crc32 instructions
+2020-06-12  0:01:06 6552 [Note] InnoDB: Initializing buffer pool, size = 8.0M
+2020-06-12  0:01:06 6552 [Note] InnoDB: Completed initialization of buffer pool
+2020-06-12  0:01:06 6552 [Note] InnoDB: Highest supported file format is Barracuda.
+2020-06-12 00:01:06 1998  InnoDB: Operating system error number 2 in a file operation.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2020-06-12  0:01:06 6552 [ERROR] InnoDB: Could not find a valid tablespace file for 'mysql/gtid_slave_pos'. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2020-06-12  0:01:06 6552 [ERROR] InnoDB: Tablespace open failed for '"mysql"."gtid_slave_pos"', ignored.
+2020-06-12  0:01:06 6552 [Note] InnoDB: 128 rollback segment(s) are active.
+2020-06-12  0:01:06 6552 [Note] InnoDB: Waiting for purge to start
+2020-06-12  0:01:06 6552 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 1616928
+2020-06-12  0:01:07 7552 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2020-06-12  0:01:07 6552 [Note] Plugin 'FEEDBACK' is disabled.
+2020-06-12  0:01:07 6552 [Note] Server socket created on IP: '::'.
+2020-06-12  0:01:07 6552 [ERROR] Missing system table mysql.roles_mapping; please run mysql_upgrade to create it
+2020-06-12  0:01:07 6552 [ERROR] Incorrect definition of table mysql.event: expected column 'sql_mode' at position 14 to have type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','IGNORE_BAD_TABLE_OPTIONS','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH'), found type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','NOT_USED','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_A
+2020-06-12  0:01:07 6552 [ERROR] mysqld.exe: Event Scheduler: An error occurred when initializing system tables. Disabling the Event Scheduler.
+2020-06-12  0:01:07 7588 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1146: Table 'mysql.gtid_slave_pos' doesn't exist
+2020-06-12  0:01:07 6552 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: ready for connections.
+Version: '10.1.9-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2020-06-12  0:08:25 7584 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Normal shutdown
+
+2020-06-12  0:08:25 7560 [Note] InnoDB: FTS optimize thread exiting.
+2020-06-12  0:08:25 7584 [Note] InnoDB: Starting shutdown...
+2020-06-12  0:08:26 7584 [Note] InnoDB: Shutdown completed; log sequence number 1616938
+2020-06-12  0:08:26 7584 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Shutdown complete
+
+2020-06-12  2:56:52 6644 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2020-06-12  2:56:52 6644 [Note] InnoDB: The InnoDB memory heap is disabled
+2020-06-12  2:56:52 6644 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-06-12  2:56:52 6644 [Note] InnoDB: Memory barrier is not used
+2020-06-12  2:56:52 6644 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-06-12  2:56:52 6644 [Note] InnoDB: Not using CPU crc32 instructions
+2020-06-12  2:56:52 6644 [Note] InnoDB: Initializing buffer pool, size = 8.0M
+2020-06-12  2:56:52 6644 [Note] InnoDB: Completed initialization of buffer pool
+2020-06-12  2:56:52 6644 [Note] InnoDB: Highest supported file format is Barracuda.
+2020-06-12 02:56:53 19f4  InnoDB: Operating system error number 2 in a file operation.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2020-06-12  2:56:53 6644 [ERROR] InnoDB: Could not find a valid tablespace file for 'mysql/gtid_slave_pos'. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2020-06-12  2:56:53 6644 [ERROR] InnoDB: Tablespace open failed for '"mysql"."gtid_slave_pos"', ignored.
+2020-06-12  2:56:53 6644 [Note] InnoDB: 128 rollback segment(s) are active.
+2020-06-12  2:56:53 6644 [Note] InnoDB: Waiting for purge to start
+2020-06-12  2:56:53 6644 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 1616938
+2020-06-12  2:56:53 8008 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2020-06-12  2:56:53 6644 [Note] Plugin 'FEEDBACK' is disabled.
+2020-06-12  2:56:53 6644 [Note] Server socket created on IP: '::'.
+2020-06-12  2:56:53 6644 [ERROR] Missing system table mysql.roles_mapping; please run mysql_upgrade to create it
+2020-06-12  2:56:53 6644 [ERROR] Incorrect definition of table mysql.event: expected column 'sql_mode' at position 14 to have type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','IGNORE_BAD_TABLE_OPTIONS','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH'), found type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','NOT_USED','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_A
+2020-06-12  2:56:53 6644 [ERROR] mysqld.exe: Event Scheduler: An error occurred when initializing system tables. Disabling the Event Scheduler.
+2020-06-12  2:56:53 8160 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1146: Table 'mysql.gtid_slave_pos' doesn't exist
+2020-06-12  2:56:54 6644 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: ready for connections.
+Version: '10.1.9-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2020-06-12  7:51:27 8156 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Normal shutdown
+
+2020-06-12  7:51:28 8016 [Note] InnoDB: FTS optimize thread exiting.
+2020-06-12  7:51:28 8156 [Note] InnoDB: Starting shutdown...
+2020-06-12  7:51:30 8156 [Note] InnoDB: Shutdown completed; log sequence number 1616948
+2020-06-12  7:51:30 8156 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: Shutdown complete
+
+2020-06-12  8:17:59 6288 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2020-06-12  8:17:59 6288 [Note] InnoDB: The InnoDB memory heap is disabled
+2020-06-12  8:17:59 6288 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2020-06-12  8:17:59 6288 [Note] InnoDB: Memory barrier is not used
+2020-06-12  8:17:59 6288 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-06-12  8:17:59 6288 [Note] InnoDB: Not using CPU crc32 instructions
+2020-06-12  8:17:59 6288 [Note] InnoDB: Initializing buffer pool, size = 8.0M
+2020-06-12  8:17:59 6288 [Note] InnoDB: Completed initialization of buffer pool
+2020-06-12  8:17:59 6288 [Note] InnoDB: Highest supported file format is Barracuda.
+2020-06-12 08:18:00 1890  InnoDB: Operating system error number 2 in a file operation.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2020-06-12  8:18:00 6288 [ERROR] InnoDB: Could not find a valid tablespace file for 'mysql/gtid_slave_pos'. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2020-06-12  8:18:00 6288 [ERROR] InnoDB: Tablespace open failed for '"mysql"."gtid_slave_pos"', ignored.
+2020-06-12  8:18:00 6288 [Note] InnoDB: 128 rollback segment(s) are active.
+2020-06-12  8:18:00 6288 [Note] InnoDB: Waiting for purge to start
+2020-06-12  8:18:00 6288 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 1616948
+2020-06-12  8:18:00 6288 [Note] Plugin 'FEEDBACK' is disabled.
+2020-06-12  8:18:00 6288 [Note] Server socket created on IP: '::'.
+2020-06-12  8:18:00 7192 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2020-06-12  8:18:00 6288 [ERROR] Missing system table mysql.roles_mapping; please run mysql_upgrade to create it
+2020-06-12  8:18:00 6288 [ERROR] Incorrect definition of table mysql.event: expected column 'sql_mode' at position 14 to have type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','IGNORE_BAD_TABLE_OPTIONS','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH'), found type set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','NOT_USED','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_A
+2020-06-12  8:18:00 6288 [ERROR] mysqld.exe: Event Scheduler: An error occurred when initializing system tables. Disabling the Event Scheduler.
+2020-06-12  8:18:00 7336 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1146: Table 'mysql.gtid_slave_pos' doesn't exist
+2020-06-12  8:18:00 6288 [Note] E:\AutoSet10\Server\MySQL5\bin\mysqld.exe: ready for connections.
+Version: '10.1.9-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
