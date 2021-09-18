@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>tabmenu</title>
+    
+    <script>
+    $(document).ready(function(){
+      $(".panel:not(:first)").hide()
+        /*첫번째를 제외한 나머지 panel을 숨김 */
+        $(".tab li a").click(function(){
+            $(".panel").hide()
+        var link = $(this).attr("href");
+        $(link).show()
+     /*클릭 한 a태그의 경로를 가지고 옴 */       
+        });/*click end*/
+    });/*jquery end*/
+    </script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .tab_area {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .tab {
+        height: 40px;
+    }
+    
+    .tab li{
+        float:left;
+    }
+    
+    .tab li a{
+        line-height: 40px;
+        color:#fff;
+        background-color:#333;
+        display: block;/* 요소를 앞뒤로 줄바꿈할수있게 만듬
+        해당 영역의 고정 영역 , 자리를 차지함 */
+        padding: 0 20px;
+    }
+    
+    .panel{
+        height:200px;
+        background-color:#f1f1f1;
+        padding:20px;
+    }
+    
+</style>
+
+<body>
+    <div class="tab_area">
+        <ul class="tab">
+            <li><a href="#panel1">tab1</a></li>
+            <li><a href="#panel2">tab2</a></li>
+            <li><a href="#panel3">tab3</a></li>
+        </ul><!--tab_area ul-->
+        <div class="panel" id="panel1">panel1</div>
+        <div class="panel" id="panel2">panel2</div>
+        <div class="panel" id="panel3">panel3</div>
+    </div>
+    <!--tab_area-->
+</body>
+
+</html>
