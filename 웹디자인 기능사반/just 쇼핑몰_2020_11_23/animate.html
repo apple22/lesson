@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>animate</title>
+</head>
+<script>
+    $(document).keydown(function(event) {
+        if (event.keyCode == '37') {
+            $("#box").animate({
+                left: -200
+            });
+        } else if (event.keyCode == '39') {
+            $("#box").animate({
+                left: 300
+        });
+
+        }
+
+    });
+</script>
+<style>
+    #box {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: pink;
+        position: relative;
+    }
+</style>
+
+<body>
+    <div id="box">
+
+
+    </div>
+    <!--box-->
+</body>
+
+</html>

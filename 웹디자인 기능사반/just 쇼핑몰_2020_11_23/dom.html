@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!--제이쿼리를 사용하기 위한 라이브러리 -->
+    <title>dom</title>
+</head>
+<!--$:제이쿼리(함수)를 사용하기 위한 객체 -->
+<script type="text/javascript">
+    /*debugging
+    1.선택자가 잘못되어 있는지 확인
+    2. 제이쿼리 라이브러리 사용 확인 
+    3.});, 및 인용부호가 제대로 되어있는지 확인
+    */
+    $(document).ready(function() {
+        $("#toggle").hide()
+        /*dom(document object model)
+    : 문서 객체 모델 ,html에 접근하기 위한 인터페이스*/
+        $("#click h1").click(function() {
+            alert("click");
+        }); /*click end*/
+
+        $("#mouseover h1").mouseover(function() {
+            alert("mouseover");
+        }); /*mouseover end*/
+
+        $("#mouseenter h1").mouseenter(function() {
+            alert("mouseenter");
+        }); /*mouseenter end*/
+
+        $("#toggle2").click(function() {
+            $("#toggle").toggle('show');
+            /*toggle : 선택한 요소가 보이면 보이지 않게 , 보이면 보이지 않게 하는 속성*/
+        }); /*toggle click end*/
+        $("#toggle3 h1").mouseover(function(){
+              $("#toggle").toggle('show');
+        });/*toggle mouseover end*/
+        
+        $("#toggle4").click(function(){
+           $("#toggle4").css("background-color","blue");
+        });
+    }); /*jquery end*/
+</script>
+<style>
+    #click,
+    #mouseover,
+    #mouseenter,
+    #toggle,
+    #toggle2,
+    #toggle3,
+    #toggle4{
+        width: 300px;
+        /*크기*/
+        height: 100px;
+        /*길이*/
+        background-color: red;
+        /*색상*/
+    }
+</style>
+
+<body>
+    <div id="click">
+        <h1>Click</h1>
+    </div>
+    <!--click-->
+
+    <div id="mouseover">
+        <h1>mouserover</h1>
+    </div>
+    <!--mouseover-->
+
+    <div id="mouseenter">
+        <h1>mouserenter</h1>
+    </div>
+    <!--mouseenter-->
+
+    <div id="toggle">
+        <h1>toggle</h1>
+    </div>
+    <!--toggle-->
+
+    <div id="toggle2">
+        <h1>toggle2</h1>
+    </div>
+    <!--toggle2-->
+
+    <div id="toggle3">
+        <h1>toggle3</h1>
+    </div><!--toggle3-->
+    
+      <div id="toggle4">
+        <h1>toggle4</h1>
+    </div>
+    <!--toggle4-->
+    
+</body>
+
+</html>

@@ -6,7 +6,22 @@
     euc-kr , Ansi , utf-8 bom-->
     <link rel="stylesheet" href="./css/main.css">
     <title>main</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 </head>
+<script>
+    $(document).ready(function() {
+        $(".sub").hide()
+
+        $("#drop ul li a").mouseover(function() {
+            $(".sub").slideDown(300);
+        });
+
+        $(".c").mouseout(function() {
+            $(".sub").slideUp(300);
+        });
+    });
+</script>
 
 <body>
     <div class="wrapper">
@@ -31,7 +46,7 @@
 
                 </div>
 
-                <div class="sub">
+                <div class="sub c">
 
                     <nav>
                         <li>1</li>
