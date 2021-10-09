@@ -4,12 +4,15 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./css/main.css">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="./js/slider.js"></script>
+<link rel="stylesheet" media="screen and (min-width:1920px)" href="./css/main_1920.css">
+<link rel="stylesheet" media="screen and (max-width:1440px)" href="./css/main_1440.css">
+<link rel='stylesheet' href="./css/slider.css">
 <link rel="stylesheet" href="./css/reset.css">
 <title>main</title>
 </head>
 <body>
-<div id="mask"></div><!--mask-->
 <header>
 <div id="menu"><img src="./img/reorder_white_24dp.svg">MENU</div><!--menu-->
 <div id="subject">하나투어</div><!--subject-->
@@ -23,11 +26,23 @@
 <div class="wrapper">
 <div class="container">
 <div id="container_left">
-<div id="subject">Jejo-do</div><!--subject-->
-<div id="mini_message"></div><!--mini_message-->
-<div id="view_more"></div><!--view_more-->
+<div id="subject">Jeju-do</div><!--subject-->
+<div id="mini_message">전국민 힐링 프로젝트 제주도 <br>
+#힐링 #국내여행 #호텔렌터카</div><!--mini_message-->
+<div id="view_more">View more →</div><!--view_more-->
 <div id="slide_button"></div><!--slide_button-->
 </div><!--container_left--->
+<div id="container_right">
+<div class="slider">
+<ul class="img_container">
+<li class="box1"><img src="./img/back_01.png"></li>
+<li class="box2"><img src="./img/back_01.png"></li>
+<li class="box3"><img src="./img/back_01.png"></li>
+<li class="box4"><img src="./img/back_01.png"></li>
+<li class="box5"><img src="./img/back_01.png"></li>
+</ul><!--img_container-->
+</div><!--slider-->
+</div><!--container_right-->
 </div><!--container-->
 </div><!--wrapper-->
 </body>

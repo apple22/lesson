@@ -1,0 +1,180 @@
+
+body{
+font-size: 16px;
+
+}
+
+.wrapper{
+width:100%;
+height:100vh;
+background-image:url('../img/back.png');
+background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+overflow-x:hidden;
+align-items: center;
+flex-direction: column;
+
+}
+
+#icon ul{
+width:100%;
+height:100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+
+
+
+
+#container_left{
+float:left;
+width:100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+/*#mask{
+position: absolute;
+width:100%;
+height:100vh;
+top:0;
+background-color:rgba(0, 0, 0, 0.5);
+}*/
+
+.bx-wrapper{
+border:unset!important;
+background: none!important;
+position: relative;
+-webkit-box-shadow: 0 0 0px #ccc!important;
+}
+
+.bx-wrapper .bx-next{
+left:10px!important;
+}
+
+.bx-wrapper .bx-prev{
+right:10px!important;
+left:unset!important;
+}
+
+.container_right{
+    width:50%;
+    height:100%;
+    float:right;
+    background:red;
+}
+
+
+.bx-controls.bx-has-controls-direction{
+position: absolute;
+left: 40px;
+bottom: 0;  
+}
+#menu , #icon{
+width:8%;
+height:100%;
+display: flex;
+align-items: center;
+color:white;
+font-weight: 900;
+justify-content: space-between;
+}
+
+header #subject{
+width: 15%;
+height: 100%;
+color: white;
+font-weight: 900;
+font-size: 2.25em;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+#container_left #subject{
+width:100%;
+height:147px;
+font-size: 8.750em;
+font-weight: 900;
+color:white;
+margin-top:124px;
+}
+
+#slide_button{
+width:14.79289940828%;
+margin-top:67px;
+height:33px;
+}
+
+#mini_message{
+width:100%;
+height:47px;
+margin-top:10px;
+line-height:47px;
+font-weight:900;
+color:white;
+margin-top:58px;
+}
+
+#view_more{
+width:100%;
+height:23px;
+margin-top:65px;
+line-height: 23px;
+font-weight:900;
+color:white;
+}
+
+
+.inner{
+  width: 77%;
+  height: 621px;
+  display:flex;
+  justify-self: space-around;
+  margin: auto;
+}
+
+header{
+width:77%;
+margin:auto;
+position: fixed;
+z-index: 99;
+left:11%;
+top:63px;
+height:45px;
+display: flex!important;
+justify-content: space-between;
+}
+
+.wrapper .container{
+width:50%;
+height:621px;
+float:left;
+}
+
+.container_b{
+    float: right;
+    width: 50%;
+    margin-top: 57px;
+    height: 100%;
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

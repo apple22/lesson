@@ -1,0 +1,12 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass src/sass:2021-10-02_guide/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

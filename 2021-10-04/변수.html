@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>변수</title>
+    <!--
+    && : 2개 이상 조건을 만족시켜야 true
+    || : 하나가참이면 true
+    -->
+    <script>
+        var kor = Number(prompt("국어점수", "0"));
+        var eng = Number(prompt("영어점수", "0"));
+        var mt = Number(prompt("수학점수", "0"));
+        var result = (kor + eng + mt) / 3;
+
+        if (result >= 0 && result < 60) {
+            alert("가");
+        } else if (result > 60 && result < 70) {
+            alert("양");
+        } else if (result > 70 && result < 80) {
+            alert("미");
+        } else if (result > 80 && result < 90) {
+            alert("우");
+        } else {
+            alert("수");
+        }
+    </script>
+
+</head>
+
+<script>
+
+</script>
+
+<body>
+
+</body></html>
