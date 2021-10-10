@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 시퀀스</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!--image sequence animation :영상 프레임과 같은 효과를 적용하기위해서 연속적인 이미지로 분할한후 이미지 표시를 제어해서 마치 한화면이 움직이는 것처럼 보이게하는효과 -->
+
+</head>
+<script>
+    $(document).ready(function() {
+
+
+
+        var picturecount = $('#container img').length;
+        /*배열의 총 갯수*/
+        var scrollResolution = 200;
+        /*50이라는 숫자는 위치*/
+
+
+        function animateHorse() {
+            var currentScrollPosition = window.pageYOffset;
+            /*문서가 수직으로 얼마나 스크롤 했는지 픽셀단위로 반환*/
+            var imageIndex = Math.round(currentScrollPosition / scrollResolution);
+            /*Math.round():함수의 정수값을 반환 -> 반올림 */
+            /*현재 스크롤 값이 이미지 총 갯수보다 크거나 같으면*/
+
+            if (imageIndex >= picturecount) {
+                imageIndex = picturecount - 1;
+                //마지막 이미지 선택
+            }
+
+            $("#container img").hide();
+            $("#container img").eq(imageIndex).show();
+            /*필터 셀렉터 : 선택한 요소중에서 전달받은 인덱스에 해당하는 요소를 선택함*/
+        }
+
+
+        $(window).scroll(function() {
+            var scrollValue = $(document).scrollTop();
+            console.log(scrollValue);
+
+            if (scrollValue > 200) {
+
+                $(window).bind('scroll', function() {
+                    animateHorse();
+                });
+
+            }
+
+        });
+
+
+        /*bind:함수와 객체를 하나로 묶는 역할을 한다
+        jquery로 선택한 dom객체에 이벤트 핸들러를 등록하는 매서드
+        예시 -> 출석 등록
+        */
+    });
+
+</script>
+<style>
+    #container {
+        position: relative;
+        top: 0;
+        clear: both;
+        margin: auto;
+        width: 70%;
+    }
+
+
+    .animated {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+    }
+
+    #up_container {
+        width: 100%;
+        height: 1000px;
+        clear: both;
+        position: relative;
+        background: red;
+    }
+
+</style>
+
+<body>
+    <div id="up_container"></div>
+    <!--up_container-->
+    <div style="position: relative;width:100%;height:1000px;background:black;">
+        <div id="container">
+            <img src="./img/heavyamrs/0_0.png">
+            <img src="./img/heavyamrs/0_1.png" class="animated">
+            <img src="./img/heavyamrs/0_2.png" class="animated">
+            <img src="./img/heavyamrs/0_3.png" class="animated">
+            <img src="./img/heavyamrs/0_4.png" class="animated">
+            <img src="./img/heavyamrs/0_5.png" class="animated">
+            <img src="./img/heavyamrs/0_6.png" class="animated">
+            <img src="./img/heavyamrs/0_7.png" class="animated">
+            <img src="./img/heavyamrs/0_8.png" class="animated">
+            <img src="./img/heavyamrs/0_9.png" class="animated">
+        </div>
+        <!--container-->
+
+        <div style="display:block;height: 3000px;width: 100%">
+
+        </div>
+    </div>
+</body>
+
+</html>
