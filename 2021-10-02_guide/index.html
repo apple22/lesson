@@ -4,21 +4,12 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="./css/fade_slider.css">
 <link rel="stylesheet" media="screen and (min-width: 1920px)" href="./css/main_1920.css" />
 <link rel="stylesheet" media="screen and (max-width: 1440px)" href="./sass-project/main_1440.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="./js/fade_slider.js"></script>
-<script>
-    $(document).ready(function(){
-      $('.slidera').bxSlider({
-         pager:false
-      });
-    });
-  </script>
 <title>main</title>
 </head>
 <body>
@@ -36,26 +27,17 @@
 <div class="wrapper">
 <div class="inner">
 <div class="container">
-<div class="slidera">
 <div class="a">
 <div id="container_left">
 <div id="subject">Jejo-do</div>
 <div id="mini_message">전국민 힐링 프로젝트 제주도 <br>#힐링 #국내여행 #호1텔렌터카 역대급 할일</div>
 <div id="view_more">View more →</div>
-<div id="slide_button">
+<div style="position:relative;" id="slide_button">
+    <li class="next"><img src="./img/arrow_forward_ios_black_24dp.svg"></li>
+    <li class="prev"><img src="./img/arrow_back_ios_black_24dp.svg"></li>
 </div><!--slide_button-->
 </div><!--container--left-->
 </div><!--a--->
-<div class="b">
-<div id="container_left">
-<div id="subject">Jejo-do</div>
-<div id="mini_message">전국민 힐링 프로젝트 제주도 <br>#힐링 #국내여행 #호1텔렌터카 역대급 할일</div>
-<div id="view_more">View more →</div>
-<div id="slide_button">
-</div><!--slide_button-->
-</div><!--container--left-->
-</div><!--b--->
-</div><!--slider-->
 </div><!--container-->
 <div class="container_b">
 <div class="slider">
@@ -67,17 +49,16 @@
         <li class="box5" id="f"><img src="./img/back_01.png" alt=""></li>
     </ul>
     
-   <!-- <ul class="paging">
-    	<li><button data-n="1" class="btn1 active"></button></li>
+<ul class="paging">
+    	  <li><button data-n="1"  class="btn1 active"></button></li>
         <li><button data-n="2" class="btn2"></button></li>
         <li><button data-n="3" class="btn3"></button></li>
         <li><button data-n="4" class="btn4"></button></li>
         <li><button data-n="5" class="btn5"></button></li>
-    </ul>-->
+  </ul>
 </div><!--slider-->
 </div><!--container_b-->
 </div><!--inner-->
-
 </div><!--wrapper-->
 </body>
 </html>
