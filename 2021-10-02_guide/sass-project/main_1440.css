@@ -1,26 +1,60 @@
 .scale {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.display-align, #icon ul, #menu, #icon, header #subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-align_column, .wrapper, #container_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.display-align_sp, .wrapper .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.background-setup, #a, #b, #c, #e, #f {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-image, .wrapper {
+  background-image: url("../img/back.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/back.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
   overflow-x: hidden;
-  align-items: center;
-  flex-direction: column;
 }
+
 .wrapper .inner {
   width: 77%;
   height: 621px;
-  display: flex;
-  justify-self: space-around;
   margin: auto;
 }
+
 .wrapper .container {
   width: 50%;
   height: 621px;
@@ -30,9 +64,8 @@
 #icon ul {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container_b {
@@ -42,55 +75,26 @@
   height: 100%;
 }
 
-/*#mask{
-position: absolute;
-width:100%;
-height:100vh;
-top:0;
-background-color:rgba(0, 0, 0, 0.5);
-}*/
-.bx-wrapper {
-  border: unset !important;
-  background: none !important;
-  position: relative;
-  -webkit-box-shadow: 0 0 0px #ccc !important;
-}
-.bx-wrapper .bx-next {
-  left: 10px !important;
-}
-.bx-wrapper .bx-prev {
-  right: 10px !important;
-  left: unset !important;
-}
-
-.bx-controls.bx-has-controls-direction {
-  position: absolute;
-  left: 40px;
-  bottom: 0;
-}
-
 .container_right {
   width: 50%;
   height: 100%;
   float: right;
-  background: red;
 }
 
 #container_left {
   float: left;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
+
 #container_left #subject {
   width: 100%;
   height: 147px;
-  font-size: 8.75em;
+  font-size: 8.750em;
   font-weight: 900;
   color: white;
   margin-top: 124px;
 }
+
 #container_left #mini_message {
   width: 100%;
   height: 47px;
@@ -100,6 +104,7 @@ background-color:rgba(0, 0, 0, 0.5);
   color: white;
   margin-top: 58px;
 }
+
 #container_left #view_more {
   width: 100%;
   height: 23px;
@@ -108,20 +113,21 @@ background-color:rgba(0, 0, 0, 0.5);
   font-weight: 900;
   color: white;
 }
+
 #container_left #slide_button {
-  width: 14.7928994083%;
-  margin-top: 67px;
+  width: 14.79289940828%;
   height: 33px;
+  position: relative;
 }
 
 #menu, #icon {
   width: 8%;
   height: 100%;
-  display: flex;
-  align-items: center;
   color: white;
   font-weight: 900;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header {
@@ -132,18 +138,21 @@ header {
   left: 11%;
   top: 63px;
   height: 45px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 header #subject {
   width: 15%;
   height: 100%;
   color: white;
   font-weight: 900;
   font-size: 2.25em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-
 /*# sourceMappingURL=main_1440.css.map */

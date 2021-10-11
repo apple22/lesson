@@ -1,89 +1,67 @@
 $wrap-width:100%;
 $wrap-height:100%;
-$bg:red;
-
-
-
 .scale{
   transform: scale(1.5);
 }
+.display-align{
+  display: flex;
+  align-items: center;
+}
+.display-align_column{
+  display:flex;
+  flex-direction: column;
+}
+.display-align_sp{
+  display: flex;
+  justify-content: space-around;
+}
 
+.background-image{
+  background-image: url('../img/back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
   .wrapper {
     width: $wrap-width;
     height: 100vh;
-    background-image: url('../img/back.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
+    @extend .background-image;
+    @extend .display-align_column;
     overflow-x: hidden;
-    align-items: center;
-    flex-direction: column;
-
-     
   .inner {
     width: 77%;
     height: 621px;
-    display: flex;
-    justify-self: space-around;
+    @extend .display-align_sp;
     margin: auto;
   }
-
    .container {
       width: 50%;
       height: 621px;
       float: left;
     };
-
-
   }
-  
-
   #icon ul {
     width:  $wrap-width;
     height:  $wrap-height;
-    display: flex;
-    align-items: center;
+    @extend .display-align;
     justify-content: space-around;
   }
-
- 
   .container_b {
     float: right;
     width: 50%;
     margin-top: 57px;
     height: $wrap-height;
   }
-  
- 
-  
-  /*#mask{
-  position: absolute;
-  width:100%;
-  height:100vh;
-  top:0;
-  background-color:rgba(0, 0, 0, 0.5);
-  }*/
-  
-  
-  
-  
   .container_right {
     width: 50%;
     height: $wrap-height;
     float: right;
-    background: red;
   }
-
   #container_left {
     float: left;
     width:  $wrap-width;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @extend .display-align_column;
 
- 
-  
   #subject {
     width: $wrap-width;
     height: 147px;
@@ -111,32 +89,21 @@ $bg:red;
     font-weight: 900;
     color: white;
   };
-
-    
   #slide_button {
     width: 14.79289940828%;
     height: 33px;
     position: relative;
   };
-  
-  
 }
-  
- 
+
   #menu, #icon {
     width: 8%;
     height: $wrap-height;
-    display: flex;
-    align-items: center;
+    @extend .display-align;
     color: white;
     font-weight: 900;
     justify-content: space-between;
   }
-
-
-
-
-  
   header {
     width: 77%;
     margin: auto;
@@ -148,20 +115,19 @@ $bg:red;
     display: flex !important;
     justify-content: space-between;
 
-  
     #subject {
       width: 15%;
       height: $wrap-height;
       color: white;
       font-weight: 900;
       font-size: 2.25em;
-      display: flex;
+      @extend .display-align;
       justify-content: space-around;
-      align-items: center;
     };
-    
+  }
 
+  #a,#b,#c,#e,#f{
+    @extend .background-setup;
   }
   
 
- 
