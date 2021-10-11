@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*초기화 시키고 시작하기*/
+    background-image: #ffffff;
+    color: #222328;
+    list-style: none;
+}
+
+.wrapper {
+    overflow-y: hidden;
+}
+
+.bx-wrapper {
+    height: 100%;
+    border: unset !important;
+
+}
+
+.b {
+    width: 30% !important;
+    visibility: hidden;
+}
+
+.c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    Z-INDEX: 99;
+    background: white;
+    position: relative;
+    top: -25px;
+    z-index: 99;
+    background: white;
+}
+
+.c nav {
+    width: 24%;
+    height: 100%;
+    /*background: red;*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+.c nav li a:hover {
+    background: black;
+    color: white;
+}
+
+.c nav li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.c nav li {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*background:blue;*/
+
+}
+
+.sub {
+    width: 50%;
+    height: 150px;
+    border: 1px solid black;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+
+.c nav li a:hover {
+    background: black;
+    color: white;
+}
+
+.c nav li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#drop ul li a:hover {
+    background: black;
+    color: white;
+}
+
+#drop ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#invisible {
+    width: 400px;
+    height: 100%;
+    float: left;
+}
+
+#drop ul {
+    width: 500px;
+    height: 50%;
+    margin: auto;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+#drop ul li {
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.wrapper {
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    border: 1px solid black;
+
+}
+
+.wrapper header {
+    width: 100%;
+    height: 100px;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+
+
+}
+
+#logo {
+    width: 200px;
+    height: 100px;
+    /*background: red;*/
+    float: left;
+    box-sizing: border-box;
+    border-right: 2px dotted;
+}
+
+.layerpop {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+    background: white;
+    top: 25%;
+    left: 35%;
+    z-index: 99;
+}
+
+#close {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#drop {
+    width: 1000px;
+    height: 100%;
+    /*background: yellow;*/
+    float: right;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.nav_a {
+    width: 100%;
+    height: 300px;
+    background-image: url('http://t1.daumcdn.net/section/oc/4c268faa475140f6beb4f096df1c71fe');
+    background-size: cover;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+}
+
+.nav_b {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://i0.holapet.com/t1.daumcdn.net/liveboard/holapet/e4af629b0f8a45efa29ce2892a5662bb.jpg?resize=640,480');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.article {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.notice {
+    display: flex;
+    text-align: center;
+}
+
+.notice li {
+    height: 100%;
+    width: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#gallery {
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 2px dotted;
+    float: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.notice {
+    width: 80% !important;
+    height: 50px !important;
+    border: 1px solid black !important;
+    margin: auto !important;
+    float: none !important;
+}
+
+.gallery_area li img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery_area {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.notice_list {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.notice_list li {
+    text-align: center;
+    border: 1px solid black;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+#banner {
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    border-right: 2px dotted;
+}
+
+#shortcut {
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+#copyright {
+    width: 800px;
+    height: 100%;
+    border-right: 3px dotted black;
+    box-sizing: border-box;
+    float: left;
+}
+
+#sns {
+    width: 200px;
+    height: 100%;
+    box-sizing: border-box;
+    float: right;
+
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+$("#imgID").attr("src", "/data/img2.png");
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 인코딩: 웹페이지 언어설정
+    euc-kr, Ansi, utf-8 bom-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--메인 css에 index html을 연결해준거-->
+    <title>main</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+</head>
+
+<script>
+    $(document).ready(function() {
+
+        var value = $("#value").val();
+        $(".layerpop").hide()
+
+        $(".notice_list li").click(function() {
+            $(".layerpop").show()
+        });
+
+
+        $("#close").click(function() {
+            $(".layerpop").hide()
+        });
+
+        $(".notice_list li:nth-child(1)").click(function() {
+            $("#value").val(1);
+            console.log(value);
+            $(".layerpop p").text("첫번째 공지사항");
+        });
+
+        $(".notice_list li:nth-child(2)").click(function() {
+            $("#value").val("2");
+            console.log(value);
+            $(".layerpop p").text("두번째 공지사항");
+        });
+
+        $(".notice_list li:nth-child(3)").click(function() {
+            $("#value").val("3");
+            $(".layerpop p").text("세번째 공지사항");
+        });
+
+
+
+
+
+
+
+        $('.slider').bxSlider({
+            auto: true,
+            speed: 3000,
+            mode: 'vertical',
+            pager: false,
+            controls: false
+        });
+
+        $(".sub").hide();
+        $(".gallery_area").hide();
+
+        $("ul.notice li:nth-child(1)").click(function() {
+            $("ul.notice_list").show();
+            $(".gallery_area").hide();
+
+        });
+
+
+        $("ul.notice li:nth-child(2)").click(function() {
+            $("ul.notice_list").hide();
+            $(".gallery_area").show();
+
+        });
+
+
+
+
+        $("#drop ul li a").mouseover(function() {
+            $(".sub").slideDown(
+                300);
+        });
+
+        $(".c").mouseleave(function() {
+            $(".sub.c").mouseleave(function() {
+                $(".sub").slideUp(300);
+            });
+        });
+    });
+</script>
+
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div id="logo"></div>
+            <!--logo-->
+
+            <div id="drop">
+                <div id="invisible"></div>
+                <!--invisible(ul을 오른쪽으로 밀어주는 보이지않는 역할)-->
+                <ul>
+                    <li><a>MENU-1</a></li>
+                    <li><a>MENU-2</a></li>
+                    <li><a>MENU-3</a></li>
+                    <li><a>MENU-4</a></li>
+                </ul>
+                <div class="sub b">
+                </div>
+
+                <div class="sub c">
+                    <nav>
+                        <li><a>SubMenu-1</a></li>
+
+                        <li><a>SubMenu-2</a></li>
+                        <li><a>SubMenu-3</a></li>
+                        <li><a>SubMenu-4</a></li>
+
+
+
+                    </nav>
+                    <nav>
+                        <li><a>SubMenu-1</a></li>
+                        <li><a>SubMenu-2</a></li>
+                        <li><a>SubMenu-3</a></li>
+                        <li><a>SubMenu-4</a></li>
+                    </nav>
+
+                    <nav>
+                        <li><a>SubMenu-1</a></li>
+                        <li><a>SubMenu-2</a></li>
+                        <li><a>SubMenu-3</a></li>
+                        <li><a>SubMenu-4</a></li>
+                    </nav>
+
+                    <nav>
+                        <li><a>SubMenu-1</a></li>
+                        <li><a>SubMenu-2</a></li>
+                        <li><a>SubMenu-3</a></li>
+                        <li><a>SubMenu-4</a></li>
+                    </nav>
+                </div>
+            </div>
+            <!--drop 드롭박스 밑에 깔려있는, 로고박스 옆에 있는 박스-->
+        </header>
+        <!--header-->
+
+        <div class="layerpop">
+            <button id="close">X</button>
+
+            <p>첫번째 공지사항</p>
+        </div>
+        <!--layerpop-->
+
+        <div class="slide">
+            <div class="slider">
+                <div>
+                    <nav class="nav_a"></nav>
+                </div>
+                <div>
+                    <nav class="nav_b"></nav>
+                </div>
+            </div>
+        </div>
+
+        <!--slide-->
+        <div class="article">
+            <div id="gallery">
+                <ul class="notice">
+                    <li>공지사항</li>
+                    <li>갤러리</li>
+                </ul>
+
+                <ul class="notice_list">
+                    <li>공지사항 글 첫번째</li>
+                    <li>공지사항 글 두번째</li>
+                    <li>공지사항 글 세번째</li>
+                </ul>
+
+
+                <ul class="gallery_area">
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntYJ6ppQjQy6-7KZFxzqvtK__MFusfRje9EIJv-t-WXYx9aK60t1C8nO8qSUlmvP3suE&usqp=CAU"></li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntYJ6ppQjQy6-7KZFxzqvtK__MFusfRje9EIJv-t-WXYx9aK60t1C8nO8qSUlmvP3suE&usqp=CAU"></li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntYJ6ppQjQy6-7KZFxzqvtK__MFusfRje9EIJv-t-WXYx9aK60t1C8nO8qSUlmvP3suE&usqp=CAU"></li>
+                </ul>
+
+
+
+
+
+            </div>
+            <!--gallery-->
+
+
+
+            <div id="banner"></div>
+            <!--banner-->
+
+            <div id="shortcut"></div>
+            <!--shortcut-->
+
+        </div>
+        <!--article-->
+
+        <footer>
+            <div id="logo">
+
+            </div>
+            <!--logo-->
+
+            <div id="copyright">
+
+            </div>
+            <!--copyright-->
+            <div id="sns">
+
+            </div>
+            <!--sns-->
+        </footer>
+        <!--footer-->
+    </div>
+    <!--wrapper-->
+</body></html>

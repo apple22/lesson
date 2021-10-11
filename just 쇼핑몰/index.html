@@ -10,27 +10,20 @@
     <title>main</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
-
 <script>
     $(document).ready(function() {
                 $(".sub").hide();
-
                 $("#drop ul li a").mouseover(function() {
                     $(".sub").slideDown(
                         300);
                 });
-
-
                 $(".c").mouseleave(function() {
-
                     $(".sub.c").mouseleave(function() {
-
                         $(".sub").slideUp(
                             300);
                     });
                 });
 </script>
-
 
 <body>
     <div class="wrapper">
@@ -49,17 +42,18 @@
                 </ul>
                 <div class="sub b">
                 </div>
-
                 <div class="sub c">
                     <nav>
                         <li><a>SubMenu-1</a></li>
-
                         <li><a>SubMenu-2</a></li>
                         <li><a>SubMenu-3</a></li>
                         <li><a>SubMenu-4</a></li>
-
-
-
+                    </nav>
+                    <nav>
+                        <li><a>SubMenu-1</a></li>
+                        <li><a>SubMenu-2</a></li>
+                        <li><a>SubMenu-3</a></li>
+                        <li><a>SubMenu-4</a></li>
                     </nav>
                     <nav>
                         <li><a>SubMenu-1</a></li>
@@ -72,44 +66,28 @@
                         <li><a>SubMenu-2</a></li>
                         <li><a>SubMenu-3</a></li>
                         <li><a>SubMenu-4</a></li>
-                    </nav>
-
-                    <nav>
-
-                        <li><a>SubMenu-1</a></li>
-                        <li><a>SubMenu-2</a></li>
-                        <li><a>SubMenu-3</a></li>
-                        <li><a>SubMenu-4</a></li>
-
-
                     </nav>
                 </div>
             </div>
             <!--drop 드롭박스 밑에 깔려있는, 로고박스 옆에 있는 박스-->
         </header>
         <!--header-->
-
         <div class="slide"></div>
         <!--slide-->
         <div class="article">
             <div id="gallery"></div>
             <!--gallery-->
-
             <div id="banner"></div>
             <!--banner-->
-
             <div id="shortcut"></div>
             <!--shortcut-->
-
         </div>
         <!--article-->
-
         <footer>
             <div id="logo">
 
             </div>
             <!--logo-->
-
             <div id="copyright">
 
             </div>
