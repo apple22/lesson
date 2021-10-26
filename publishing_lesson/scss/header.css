@@ -1,7 +1,3 @@
-body {
-  overflow-y: hidden;
-}
-
 .align, .header .inner {
   display: flex;
   justify-content: space-around;
