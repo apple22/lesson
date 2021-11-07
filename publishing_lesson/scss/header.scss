@@ -4,9 +4,31 @@
     align-items: center;
 }
 
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.anav {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+}
+
+.aspan {
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    line-height: 1.5;
+    font-size: 36px;
+}
+
 .header {
     width: 100%;
-    height: 2383px;
+    height: 625px;
 
     .inner {
         width: 1280px;
@@ -20,15 +42,57 @@
         .left {
             width: 384px;
             height: 607px;
-            background: yellow;
+            @extend .background;
+            background-image: url('../img/port_01.png');
+            border-radius: 20px;
+
         }
 
         /*left*/
 
         .right {
             width: 569px;
-            height: 572px;
-            background: green;
+            height: 286px;
+            @extend .align;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            #a {
+                width: 100%;
+                height: 45%;
+
+                nav {
+                    @extend .anav;
+
+                    span {
+                        @extend .aspan;
+                    }
+                }
+
+            }
+
+            #b {
+                width: 100%;
+                height: 45%;
+
+
+                nav {
+                    @extend .anav;
+                    width: 48%;
+
+
+                    span {
+                        @extend .aspan;
+                        font-size: 14px;
+                        font-weight: 400px;
+                        color: gray;
+                        line-height: normal;
+                    }
+                }
+
+            }
+
         }
 
         /*right*/
