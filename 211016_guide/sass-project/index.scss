@@ -1,0 +1,248 @@
+$wrap-width:100%;
+$wrap-height:100%;
+$background:red;
+
+body {
+    font-size: 16px;
+}
+
+.title_a {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.wrapper {
+    width: calc(100% - 43%);
+    height: 2300px;
+    margin: auto;
+    border: 1px solid black;
+
+
+    #client_profile {
+        width: $wrap-width;
+        height: 200px;
+
+        #subject {
+            width: calc(100% - 68%);
+            height: $wrap-height;
+            margin: auto;
+            font-size: 2em;
+            @extend .align;
+            color: #954E0E;
+        }
+    }
+
+    /*client_profile*/
+    #surbay {
+        width: $wrap-width;
+        height: 2000px;
+
+
+        #surbay_inform {
+            width: $wrap-width;
+            height: 230px;
+
+
+
+            #surbay_inform_a {
+                width: $wrap-width;
+                height: 73px;
+                background-color: white;
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 35px;
+
+
+
+                #surbay_inform_a_bar {
+                    width: 1%;
+                    height: 73px;
+                    background-color: #954E0E;
+                    border: 1px solid 954E0E;
+
+                }
+
+                #surbay_inform_a_text {
+                    width: 100%;
+                    height: 73px;
+                    background-color: #ffffff;
+                    margin-left: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .title {
+                        @extend .title_a;
+                    }
+
+                    /*title*/
+
+                    .remain {
+                        height: 40px;
+                        margin-left: 10px;
+                        font-size: 15px;
+                        color: #954E0E;
+                        line-height: 15px;
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    /*remain*/
+
+                }
+
+                /*surbay_inform_a_text*/
+
+
+            }
+
+            /*inform_a*/
+
+        }
+
+        #surbay_inform_b {
+            @extend #surbay_inform_a;
+            flex-wrap: wrap;
+            height: 135px !important;
+
+            p {
+                height: 25%;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .title {
+                @extend .title_a;
+                font-size: 16px;
+                font-weight: 400;
+                margin-left: auto;
+                float: left;
+                width: 100%;
+            }
+
+            .guide {
+
+                @extend .title_a;
+                font-size: 16px;
+                font-weight: 400;
+                margin-left: auto;
+                float: left;
+                width: 100%;
+            }
+
+
+            p {
+                @extend .align;
+                justify-content: flex-start;
+                height: 25%;
+            }
+
+            .e_mail {
+                font-size: 16px;
+                color: brown;
+                width: $wrap-width;
+                @extend .align;
+                justify-content: flex-start;
+            }
+
+            .lesson_r {
+                @extend .guide;
+                font-weight: 900;
+            }
+
+
+        }
+
+        /*surbay_inform_b*/
+
+        .surbay_inform_c {
+            width: 100%;
+            height: 555px;
+
+            ul {
+                width: 100%;
+                height: 100%;
+                @extend .align;
+                flex-direction: column;
+
+                .three {
+
+
+                    input {
+                        width: 20% !important;
+                        float: left;
+                        margin-right: 10px;
+                        box-sizing: border-box;
+                    }
+
+                }
+
+                li {
+                    width: 100%;
+                    height: 18%;
+                    text-align: center;
+                    @extend .align;
+                    flex-direction: column;
+                }
+
+                li input {
+                    height: 55px;
+                    border: 1px solid gray;
+                }
+
+                li span {
+                    height: 50%;
+                    width: 100%;
+                    text-align: left;
+                    @extend .align;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    b {
+                        fonts-size: 20px;
+                        display: block;
+                        margin-right: 3px;
+                    }
+
+                    sub {
+                        font-size: 13px;
+                        color: gray;
+                    }
+                }
+
+                li input::placeholder {
+                    color: gray;
+                    font-size: 18px;
+                }
+
+                li:nth-child(1) input {
+                    width: 98%;
+                    padding-left: 10px;
+                }
+
+                /*surbay_inform_c li*/
+            }
+
+            /*surbay_inform_c ul*/
+        }
+
+        /*surbay_inform_c*/
+
+        /*surbay_inform*/
+
+    }
+
+    /*surbay*/
+
+}

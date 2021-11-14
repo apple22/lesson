@@ -1,0 +1,172 @@
+body {
+  font-size: 16px;
+}
+
+.title_a, .wrapper #surbay #surbay_inform_b .guide, .wrapper #surbay #surbay_inform_b .lesson_r, .wrapper #surbay #surbay_inform_b .title, .wrapper #surbay #surbay_inform #surbay_inform_a #surbay_inform_a_text .title, .wrapper #surbay #surbay_inform #surbay_inform_b #surbay_inform_a_text .title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-left: 10px;
+}
+
+.align, .wrapper #surbay .surbay_inform_c ul li span, .wrapper #surbay .surbay_inform_c ul li, .wrapper #surbay .surbay_inform_c ul, .wrapper #surbay #surbay_inform_b .e_mail, .wrapper #surbay #surbay_inform_b p, .wrapper #client_profile #subject {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wrapper {
+  width: 57%;
+  height: 2300px;
+  margin: auto;
+  border: 1px solid black;
+  /*client_profile*/
+  /*surbay*/
+}
+.wrapper #client_profile {
+  width: 100%;
+  height: 200px;
+}
+.wrapper #client_profile #subject {
+  width: 32%;
+  height: 100%;
+  margin: auto;
+  font-size: 2em;
+  color: #954E0E;
+}
+.wrapper #surbay {
+  width: 100%;
+  height: 2000px;
+  /*surbay_inform_b*/
+  /*surbay_inform_c*/
+  /*surbay_inform*/
+}
+.wrapper #surbay #surbay_inform {
+  width: 100%;
+  height: 230px;
+  /*inform_a*/
+}
+.wrapper #surbay #surbay_inform #surbay_inform_a, .wrapper #surbay #surbay_inform #surbay_inform_b {
+  width: 100%;
+  height: 73px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+  /*surbay_inform_a_text*/
+}
+.wrapper #surbay #surbay_inform #surbay_inform_a #surbay_inform_a_bar, .wrapper #surbay #surbay_inform #surbay_inform_b #surbay_inform_a_bar {
+  width: 1%;
+  height: 73px;
+  background-color: #954E0E;
+  border: 1px solid 954E;
+}
+.wrapper #surbay #surbay_inform #surbay_inform_a #surbay_inform_a_text, .wrapper #surbay #surbay_inform #surbay_inform_b #surbay_inform_a_text {
+  width: 100%;
+  height: 73px;
+  background-color: #ffffff;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  /*title*/
+  /*remain*/
+}
+.wrapper #surbay #surbay_inform #surbay_inform_a #surbay_inform_a_text .remain, .wrapper #surbay #surbay_inform #surbay_inform_b #surbay_inform_a_text .remain {
+  height: 40px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #954E0E;
+  line-height: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.wrapper #surbay #surbay_inform_b {
+  flex-wrap: wrap;
+  height: 135px !important;
+}
+.wrapper #surbay #surbay_inform_b p {
+  height: 25%;
+  display: flex;
+  align-items: center;
+}
+.wrapper #surbay #surbay_inform_b .title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: auto;
+  float: left;
+  width: 100%;
+}
+.wrapper #surbay #surbay_inform_b .guide, .wrapper #surbay #surbay_inform_b .lesson_r {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: auto;
+  float: left;
+  width: 100%;
+}
+.wrapper #surbay #surbay_inform_b p {
+  justify-content: flex-start;
+  height: 25%;
+}
+.wrapper #surbay #surbay_inform_b .e_mail {
+  font-size: 16px;
+  color: brown;
+  width: 100%;
+  justify-content: flex-start;
+}
+.wrapper #surbay #surbay_inform_b .lesson_r {
+  font-weight: 900;
+}
+.wrapper #surbay .surbay_inform_c {
+  width: 100%;
+  height: 555px;
+  /*surbay_inform_c ul*/
+}
+.wrapper #surbay .surbay_inform_c ul {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  /*surbay_inform_c li*/
+}
+.wrapper #surbay .surbay_inform_c ul .three input {
+  width: 20% !important;
+  float: left;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.wrapper #surbay .surbay_inform_c ul li {
+  width: 100%;
+  height: 18%;
+  text-align: center;
+  flex-direction: column;
+}
+.wrapper #surbay .surbay_inform_c ul li input {
+  height: 55px;
+  border: 1px solid gray;
+}
+.wrapper #surbay .surbay_inform_c ul li span {
+  height: 50%;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wrapper #surbay .surbay_inform_c ul li span b {
+  fonts-size: 20px;
+  display: block;
+  margin-right: 3px;
+}
+.wrapper #surbay .surbay_inform_c ul li span sub {
+  font-size: 13px;
+  color: gray;
+}
+.wrapper #surbay .surbay_inform_c ul li input::placeholder {
+  color: gray;
+  font-size: 18px;
+}
+.wrapper #surbay .surbay_inform_c ul li:nth-child(1) input {
+  width: 98%;
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
