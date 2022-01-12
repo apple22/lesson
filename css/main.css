@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*상속, 중첩*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+h1 {
+  line-height: 100px; }
+
+#container {
+  width: 1000px;
+  height: 5000px;
+  text-align: center;
+  margin: auto; }
+  #container header, #container footer {
+    height: 100px;
+    background-color: gray;
+    border-radius: 20px; }
+  #container ul {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    margin: 5px 0 0 0; }
+  #container ul li {
+    margin: 0 5px 5px 0;
+    width: 245px;
+    height: 120px;
+    border-radius: 20px; }
+  #container ul li:nth-child(1) {
+    background-color: pink; }
+  #container ul li:nth-child(2) {
+    background-color: green; }
+  #container ul li:nth-child(3) {
+    background-color: skyblue; }
+  #container ul li:nth-child(4) {
+    background-color: slateblue; }
+  #container ul li:nth-child(5) {
+    background-color: yellow; }
+  #container ul li:nth-child(6) {
+    background-color: darkorange; }
+  #container ul li:nth-child(7) {
+    background-color: firebrick; }
+  #container ul li:nth-child(8) {
+    background-color: hotpink; }
+  #container ul li:hover {
+    background: #e95d9b;
+    background: radial-gradient(circle, #e95d9b 0%, #4c9af5 100%); }
+  #container ul li h2 {
+    line-height: 70px; }
+
+@keyframes ani {
+  from {
+    width: 200px; }
+  to {
+    width: 245px; } }
+
+/*# sourceMappingURL=main.css.map */
