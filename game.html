@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script>
+        var canvas; //도화지 객체
+        var context; //화가 객체
+
+        // 플레이어 이동 방향과 속도
+        var dx = 0;
+        var dy = 0;
+
+        // 키 이벤트로 인해 인식된 keycode변수
+        var keycode;
+
+        // 전역변수로서 이미지 객체 생성
+        var imgChar = new Image();
+        imgChar.src = "https://cdn.clien.net/web/api/file/F01/5154675/e6ce42fde3664f1c9b6.GIF?w=780&h=30000&gif=true";
+        var imgBg = new Image();
+        imgBg.src = "https://i.pinimg.com/originals/e7/cb/84/e7cb84ae644eb73d05a2ab8388bb5c34.jpg";
+
+        //플레이어의 캐릭터의 중심좌표 
+        var x = 200,
+            y = 250; /*정가운데로 위치*/
+        
+        var w = 40,
+            h = 40; //플레이어 이미지의 절반 사이즈
+
+        function loaded(){
+            canvas = document.getElementById('c1');
+            context = canvas.getContext('2d');
+
+            runGame();//게임을 진행하는 함수
+            setInterval(rungame,10);
+            //10ms마다 rungame()을 다시 호출
+
+        }
+
+        function runGame(){
+            moveAll();//캐릭터를 움직이는 함수
+            drawAll();//이미지를 그리는 함수
+        }
+
+        function moveAll(){
+            x += dx;
+            y += dy;
+
+        }
+
+        function drawAll(){
+            context.drawImage(imgBg, 0, 0, 400, 500);
+            context.drawImage(imgChar, x - w, y - h, w * 2, h * 2);
+       
+            context.fillStyle = "white";
+            context.font = "30px sans-serif";
+            context.fillText(keycode, 10, 40);
+        }
+    </script>
+</head>
+<body onload="loaded()">
+<canvas id="c1" width="400" height="500" style="border:2px solid black"></canvas>
+</body>
+</html>
