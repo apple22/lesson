@@ -1,4 +1,4 @@
-document.write("==== variable.js ====", "<br/>");
+/*document.write("==== variable.js ====", "<br/>");
 
 
 
@@ -19,4 +19,4 @@ document.write(사과-3+3, "<br/>");
 
 var hh = 2 ** 10;
 
-document.write(hh, "<br/>");
+document.write(hh, "<br/>");*/

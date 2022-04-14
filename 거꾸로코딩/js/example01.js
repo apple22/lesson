@@ -1,1 +1,3 @@
-document.write("<br/>", "==== example01.js ====", "<br/>");
+/*
+    document.write("<br/>", "==== example01.js ====", "<br/>");
+*/

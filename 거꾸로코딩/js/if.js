@@ -1,4 +1,4 @@
-document.write("<br/>", "==== if.js ====", "<br/>");
+/*document.write("<br/>", "==== if.js ====", "<br/>");
 
 
 var aa = 1;
@@ -25,4 +25,4 @@ if (걷는양 >= 10000){
     document.write("10000걸음을 걸었어요.", "<br/>");
 }else{
     document.write(`10000걸음까지 ${10000-걷는양}만큼 남았어요.`, "<br/>");
-}
+}*/
