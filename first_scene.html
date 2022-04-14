@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./lib/three.js"></script>
+    <script type="text/javascript" src="./lib/stats.js"></script>
+    <script type="text/javascript" src="./lib/dat.gui.js"></script>
     <title>Document</title>
     <style>
 body{
@@ -19,12 +21,15 @@ body{
 
     </div>
 
+    <div id="Stats-output">
+    </div>
+
     <script type="text/javascript">
         function init(){
              /*카메라와 빛을 담을수 있는 장면 생성*/
             var scene = new THREE.Scene();
             var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-             
+            var stats = initStats();
     
             /*
    fov(field of view) : 카메라의 시야각을 의미합니다 , 기본값은 50 
@@ -36,16 +41,22 @@ body{
            window.innerHeight :세로 스크롤을 포함한 윈도우창의 세로 길이를 가져옴 
             */
             var renderer = new THREE.WebGLRenderer();
-            renderer.setClearColorHex();
-            renderer.setClearColor(new THREE.Color(0xEEEEEE));
+         
+            renderer.setClearColor(new THREE.Color(0xEEEEEE, 1.0));
             renderer.setSize(window.innerWidth , window.innerHeight);
-       
-            var axes = new THREE.AxisHelper(20);
-            scene.add(axes);
+            renderer.shadowMapEnabled = true;
 
+            var axes = new THREE.AxisHelper(30);
+           scene.add(axes);
+       
+           
+ /*크기 , 방향, 색깔 , 재질 */
             var planeGeometry = new THREE.PlaneGeometry(60, 20);
-            var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
+            var planeMaterial = new THREE.MeshPhongMaterial({color: 0xffffff});
             var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+            plane.shadowMapEnabled = true;
+
+            
             
 
             plane.rotation.x = -0.5 * Math.PI;
@@ -55,10 +66,10 @@ body{
 
             scene.add(plane);
 
-            /*물체 -> 재질 - > 방향 */
+            
 
             var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
-           var cubeMaterial = new THREE.MeshBasicMaterial({color: 0xff0000, wireframe: true});
+           var cubeMaterial = new THREE.MeshPhongMaterial({color: 0xff0000, wireframe: false});
         var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
  
             cube.position.x = -4;
@@ -68,7 +79,7 @@ body{
             scene.add(cube);
 
             var sphereGeometry = new THREE.SphereGeometry(4,20,20);
-            var sphereMaterial =  new THREE.MeshBasicMaterial({color:0x7777ff,wireframe:true});
+            var sphereMaterial =  new THREE.MeshPhongMaterial({color:0x7777ff,wireframe:false});
             var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 
             sphere.position.x = 20;
@@ -76,6 +87,12 @@ body{
             sphere.position.y = 2;
 
             scene.add(sphere);
+            
+
+            var spotLight = new THREE.SpotLight(0xffffff);
+            spotLight.position.set(-40, 60, -10);
+            spotLight.castShadow = true;
+            scene.add(spotLight);
 
             camera.position.x = -30;
            camera.position.y = 40;
@@ -84,7 +101,70 @@ body{
 
           document.getElementById("WebGL-output").appendChild(renderer.domElement);
 
-          renderer.render(scene,camera);
+          var step = 0;
+
+          var controls = new function (){
+              this.rotationspeed = 0.02;
+              this.bouncingspeed = 0.03;
+          };
+          
+          var gui = new dat.GUI();
+          gui.add(controls,'rotationspeed', 0 , 0.5);
+          gui.add(controls,'bouncingspeed', 0 , 0.5);
+          
+          function render(){
+            stats.update();
+            
+            cube.rotation.x += controls.rotationspeed;
+            cube.rotation.y += controls.rotationspeed;
+            cube.rotation.z += controls.rotationspeed;
+
+            step += controls.bouncingspeed;
+            sphere.position.x = 20 + ( 10 * (Math.cos(step)));
+            sphere.position.y = 2 + ( 10 * Math.abs(Math.sin(step)));
+
+                
+            requestAnimationFrame(render);
+            renderer.render(scene,camera);
+
+          }
+
+          render();
+
+          
+    
+
+          function renderScene(){
+            
+            /*회전*/
+            cube.rotation.x += 0.02;
+            cube.rotation.y += 0.02;
+            cube.rotation.z += 0.02;
+
+            step += 0.04;
+         
+
+    
+
+          }
+
+          function initStats() {
+
+            var stats = new Stats();
+            stats.setMode(0);
+
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+
+            document.getElementById("Stats-output").appendChild(stats.domElement);
+
+            return stats;
+            
+
+          }
+
+          
 
 
             
