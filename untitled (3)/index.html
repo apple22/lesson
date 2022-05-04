@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="generator" content="Three.js Editor">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: 11px;
+				background-color: #000;
+				margin: 0px;
+			}
+			canvas {
+				display: block;
+			}
+		</style>
+	</head>
+	<body ontouchstart="">
+		<script type="module">
+
+			import * as THREE from './js/three.module.js';
+			import { APP } from './js/app.js';
+			import { VRButton } from './js/VRButton.js';
+			import { OrbitControls } from './js/OrbitControls.js';
+
+			window.THREE = THREE; // Used by APP Scripts.
+			window.VRButton = VRButton; // Used by APP Scripts.
+
+			document.addEventListener("keydown", onDocumentKeyDown, false)
+			function onDocumentKeyDown(event){
+				var keyCode = event.which;
+				if(keyCode == 87){
+					
+					document.getElementById("w").style.background = "red";
+					document.getElementById("a").style.background = "white";
+					document.getElementById("s").style.background = "white";
+					document.getElementById("d").style.background = "white";
+
+					event.preventDefault();
+					/*이벤트가 하나 실행하고 있을시에 다른 이벤트의 동작을 없앰*/
+
+				}else if(keyCode == 83){
+					document.getElementById("w").style.background = "white";
+					document.getElementById("a").style.background = "white";
+					document.getElementById("s").style.background = "red";
+					document.getElementById("d").style.background = "white";
+
+					event.preventDefault();
+
+				}else if(keyCode == 65){
+					document.getElementById("w").style.background = "white";
+					document.getElementById("a").style.background = "red";
+					document.getElementById("s").style.background = "white";
+					document.getElementById("d").style.background = "white";
+
+					event.preventDefault();
+					
+				}else if(keyCode == 68){
+					document.getElementById("w").style.background = "white";
+					document.getElementById("a").style.background = "white";
+					document.getElementById("s").style.background = "white";
+					document.getElementById("d").style.background = "red";
+
+					event.preventDefault();
+				}else{
+					document.getElementById("w").style.background = "white";
+					document.getElementById("a").style.background = "white";
+					document.getElementById("s").style.background = "white";
+					document.getElementById("d").style.background = "white";
+					
+					event.preventDefault();
+				}
+			}
+
+			var loader = new THREE.FileLoader();
+			loader.load( 'app.json', function ( text ) {
+
+				var player = new APP.Player();
+				player.load( JSON.parse( text ) );
+				player.setSize( window.innerWidth, window.innerHeight );
+				player.play();
+
+				document.body.appendChild( player.dom );
+
+				window.addEventListener( 'resize', function () {
+
+					player.setSize( window.innerWidth, window.innerHeight );
+
+				} );
+
+			} );
+
+
+
+</script>
+<style>
+	.button{
+		position: fixed;
+		bottom:20px;
+		background:transparent;
+	
+		width:1200px;
+		height:100px;
+	}
+
+	.button ul{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		width:60%;
+		height:100%;
+		list-style: none;
+		margin:0;
+		padding:0;
+	}
+
+	.button ul li{
+		width:100px;
+		height:100%;
+		font-weight: 900;
+		font-size: 50px;
+		display:flex;
+		align-items: center;
+		justify-content: space-around;
+		color:black;
+		background:white;
+		border-radius: 100px;
+	}
+</style>
+<div class="button">
+<ul>
+<li id="w">W</li>
+<li id="a">A</li>
+<li id="s">S</li>
+<li id="d">D</li>
+</ul>
+</div>
+</body>
+</html>
